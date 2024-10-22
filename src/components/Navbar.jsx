@@ -14,7 +14,7 @@ const Navbar = () => {
 
     const targetElement = document.querySelector(href)
     if (targetElement) {
-      const offset = -85
+      const offset = -20 // prev:85
       const elementPosition = targetElement.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.scrollY + offset
 
@@ -56,16 +56,16 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='pt-4 backdrop-blur-lg lg:hidden'>
+        <div className='pt-3 backdrop-blur-lg lg:hidden'>
           <div className='flex items-center justify-between px-4'>
-            <div>
+            <div className='-translate-y-1'>
               <a href='#'>
                 <span className='ml-1'>Tushar Verma</span>
               </a>
             </div>
             <div className='flex items-center'>
               <button
-                className='focus:outline-none lg:hidden'
+                className='focus:outline-none lg:hidden -translate-y-1'
                 onClick={toggleMobileMenu}
                 aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >

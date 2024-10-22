@@ -31,7 +31,7 @@ export const NAVIGATION_LINKS = [
 
 export const PROFILE = {
   name: 'Tushar Verma',
-  role: 'Software Developer',
+  role: 'Frontend App Developer',
   subheading:
     'With hands-on experience in developing meaningful projects using in-demand technologies, I am dedicated to delivering high-quality software solutions. I am excited to find a role in a dynamic company where I can apply my skills and continue to learn in a professional environment.'
 }
@@ -43,7 +43,8 @@ export const PROJECTS = [
     description:
       'A full-featured e-commerce website built with React and Node.js. It includes user authentication, product management, and an integrated payment gateway.',
     techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    imgSrc: project1,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://example-ecommerce.com'
   },
   {
@@ -52,7 +53,8 @@ export const PROJECTS = [
     description:
       'A real-time social media app with chat, notifications, and a customizable profile page. Built with React, Firebase, and Redux for state management.',
     techStack: ['React', 'Firebase', 'Redux'],
-    imgSrc: project2,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://example-socialapp.com'
   },
   {
@@ -61,7 +63,8 @@ export const PROJECTS = [
     description:
       'A personal portfolio website showcasing projects and skills. Fully responsive and optimized for performance.',
     techStack: ['Next.js', 'Tailwind CSS'],
-    imgSrc: project3,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://myportfolio.com'
   },
   {
@@ -70,7 +73,8 @@ export const PROJECTS = [
     description:
       'A blogging platform with a content management system, user authentication, and an intuitive editor.',
     techStack: ['Ruby on Rails', 'PostgreSQL', 'Tailwind CSS'],
-    imgSrc: project4,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://example-blogplatform.com'
   },
   {
@@ -79,7 +83,8 @@ export const PROJECTS = [
     description:
       'A task management tool with user authentication, reminders, and collaboration features.',
     techStack: ['Angular', 'Firebase', 'Material UI'],
-    imgSrc: project5,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://example-taskapp.com'
   },
   {
@@ -88,7 +93,8 @@ export const PROJECTS = [
     description:
       'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
     techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
-    imgSrc: project6,
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
     link: 'https://example-learningplatform.com'
   }
 ]

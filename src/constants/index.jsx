@@ -30,10 +30,10 @@ export const NAVIGATION_LINKS = [
 ]
 
 export const PROFILE = {
-  name: 'David Stones',
-  role: 'Full Stack Developer',
+  name: 'Tushar Verma',
+  role: 'Software Developer',
   subheading:
-    'With 10 years of full-stack development experience, I build efficient, scalable web applications. Not on the job hunt, but always curious about interesting projects.'
+    'With hands-on experience in developing meaningful projects using in-demand technologies, I am dedicated to delivering high-quality software solutions. I am excited to find a role in a dynamic company where I can apply my skills and continue to learn in a professional environment.'
 }
 
 export const PROJECTS = [

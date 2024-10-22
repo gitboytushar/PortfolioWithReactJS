@@ -1,4 +1,4 @@
-import { RiCloseLine, RiMenu3Line } from '@remixicon/react'
+import { RiCloseLargeLine, RiMenu5Line } from '@remixicon/react'
 import { useState } from 'react'
 import { NAVIGATION_LINKS } from '../constants/index'
 
@@ -31,10 +31,10 @@ const Navbar = () => {
       <nav className='fixed left-0 right-0 z-50 lg:top-4'>
         {/* Desktop Menu */}
         <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg lg:flex'>
-          <div className='flex items-center justify-between gap-20'>
+          <div className='flex items-center justify-between gap-40'>
             <div>
               <a href='/'>
-                <span className='uppercase'>Tushar Verma</span>
+                <span>Tushar Verma</span>
               </a>
             </div>
             <div>
@@ -56,11 +56,11 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='py-2 backdrop-blur-md lg:hidden'>
-          <div className='flex items-center justify-between px-2'>
+        <div className='pt-4 backdrop-blur-lg lg:hidden'>
+          <div className='flex items-center justify-between px-4'>
             <div>
               <a href='#'>
-                <span className='uppercase'>Tushar Verma</span>
+                <span className='ml-1'>Tushar Verma</span>
               </a>
             </div>
             <div className='flex items-center'>
@@ -70,16 +70,16 @@ const Navbar = () => {
                 aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >
                 {isMobileMenuOpen ? (
-                  <RiCloseLine className='m-1 h-6 w-5' />
+                  <RiCloseLargeLine className='h-6 w-5' />
                 ) : (
-                  <RiMenu3Line className='m-1 h-6 w-5' />
+                  <RiMenu5Line className='h-6 w-5' />
                 )}
               </button>
             </div>
           </div>
           {/* menu options */}
           {isMobileMenuOpen && (
-            <ul className='my-4 mx-4 flex flex-col gap-6 backdrop-blur-md'>
+            <ul className='mt-16 mx-2 pb-16 flex flex-col gap-9 text-center border-b border-white/40 rounded-3xl'>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a

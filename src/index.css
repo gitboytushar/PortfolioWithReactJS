@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* outline: solid 1px red; */
+}
+
 :root {
-  font-family: "Alef", sans-serif;
+  font-family: "Coda", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
   background-color: rgb(24 3 23);
   color: white;
 }

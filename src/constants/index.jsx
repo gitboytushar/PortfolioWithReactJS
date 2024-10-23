@@ -45,7 +45,8 @@ export const PROJECTS = [
     techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
     videoSrc:
       'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://example-ecommerce.com'
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   },
   {
     id: 2,
@@ -54,8 +55,9 @@ export const PROJECTS = [
       'A real-time social media app with chat, notifications, and a customizable profile page. Built with React, Firebase, and Redux for state management.',
     techStack: ['React', 'Firebase', 'Redux'],
     videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://example-socialapp.com'
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   },
   {
     id: 3,
@@ -64,8 +66,9 @@ export const PROJECTS = [
       'A personal portfolio website showcasing projects and skills. Fully responsive and optimized for performance.',
     techStack: ['Next.js', 'Tailwind CSS'],
     videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://myportfolio.com'
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   },
   {
     id: 4,
@@ -74,8 +77,9 @@ export const PROJECTS = [
       'A blogging platform with a content management system, user authentication, and an intuitive editor.',
     techStack: ['Ruby on Rails', 'PostgreSQL', 'Tailwind CSS'],
     videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://example-blogplatform.com'
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   },
   {
     id: 5,
@@ -84,8 +88,9 @@ export const PROJECTS = [
       'A task management tool with user authentication, reminders, and collaboration features.',
     techStack: ['Angular', 'Firebase', 'Material UI'],
     videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://example-taskapp.com'
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   },
   {
     id: 6,
@@ -94,8 +99,9 @@ export const PROJECTS = [
       'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
     techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
     videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    link: 'https://example-learningplatform.com'
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   }
 ]
 

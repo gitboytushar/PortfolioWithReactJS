@@ -17,6 +17,7 @@ const Hero = () => {
           {PROFILE.subheading}
         </h3>
         <a
+          id='dnRBtn'
           href='/Tushar-verma.pdf'
           target='_blank'
           rel='noopener noreferrer'
@@ -24,7 +25,7 @@ const Hero = () => {
           className='hero-btn mb-2 flex gap-1 rounded-full border border-pink-200/50 px-4 py-2 text-white/80 cursor-pointer hover:text-white transition-colors duration-500 ease-in-out'
         >
           <span>download Resume</span>
-          <RiArrowRightUpLine className='w-5' />
+          <RiArrowRightUpLine className='dnRIcon w-5' />
         </a>
         <img
           src='src/assets/Tushar.webp'

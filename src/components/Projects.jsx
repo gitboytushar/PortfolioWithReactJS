@@ -31,17 +31,17 @@ const Projects = () => {
                     />
                   </div>
                   <div className='p-3 md:p-5 pb-0'>
-                    <h3 className='mb-2 text-lg font-medium lg:text-2xl'>
+                    <h3 className='mb-2 text-[18.5px] font-medium'>
                       {project.title}
                     </h3>
-                    <p className='mb-4 text-white/70'>{project.description}</p>
+                    <p className='mb-3 text-white/65'>{project.description}</p>
                     <div className='mb-4'>
-                      <p className='mb-2'>Tech Stack:</p>
+                      <p className='mb-1'>Tech Stack:</p>
                       <ul>
                         {project.techStack.map((tech, index) => (
                           <li
                             key={index}
-                            className='m-1 mb-2 inline-block rounded-full border border-purple-300/30 px-3 py-1 text-[.8rem]'
+                            className='m-1 mb-2 inline-block rounded-full border border-purple-300/40 px-3 py-1 text-[.7rem] font-mono'
                           >
                             {tech}
                           </li>

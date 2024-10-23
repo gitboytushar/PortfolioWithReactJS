@@ -1,17 +1,29 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { PROJECTS } from '../constants'
-import { RiArrowRightLine, RiGithubFill } from '@remixicon/react'
+import {
+  RiArrowDownWideLine,
+  RiArrowRightLine,
+  RiGithubFill
+} from '@remixicon/react'
 
 const Projects = () => {
   const projectRef = useRef(null)
+
+  // Show 3 latest projects initially
+  const [visibleProjects, setVisibleProjects] = useState(6)
+  const handleShowMore = () => {
+    setVisibleProjects(prev => prev + 3)
+  }
+
   return (
     <section className='pt-32' id='projects' ref={projectRef}>
       <div className='px-4'>
         <h2 className='mb-8 text-center text-3xl font-medium lg:text-4xl'>
           Projects
         </h2>
+
         <div className='flex flex-wrap'>
-          {PROJECTS.map(project => (
+          {PROJECTS.slice(0, visibleProjects).map(project => (
             <div
               key={project.id}
               className='flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
@@ -50,6 +62,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
+
                 {/* preview link and code link */}
                 <div className='px-6 mt-2 mb-5'>
                   <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
@@ -82,6 +95,21 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        {/* Show More Button */}
+        {visibleProjects < PROJECTS.length && (
+          <div className='text-center mt-3 lg:mt-4'>
+            <button
+              onClick={handleShowMore}
+              className='showMoreProjectsBtn py-2 px-4 w-fit text-1xl lg:text-lg cursor-pointer'
+            >
+              <div className='flex items-center justify-center'>
+                <p className='ml-2 mr-1'>Show More Projects</p>
+                <RiArrowDownWideLine className='h-5' />
+              </div>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )

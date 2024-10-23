@@ -59,3 +59,18 @@ iframe {
     transform: translateY(3px);
   }
 }
+
+/* Show more project button */
+@media (hover: hover) and (pointer: fine) {
+  .showMoreProjectsBtn {
+    color: rgba(255, 255, 255, 0.713);
+    background-color: transparent;
+    border: none;
+    transition: all .4s ease-in-out;
+  }
+
+  .showMoreProjectsBtn:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ffffff8f;
+  }
+}

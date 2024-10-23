@@ -102,6 +102,39 @@ export const PROJECTS = [
       'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
     preview_link: 'https://example-ecommerce.com',
     code_link: 'https://example-ecommerce.com'
+  },
+  {
+    id: 7,
+    title: 'Online Learning Platform',
+    description:
+      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
+    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
+  },
+  {
+    id: 8,
+    title: 'Online Learning Platform',
+    description:
+      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
+    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
+  },
+  {
+    id: 9,
+    title: 'Online Learning Platform',
+    description:
+      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
+    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
+    videoSrc:
+      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
+    preview_link: 'https://example-ecommerce.com',
+    code_link: 'https://example-ecommerce.com'
   }
 ]
 

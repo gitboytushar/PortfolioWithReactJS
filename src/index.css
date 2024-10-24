@@ -1,7 +1,9 @@
+/* tailwind esssentials */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* resets */
 * {
   /* outline: solid 1px red; */
   scrollbar-width: none;
@@ -16,10 +18,12 @@
   color: white;
 }
 
+/* ------------ main webpage background noise image ------------ */
 .bg-image {
   background-image: url(assets/noise.webp);
 }
 
+/* ------------ projects video player size ------------ */
 iframe {
   height: 300px;
   width: 100%;
@@ -28,7 +32,7 @@ iframe {
   border-top-right-radius: 12px;
 }
 
-/* hero section download resume btn interaction */
+/* ------------ resume download btn interaction ------------ */
 @media (hover: hover) and (pointer: fine) {
   .dnRIcon {
     transition: transform 0.3s ease-in-out;
@@ -39,7 +43,7 @@ iframe {
   }
 }
 
-/* projects element interactions */
+/* ------------ projects element interactions ------------ */
 @media (hover: hover) and (pointer: fine) {
   .projectPreviewIcon {
     transition: transform 0.3s ease-in-out;
@@ -56,11 +60,11 @@ iframe {
   }
 
   .project-card-btn:hover {
-    transform: translateY(3px);
+    transform: scale(1.1);
   }
 }
 
-/* Show more project button */
+/* ------------ Show more project button ------------ */
 @media (hover: hover) and (pointer: fine) {
   .showMoreProjectsBtn {
     color: rgba(255, 255, 255, 0.713);
@@ -72,5 +76,39 @@ iframe {
   .showMoreProjectsBtn:hover {
     color: #fff;
     text-shadow: 0 0 10px #ffffff8f;
+  }
+}
+
+/* ------------ Marquee Side Shadows on large displays only ------------ */
+.fade-shadow {
+  position: relative;
+  overflow: hidden;
+}
+
+.fade-shadow::before,
+.fade-shadow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 10;
+}
+
+.fade-shadow::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(24 3 23), rgba(24, 3, 23, 0));
+}
+
+.fade-shadow::after {
+  right: 0;
+  background: linear-gradient(to left, rgb(24 3 23), rgba(24, 3, 23, 0));
+}
+
+@media screen and (min-width: 250px) and (max-width: 1033px) {
+
+  .fade-shadow::before,
+  .fade-shadow::after {
+    width: 0;
   }
 }

@@ -140,36 +140,72 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
-    name: 'HTML5',
-    icon: <RiHtml5Line className='text-orange-600' />
+    name: 'Java',
+    logo: <img src='src/assets/skillsIcons/java.png' alt='java' />
   },
   {
-    name: 'CSS3',
-    icon: <RiCss3Line className='text-blue-500' />
+    name: 'Python',
+    logo: <img src='src/assets/skillsIcons/python.png' alt='python' />
   },
   {
-    name: 'JavaScript',
-    icon: <RiJavascriptLine className='text-yellow-500' />
+    name: 'Html5',
+    logo: <img src='src/assets/skillsIcons/html.png' alt='html5' />
   },
   {
-    name: 'React',
-    icon: <RiReactjsLine className='text-blue-400' />
+    name: 'Css3',
+    logo: <img src='src/assets/skillsIcons/css.png' alt='css3' />
   },
   {
-    name: 'Node.js',
-    icon: <RiNodeTree className='text-green-500' />
+    name: 'Javascript',
+    logo: <img src='src/assets/skillsIcons/js.png' alt='js' />
+  },
+  {
+    name: 'Bootstrap5',
+    logo: <img src='src/assets/skillsIcons/bootstrap.png' alt='bootstrap' />
+  },
+  {
+    name: 'ReactJS',
+    logo: <img src='src/assets/skillsIcons/react.png' alt='reactjs' />
+  },
+  {
+    name: 'Tailwindcss',
+    logo: <img src='src/assets/skillsIcons/tailwind.png' alt='tailwindcss' />
+  },
+  {
+    name: 'Figma',
+    logo: <img src='src/assets/skillsIcons/figma.png' alt='figma' />
+  },
+  {
+    name: 'NodeJS',
+    logo: <img src='src/assets/skillsIcons/node.png' alt='node' />
   },
   {
     name: 'MongoDB',
-    icon: <RiDatabaseLine className='text-green-600' />
+    logo: <img src='src/assets/skillsIcons/mongodb.png' alt='mongodb' />
   },
   {
-    name: 'Tailwind CSS',
-    icon: <RiCodeSSlashLine className='text-teal-400' />
+    name: 'Git',
+    logo: <img src='src/assets/skillsIcons/git.png' alt='git' />
   },
   {
-    name: 'GraphQL',
-    icon: <RiGitBranchLine className='text-pink-400' />
+    name: 'GitHub',
+    logo: <img src='src/assets/skillsIcons/github.png' alt='github' />
+  },
+  {
+    name: 'Aws',
+    logo: <img src='src/assets/skillsIcons/aws.png' alt='aws' />
+  },
+  {
+    name: 'Firebase',
+    logo: <img src='src/assets/skillsIcons/firebase.png' alt='firebase' />
+  },
+  {
+    name: 'WordPress',
+    logo: <img src='src/assets/skillsIcons/wordpress.png' alt='wordpress' />
+  },
+  {
+    name: 'Flutter',
+    logo: <img src='src/assets/skillsIcons/flutter.png' alt='flutter' />
   }
 ]
 

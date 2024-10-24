@@ -71,9 +71,9 @@ const Projects = () => {
                       href={project.preview_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-l from-indigo-700 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full bg-gradient-to-r from-purple-800 border-none px-4 py-1 text-sm cursor-pointer'
                     >
-                      <div className='flex flex-row items-center justify-center gap-1'>
+                      <div className='flex flex-row items-center justify-center gap-2'>
                         <p>Live Preview</p>
                         <RiArrowRightLine className='projectPreviewIcon w-4' />
                       </div>
@@ -82,9 +82,9 @@ const Projects = () => {
                       href={project.code_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-r from-indigo-700 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full bg-gradient-to-r from-white/20 border-none px-4 py-1 text-sm cursor-pointer'
                     >
-                      <div className='flex flex-row items-center justify-center gap-1'>
+                      <div className='flex flex-row items-center justify-center gap-2'>
                         <p>Source Code</p>
                         <RiGithubFill className='w-4' />
                       </div>

@@ -6,14 +6,12 @@ const Skills = () => {
   const skillsRef = useRef(null)
 
   return (
-    <section className='mt-14 py-32' id='skills' ref={skillsRef}>
+    <section className='mt-32 py-32' id='skills' ref={skillsRef}>
       <div className='px-4'>
-        <h2 className='mb-14 text-center text-3xl font-medium lg:text-4xl'>
-          Skills
-        </h2>
+        <h2 className='mb-20 text-center text-3xl lg:text-4xl'>Skills</h2>
 
         {/* using external npm-package for marquee effect */}
-        <div className='fade-shadow flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab'>
+        <div className='fade-shadow flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab select-none'>
           <Marquee speed={60} pauseOnHover>
             <FloatingSkills />
           </Marquee>

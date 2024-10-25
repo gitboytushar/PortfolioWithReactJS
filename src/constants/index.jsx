@@ -141,71 +141,147 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     name: 'Java',
-    logo: <img src='src/assets/skillsIcons/java.png' alt='java' />
+    logo: (
+      <img src='src/assets/skillsIcons/java.png' alt='java' draggable='false' />
+    )
   },
   {
     name: 'Python',
-    logo: <img src='src/assets/skillsIcons/python.png' alt='python' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/python.png'
+        alt='python'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Html5',
-    logo: <img src='src/assets/skillsIcons/html.png' alt='html5' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/html.png'
+        alt='html5'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Css3',
-    logo: <img src='src/assets/skillsIcons/css.png' alt='css3' />
+    logo: (
+      <img src='src/assets/skillsIcons/css.png' alt='css3' draggable='false' />
+    )
   },
   {
     name: 'Javascript',
-    logo: <img src='src/assets/skillsIcons/js.png' alt='js' />
+    logo: <img src='src/assets/skillsIcons/js.png' alt='js' draggable='false' />
   },
   {
     name: 'Bootstrap5',
-    logo: <img src='src/assets/skillsIcons/bootstrap.png' alt='bootstrap' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/bootstrap.png'
+        alt='bootstrap'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'ReactJS',
-    logo: <img src='src/assets/skillsIcons/react.png' alt='reactjs' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/react.png'
+        alt='reactjs'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Tailwindcss',
-    logo: <img src='src/assets/skillsIcons/tailwind.png' alt='tailwindcss' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/tailwind.png'
+        alt='tailwindcss'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Figma',
-    logo: <img src='src/assets/skillsIcons/figma.png' alt='figma' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/figma.png'
+        alt='figma'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'NodeJS',
-    logo: <img src='src/assets/skillsIcons/node.png' alt='node' />
+    logo: (
+      <img src='src/assets/skillsIcons/node.png' alt='node' draggable='false' />
+    )
   },
   {
     name: 'MongoDB',
-    logo: <img src='src/assets/skillsIcons/mongodb.png' alt='mongodb' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/mongodb.png'
+        alt='mongodb'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Git',
-    logo: <img src='src/assets/skillsIcons/git.png' alt='git' />
+    logo: (
+      <img src='src/assets/skillsIcons/git.png' alt='git' draggable='false' />
+    )
   },
   {
     name: 'GitHub',
-    logo: <img src='src/assets/skillsIcons/github.png' alt='github' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/github.png'
+        alt='github'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Aws',
-    logo: <img src='src/assets/skillsIcons/aws.png' alt='aws' />
+    logo: (
+      <img src='src/assets/skillsIcons/aws.png' alt='aws' draggable='false' />
+    )
   },
   {
     name: 'Firebase',
-    logo: <img src='src/assets/skillsIcons/firebase.png' alt='firebase' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/firebase.png'
+        alt='firebase'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'WordPress',
-    logo: <img src='src/assets/skillsIcons/wordpress.png' alt='wordpress' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/wordpress.png'
+        alt='wordpress'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Flutter',
-    logo: <img src='src/assets/skillsIcons/flutter.png' alt='flutter' />
+    logo: (
+      <img
+        src='src/assets/skillsIcons/flutter.png'
+        alt='flutter'
+        draggable='false'
+      />
+    )
   }
 ]
 

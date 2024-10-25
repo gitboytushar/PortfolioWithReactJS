@@ -8,7 +8,7 @@ const FloatingSkills = () => {
       {SKILLS.map((skill, index) => (
         <div
           key={index}
-          className='flex flex-col items-center justify-center opacity-30 hover:opacity-60 transition-opacity duration-500 ease-in-out'
+          className='flex flex-col items-center justify-center opacity-30 hover:opacity-80 transition-opacity duration-500 ease-in-out'
         >
           <div className='mb-3 invert w-16 lg:w-20'>{skill.logo}</div>
           <h3 className='text-sm lg:text-lg'>{skill.name}</h3>

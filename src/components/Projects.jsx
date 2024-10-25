@@ -82,7 +82,7 @@ const Projects = () => {
                       href={project.code_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-r from-white/20 border-none px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full border border-purple-300/40 px-4 py-1 text-sm cursor-pointer'
                     >
                       <div className='flex flex-row items-center justify-center gap-2'>
                         <p>Source Code</p>

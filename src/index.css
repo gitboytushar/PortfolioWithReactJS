@@ -112,3 +112,28 @@ iframe {
     width: 0;
   }
 }
+
+/* achievements section */
+.img-container-gcp {
+  background-image: url(./assets/gcpBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.img-container-aws {
+  background-image: url(./assets/awsBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .view-badge-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #view-badge-btn:hover .view-badge-icon {
+    transform: rotate(-45deg) scale(1.1);
+  }
+}

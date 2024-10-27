@@ -18,6 +18,17 @@
   color: white;
 }
 
+/* Change the background color and text color of selected text */
+::selection {
+  background-color: white;
+  color: black;
+}
+
+::-moz-selection {
+  background-color: white;
+  color: black;
+}
+
 /* ------------ main webpage background noise image ------------ */
 .bg-image {
   background-image: url(assets/noise.webp);
@@ -135,5 +146,21 @@ iframe {
 
   #view-badge-btn:hover .view-badge-icon {
     transform: rotate(-45deg) scale(1.1);
+  }
+}
+
+/* Education section */
+@media (hover: hover) and (pointer: fine) {
+  #institutionLink {
+    transition: all 0.3s ease-in-out;
+  }
+
+  #institutionLink:hover {
+    opacity: 1;
+    transform: translateX(2px);
+    background: linear-gradient(to left, #fcf8ff, #e0ffb2, #c3ff68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

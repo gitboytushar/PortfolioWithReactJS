@@ -285,72 +285,33 @@ export const SKILLS = [
   }
 ]
 
-export const EXPERIENCES = [
-  {
-    yearRange: '2023 - Present',
-    role: 'Senior Full Stack Developer',
-    company: 'Google Inc.',
-    description:
-      'Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.',
-    techStack: ['Javascript', 'React.js', 'Next.js', 'MongoDB']
-  },
-  {
-    yearRange: '2022 - 2023',
-    role: 'Frontend Developer',
-    company: 'Adobe',
-    description:
-      'Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.',
-    techStack: ['HTML', 'CSS', 'Vue.js', 'MySQL']
-  },
-  {
-    yearRange: '2021 - 2022',
-    role: 'Full Stack Developer',
-    company: 'Facebook',
-    description:
-      'Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.',
-    techStack: ['Python', 'Svelte', 'Three.js', 'Postgres']
-  },
-  {
-    yearRange: '2020 - 2021',
-    role: 'Software Engineer',
-    company: 'PayPal',
-    description:
-      'Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.',
-    techStack: ['Ruby', 'Rails', 'PHP', 'SQLite']
-  }
-]
-
 export const EDUCATION = [
   {
     id: 1,
-    degree: 'Bachelor of Science in Computer Science',
-    institution: 'Stanford University',
-    duration: '2012 - 2016',
+    degree: 'Bachelor of Technology in Computer Science',
+    institution: 'The Northcap University, Gurugram',
+    institutionWebsiteLink:
+      'https://www.ncuindia.edu/the-northcap-university/#the-northcap-university',
+    duration: '2020 - 2024',
     description:
-      'Graduated with honors in Computer Science, focusing on algorithms, data structures, and web development. Completed a capstone project on scalable cloud architectures.'
+      'Graduated in Computer Science with a specialization in Cloud Computing, achieving a 7.9 CGPA. Developed hands-on experience with leading cloud service providers, including Google Cloud Platform and Amazon Web Services. Additionally, focused on web development and completed a major project, Servispot—a modern, responsive platform designed as a hub for multiple small web applications accessible via user login.'
   },
   {
     id: 2,
-    degree: 'Master of Science in Software Engineering',
-    institution: 'MIT',
-    duration: '2016 - 2018',
+    degree: 'Non-Medical with Computer Science',
+    institution: 'Kendriya Vidyalaya No.1 AFS Gurugram',
+    institutionWebsiteLink: 'https://afsno1gurgaon.kvs.ac.in/',
+    duration: 'Senior Secondary (XII) - 2019',
     description:
-      'Focused on advanced software engineering concepts, system design, and AI technologies. Completed a thesis on machine learning applications in real-time data processing.'
+      'I chose the Non-Medical stream with Computer Science as an elective in senior secondary, where I built a solid foundation in C++ coding under a supportive teacher. As a bright student, I mentored classmates and developed a C++ command-line application for my Class 12 project, featuring shopping and lottery functionalities while managing user data in text files. I completed my studies with 82% in the CBSE board exams.'
   },
   {
     id: 3,
-    degree: 'Certified React Developer',
-    institution: 'Udacity Nanodegree',
-    duration: '2019',
+    degree: 'Matriculation',
+    institution: 'Kendriya Vidyalaya No.1 AFS Gurugram',
+    institutionWebsiteLink: 'https://afsno1gurgaon.kvs.ac.in/',
+    duration: 'Secondary (X) - 2017',
     description:
-      'Earned a certification in advanced React.js development, including hooks, context API, and performance optimization.'
+      'I completed Class 10 with a CGPA of 8.8, and while performing well in my studies, I was recognized for my creative skills in art and craft, earning several prizes and trophies. I also enjoyed playing table tennis at a regional level, where I achieved bronze and silver medals, showcasing my commitment to extracurricular activities and skill development.'
   }
 ]
-
-export const TESTIMONIAL = {
-  name: 'Sarah Doe',
-  title: 'CEO, TechCorp',
-  quote:
-    'Working with David was a game-changer. His expertise in full-stack development helped us scale our product with ease. His attention to detail and passion for quality are unmatched.',
-  image: personImage
-}

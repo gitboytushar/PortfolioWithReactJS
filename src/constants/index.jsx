@@ -1,24 +1,3 @@
-import project1 from '../assets/project1.webp'
-import project2 from '../assets/project2.webp'
-import project3 from '../assets/project3.webp'
-import project4 from '../assets/project4.webp'
-import project5 from '../assets/project5.webp'
-import project6 from '../assets/project6.webp'
-import personImage from '../assets/testimonial.webp'
-
-import {
-  RiHtml5Line,
-  RiCss3Line,
-  RiJavascriptLine,
-  RiReactjsLine,
-  RiNodeTree
-} from '@remixicon/react'
-import {
-  RiDatabaseLine,
-  RiCodeSSlashLine,
-  RiGitBranchLine
-} from '@remixicon/react'
-
 export const NAVIGATION_LINKS = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
@@ -33,7 +12,7 @@ export const PROFILE = {
   name: 'Tushar Verma',
   role: 'Frontend App Developer',
   subheading:
-    'With hands-on experience in developing meaningful projects using in-demand technologies, I am dedicated to delivering high-quality software solutions. I am excited to find a role in a dynamic company where I can apply my skills and continue to learn in a professional environment.'
+    'I’m a dedicated and a detail-oriented Developer with a strong foundation in building modern, interactive web and mobile applications. As a beginner, I bring creativity, eagerness to learn, and a proactive approach to my projects. I’m excited to contribute my skills in a dynamic company environment and grow as a software developer while supporting team objectives.'
 }
 
 export const PROJECTS = [

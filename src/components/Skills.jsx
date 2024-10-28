@@ -6,7 +6,11 @@ const Skills = () => {
   const skillsRef = useRef(null)
 
   return (
-    <section className='mt-32 py-32' id='skills' ref={skillsRef}>
+    <section
+      className='mt-0 md:mt-24 lg:mt-36 py-32'
+      id='skills'
+      ref={skillsRef}
+    >
       <div className='px-4'>
         <h2 className='mb-20 text-center text-3xl lg:text-4xl'>Skills</h2>
 

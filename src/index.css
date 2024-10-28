@@ -158,7 +158,7 @@ iframe {
   #institutionLink:hover {
     opacity: 1;
     transform: translateX(2px);
-    background: linear-gradient(to left, #fcf8ff, #e0ffb2, #c3ff68);
+    background: linear-gradient(to left, #fcf8ff, #63ffbe, #3affef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

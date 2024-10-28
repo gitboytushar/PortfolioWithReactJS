@@ -13,7 +13,7 @@ const Hero = () => {
         <h2 className='sub-title text-xl lg:text-4xl opacity-30 -translate-y-3'>
           {PROFILE.role}
         </h2>
-        <h3 className='hero-subheading bg-gradient-to-t from-pink-500 to-white bg-clip-text text-transparent text-center text-xl lg:text-2xl px-12 lg:px-52 mb-2'>
+        <h3 className='hero-subheading bg-gradient-to-t from-pink-500 to-white bg-clip-text text-transparent text-center text-md md:text-xl lg:text-2xl px-12 lg:px-52 mb-2'>
           {PROFILE.subheading}
         </h3>
         <a
@@ -31,7 +31,7 @@ const Hero = () => {
           src='src/assets/Tushar.webp'
           alt={PROFILE.name}
           width={300}
-          className='hero-img rounded-3xl border border-purple-300/30 p-1 brightness-75'
+          className='hero-img rounded-3xl border border-purple-300/30 p-1 brightness-90'
         />
       </div>
     </section>

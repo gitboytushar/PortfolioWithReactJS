@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Achievements from './components/Achievements'
 import Education from './components/Education'
+import Hobbies from './components/Hobbies'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Skills />
         <Achievements />
         <Education />
+        <Hobbies />
       </div>
     </main>
   )

@@ -294,3 +294,12 @@ export const EDUCATION = [
       'I completed Class 10 with a CGPA of 8.8, and while performing well in my studies, I was recognized for my creative skills in art and craft, earning several prizes and trophies. I also enjoyed playing table tennis at a regional level, where I achieved bronze and silver medals, showcasing my commitment to extracurricular activities and skill development.'
   }
 ]
+
+export const HOBBIES = [
+  {
+    id: 1,
+    name: 'Coding and Development',
+    image: ''
+  },
+  {}
+]

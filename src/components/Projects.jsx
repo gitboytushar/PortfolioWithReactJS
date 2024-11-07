@@ -10,7 +10,7 @@ const Projects = () => {
   const projectRef = useRef(null)
 
   // Show 3 latest projects initially
-  const [visibleProjects, setVisibleProjects] = useState(6)
+  const [visibleProjects, setVisibleProjects] = useState(3)
   const handleShowMore = () => {
     setVisibleProjects(prev => prev + 3)
   }

@@ -298,8 +298,37 @@ export const EDUCATION = [
 export const HOBBIES = [
   {
     id: 1,
-    name: 'Coding and Development',
-    image: ''
+    image: 'src/assets/hobby_images/artist.webp',
+    name: 'Artwork and Design',
+    rewards:
+      'Passionate about art, graphic design, and UI/UX. Recognized in school and college for exceptional work.'
   },
-  {}
+  {
+    id: 2,
+    image: 'src/assets/hobby_images/developer.jpg',
+    name: 'Coding, Software Development',
+    rewards:
+      'Excelled in school and college lab practicals with a strong interest in coding and problem-solving.'
+  },
+  {
+    id: 3,
+    image: 'src/assets/hobby_images/tabletennis.jpg',
+    name: 'Professional Table Tennis',
+    rewards:
+      'Winner of multiple school and college tournaments; served as team captain of the CSE branch in 2023.'
+  },
+  {
+    id: 4,
+    image: 'src/assets/hobby_images/techy.jpg',
+    name: 'Tech Enthusiast',
+    rewards:
+      'Fueled by a relentless curiosity for the latest in tech, from innovative gadgets to breakthrough software. Always eager to stay ahead of trends and dive into the digital future.'
+  },
+  {
+    id: 5,
+    image: 'src/assets/hobby_images/music.jpg',
+    name: 'Music and Movie Explorer',
+    rewards:
+      'Music and films are my go-to sanctuary for focus and rejuvenation, offering a blend of relaxation, creative inspiration, and fresh perspectives that keep me energized and motivated.'
+  }
 ]

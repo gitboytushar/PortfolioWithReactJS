@@ -54,6 +54,12 @@ iframe {
   }
 }
 
+@media screen and (max-width:768px) {
+  .dnRIcon {
+    transform: rotate(135deg);
+  }
+}
+
 /* ------------ projects element interactions ------------ */
 @media (hover: hover) and (pointer: fine) {
   .projectPreviewIcon {
@@ -129,14 +135,14 @@ iframe {
   background-image: url(./assets/gcpBg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 30% center;
 }
 
 .img-container-aws {
   background-image: url(./assets/awsBg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 18% center;
 }
 
 @media (hover: hover) and (pointer: fine) {

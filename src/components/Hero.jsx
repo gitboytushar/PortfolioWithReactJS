@@ -6,7 +6,7 @@ const Hero = () => {
   const heroRef = useRef(null) // use later
   return (
     <section className='flex' ref={heroRef}>
-      <div className='mt-16 lg:mt-28 flex min-h-screen flex-col items-center justify-center gap-4 lg:gap-6'>
+      <div className='mt-8 lg:mt-14 min-h-screen flex flex-col items-center justify-center gap-4 lg:gap-6'>
         <h1 className='hero-title uppercase text-4xl lg:text-7xl'>
           {PROFILE.name}
         </h1>
@@ -30,8 +30,7 @@ const Hero = () => {
         <img
           src='src/assets/Tushar.webp'
           alt={PROFILE.name}
-          width={300}
-          className='hero-img rounded-3xl border border-purple-300/30 p-1 brightness-90'
+          className='max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-75'
         />
       </div>
     </section>

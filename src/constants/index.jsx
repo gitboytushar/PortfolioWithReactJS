@@ -10,9 +10,9 @@ export const NAVIGATION_LINKS = [
 
 export const PROFILE = {
   name: 'Tushar Verma',
-  role: 'Frontend App Developer',
+  role: 'Frontend Developer',
   subheading:
-    'I’m a dedicated and a detail-oriented Developer with a strong foundation in building modern, interactive web and mobile applications. As a beginner, I bring creativity, eagerness to learn, and a proactive approach to my projects. I’m excited to contribute my skills in a dynamic company environment and grow as a software developer while supporting team objectives.'
+    'Hi there! I’m a B.tech graduate passionate about frontend development for web and mobile. I’m new to the industry but excited to roll up my sleeves, learn fast, and add value to dynamic projects and teams.'
 }
 
 export const PROJECTS = [

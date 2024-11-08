@@ -5,9 +5,13 @@ const Achievements = () => {
   const achievementsRef = useRef(null)
 
   return (
-    <section className='py-20' id='achievements' ref={achievementsRef}>
+    <section
+      className='py-20 min-h-[100vh]'
+      id='achievements'
+      ref={achievementsRef}
+    >
       <div className='px-4'>
-        <h2 className='mb-24 text-center text-3xl lg:text-4xl flex flex-col items-center justify-center'>
+        <h2 className='mb-16 md:mb-10 text-center text-3xl lg:text-4xl flex flex-col items-center justify-center'>
           <span>Achievements</span>
           <span className='text-lg opacity-50'>Cloud computing badges</span>
         </h2>

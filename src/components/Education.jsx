@@ -8,7 +8,9 @@ const Education = () => {
   return (
     <section className='py-32 min-h-[100vh]' id='education' ref={educationRef}>
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='mb-14 text-center text-3xl lg:text-4xl'>Education</h2>
+        <h2 className='mb-14 text-center text-3xl lg:text-4xl'>
+          Education Milestones
+        </h2>
       </div>
 
       {/* content */}

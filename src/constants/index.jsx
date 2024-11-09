@@ -299,36 +299,36 @@ export const HOBBIES = [
   {
     id: 1,
     image: 'src/assets/hobby_images/artist.webp',
-    name: 'Artwork and Design',
+    name: 'Artist and Designer',
     rewards:
-      'Passionate about art, graphic design, and UI/UX. Recognized in school and college for exceptional work.'
+      'Passionate creator recognized for unique art and design throughout school and college; also enjoys crafting UI/UX in Figma for apps.'
   },
   {
     id: 2,
-    image: 'src/assets/hobby_images/developer.jpg',
-    name: 'Coding, Software Development',
+    image: 'src/assets/hobby_images/tabletennis.jpg',
+    name: 'Table Tennis Champ',
     rewards:
-      'Excelled in school and college lab practicals with a strong interest in coding and problem-solving.'
+      'Multi-tournament winner; led the CSE branch team as captain in 2023.'
   },
   {
     id: 3,
-    image: 'src/assets/hobby_images/tabletennis.jpg',
-    name: 'Professional Table Tennis',
-    rewards:
-      'Winner of multiple school and college tournaments; served as team captain of the CSE branch in 2023.'
-  },
-  {
-    id: 4,
     image: 'src/assets/hobby_images/techy.jpg',
     name: 'Tech Enthusiast',
     rewards:
-      'Fueled by a relentless curiosity for the latest in tech, from innovative gadgets to breakthrough software. Always eager to stay ahead of trends and dive into the digital future.'
+      'Driven by curiosity for tech trends, gadgets, and digital innovations.'
+  },
+  {
+    id: 4,
+    image: 'src/assets/hobby_images/music.jpg',
+    name: 'Movie and Music Lover',
+    rewards:
+      'Loves diving into movies and music as a source of relaxation, inspiration, and fresh perspectives.'
   },
   {
     id: 5,
-    image: 'src/assets/hobby_images/music.jpg',
-    name: 'Music and Movie Explorer',
+    image: 'src/assets/hobby_images/photography.jpg',
+    name: 'Smartphone Photographer',
     rewards:
-      'Music and films are my go-to sanctuary for focus and rejuvenation, offering a blend of relaxation, creative inspiration, and fresh perspectives that keep me energized and motivated.'
+      'Captures life’s moments through the lens of a smartphone, earning compliments from friends and family.'
   }
 ]

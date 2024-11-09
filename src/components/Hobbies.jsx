@@ -12,7 +12,7 @@ const Hobbies = () => {
     >
       <div className='mx-auto max-w-full px-4'>
         <h2 className='mb-10 lg:mb-16 lg:pt-14 text-center text-3xl lg:text-4xl'>
-          Hobbies
+          Life Outside Work
         </h2>
       </div>
 

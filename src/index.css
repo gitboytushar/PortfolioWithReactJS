@@ -10,7 +10,7 @@
 }
 
 :root {
-  font-family: "Coda", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 
@@ -168,6 +168,35 @@ iframe {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+/* Contact Section */
+.contact-title-underline {
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+/* cool underline effect on the mail-id hover on desktops */
+@media (hover: hover) and (pointer: fine) {
+  .mail-link {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .mail-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, white, transparent);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .mail-link:hover::before {
+    width: 100%;
   }
 }
 

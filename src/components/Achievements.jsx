@@ -11,7 +11,7 @@ const Achievements = () => {
       ref={achievementsRef}
     >
       <div className='px-4'>
-        <h2 className='mb-16 md:mb-10 text-center text-3xl lg:text-4xl flex flex-col items-center justify-center'>
+        <h2 className='mb-16 md:mb-10 text-center font-medium text-3xl lg:text-4xl flex flex-col items-center justify-center'>
           <span>Achievements</span>
           <span className='text-lg opacity-50'>Cloud computing badges</span>
         </h2>
@@ -34,15 +34,15 @@ const Achievements = () => {
 
             {/* main content */}
             <div className='img-container-gcp w-full h-full rounded-[10px] relative'>
-              <div className='flex flex-col items-center justify-between gap-8 lg:gap-16 w-full md:w-fit p-5 md:absolute top-12 lg:top-20 left-14'>
+              <div className='flex flex-col items-center justify-between gap-12 lg:gap-14 w-full md:w-fit p-5 md:absolute top-12 lg:top-20 left-14'>
                 <div className='text-center mt-20 md:mt-0'>
-                  <h2 className='text-3xl lg:text-5xl'>
+                  <h2 className='text-3xl lg:text-5xl font-bold'>
                     Google Cloud Platform
                   </h2>
                   <h3 className='text-lg lg:text-2xl mt-1 lg:mt-2 opacity-50'>
-                    Part of College curriculum
+                    College curriculum
                   </h3>
-                  <h3 className='text-2xl lg:text-4xl mt-4 md:mt-6 opacity-70'>
+                  <h3 className='text-xl lg:text-4xl mt-4 md:mt-6 opacity-70'>
                     Earned in 2022
                   </h3>
                 </div>
@@ -78,14 +78,16 @@ const Achievements = () => {
             <div className='img-container-aws w-full h-full rounded-[10px] relative'>
               <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
                 <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-36 px-2 md:px-0'>
-                  <h2 className='text-3xl lg:text-5xl'>Amazon Web Services</h2>
-                  <h3 className='text-lg lg:text-2xl lg:mt-2 opacity-60 md:opacity-30'>
-                    Part of College curriculum
+                  <h2 className='text-3xl lg:text-5xl font-bold'>
+                    Amazon Web Services
+                  </h2>
+                  <h3 className='text-lg lg:text-2xl lg:mt-2 opacity-50 md:opacity-30'>
+                    College curriculum
                   </h3>
                 </div>
 
                 <div className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-32'>
-                  <h3 className='w-32 md:w-fit text-2xl lg:text-4xl mt-4 opacity-70'>
+                  <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 opacity-70'>
                     Earned in 2022 - 2023
                   </h3>
                   <a

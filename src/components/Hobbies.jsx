@@ -6,12 +6,12 @@ const Hobbies = () => {
 
   return (
     <section
-      className='py-12 md:py-32 lg:mt-28 max-h-screen'
+      className='py-12 md:py-32 lg:mt-28 min-h-screen'
       id='hobbies'
       ref={hobbiesRef}
     >
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='mb-10 lg:mb-16 lg:pt-14 text-center text-3xl lg:text-4xl'>
+        <h2 className='mb-10 pt-4 lg:mb-16 lg:pt-14 text-center text-3xl lg:text-4xl font-medium'>
           Life Outside Work
         </h2>
       </div>

@@ -12,7 +12,7 @@ export const PROFILE = {
   name: 'Tushar Verma',
   role: 'Frontend Developer',
   subheading:
-    'Hi there! I’m a B.tech graduate passionate about frontend development for web and mobile. I’m new to the industry but excited to roll up my sleeves, learn fast, and add value to dynamic projects and teams.'
+    'I’m a B.tech graduate passionate about frontend development for web and mobile. I’m new to the industry but excited to roll up my sleeves, learn fast, and add value to dynamic projects and teams.'
 }
 
 export const PROJECTS = [

@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <section className='py-24 min-h-[100vh]' id='projects' ref={projectRef}>
       <div className='px-4'>
-        <h2 className='mb-5 text-center text-3xl font-medium lg:text-4xl'>
+        <h2 className='mb-5 text-center font-medium text-3xl lg:text-4xl'>
           Projects in Action
         </h2>
 

@@ -18,7 +18,7 @@ const Education = () => {
         {EDUCATION.map(edu => {
           return (
             <div key={edu.id}>
-              <div className='flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/40 rounded-xl p-6'>
+              <div className='flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/20 rounded-xl p-6'>
                 <h2 className='text-xl lg:text-2xl'>{edu.degree}</h2>
                 <div>
                   <a

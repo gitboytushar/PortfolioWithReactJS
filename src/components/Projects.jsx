@@ -28,7 +28,7 @@ const Projects = () => {
               key={project.id}
               className='flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
             >
-              <div className='flex-grow overflow-hidden rounded-2xl border border-purple-300/30 p-1 flex flex-col items-center justify-between'>
+              <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
                 {/* project info */}
                 <div>
                   <div
@@ -55,7 +55,7 @@ const Projects = () => {
                         {project.techStack.map((tech, index) => (
                           <li
                             key={index}
-                            className='mr-1 mb-1 inline-block rounded-full border border-purple-300/40 px-3 py-1 text-[.7rem] font-mono'
+                            className='mr-1 mb-1 inline-block rounded-full border border-white/40 px-3 py-1 text-[.7rem] font-mono'
                           >
                             {tech}
                           </li>
@@ -73,7 +73,7 @@ const Projects = () => {
                       href={project.preview_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-r from-violet-600 to-violet-950 border-none px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
                     >
                       <div className='flex flex-row items-center justify-center gap-2 font-medium'>
                         <p>Live Preview</p>
@@ -84,7 +84,7 @@ const Projects = () => {
                       href={project.code_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full border border-purple-300/40 px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
                     >
                       <div className='flex flex-row items-center justify-center gap-2'>
                         <p>Source Code</p>

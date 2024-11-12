@@ -11,7 +11,7 @@ const Hobbies = () => {
       ref={hobbiesRef}
     >
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='mb-10 pt-4 lg:mb-16 lg:pt-14 text-center text-3xl lg:text-4xl font-medium'>
+        <h2 className='mb-5 pt-10 md:pt-5 md:mb-12 lg:mb-14 lg:pt-14 text-center text-3xl lg:text-4xl font-medium'>
           Life Outside Work
         </h2>
       </div>

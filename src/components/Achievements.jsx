@@ -80,7 +80,7 @@ const Achievements = () => {
             <div className='img-container-aws w-full h-full rounded-[10px] relative'>
               <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
                 <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-36 px-2 md:px-0'>
-                  <h2 className='text-3xl lg:text-5xl font-bold'>
+                  <h2 className='text-3xl lg:text-5xl font-bold px-4'>
                     Amazon Web Services
                   </h2>
                   <h3 className='text-lg lg:text-2xl lg:mt-2 opacity-50 md:opacity-30'>

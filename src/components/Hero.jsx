@@ -18,7 +18,7 @@ const Hero = () => {
         </h2>
       </div>
 
-      <h3 className='hero-subheading bg-gradient-to-t from-pink-500 to-white bg-clip-text text-transparent text-center text-md md:text-xl lg:text-2xl px-12 lg:px-52 mb-2'>
+      <h3 className='hero-subheading bg-gradient-to-t from-pink-400 to-white bg-clip-text text-transparent text-center text-md md:text-xl lg:text-2xl px-12 lg:px-52 mb-2'>
         {PROFILE.subheading}
       </h3>
 

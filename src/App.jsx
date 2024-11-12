@@ -13,7 +13,7 @@ import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
 const App = () => {
   return (
     <main className='mx-auto max-w-7xl overflow-x-hidden antialiased'>
-      <div className='bg-image fixed inset-0 bg-cover bg-fixed bg-center'></div>
+      <div className='bg-image fixed inset-0 bg-blend-soft-light bg-scroll lg:bg-fixed bg-center'></div>
       <div className='relative z-10'>
         {/* Adding components */}
         <Navbar />

@@ -12,7 +12,7 @@ const Skills = () => {
       ref={skillsRef}
     >
       <div className='px-4'>
-        <h2 className='mb-16 pt-10 text-center font-medium text-3xl lg:text-4xl'>
+        <h2 className='mb-16 pt-6 text-center font-medium text-3xl lg:text-4xl'>
           Skills
         </h2>
 

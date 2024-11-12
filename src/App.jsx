@@ -8,6 +8,7 @@ import Achievements from './components/Achievements'
 import Education from './components/Education'
 import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
+import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Education />
         <Hobbies />
         <Contact />
+        <Scroll2TopFloatingButton />
       </div>
     </main>
   )

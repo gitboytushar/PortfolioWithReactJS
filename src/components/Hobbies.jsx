@@ -6,7 +6,7 @@ const Hobbies = () => {
 
   return (
     <section
-      className='py-12 md:py-32 lg:mt-28 min-h-screen'
+      className='py-12 md:pt-32 min-h-screen'
       id='hobbies'
       ref={hobbiesRef}
     >

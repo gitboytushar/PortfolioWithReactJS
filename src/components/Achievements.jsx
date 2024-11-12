@@ -11,9 +11,11 @@ const Achievements = () => {
       ref={achievementsRef}
     >
       <div className='px-4'>
-        <h2 className='mb-16 md:mb-10 text-center font-medium text-3xl lg:text-4xl flex flex-col items-center justify-center'>
+        <h2 className='mb-16 md:mb-20 lg:pt-2 lg:mb-10 text-center font-medium text-3xl lg:text-4xl flex flex-col items-center justify-center'>
           <span>Achievements</span>
-          <span className='text-lg opacity-50'>Cloud computing badges</span>
+          <span className='text-lg opacity-50 font-normal'>
+            Cloud computing badges
+          </span>
         </h2>
 
         {/* Cards Stack */}

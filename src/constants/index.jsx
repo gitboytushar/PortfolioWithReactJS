@@ -1,7 +1,7 @@
 export const NAVIGATION_LINKS = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  // { label: "Work Experience", href: "#work" },
+  // { label: 'Work Experience', href: '#work' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Education', href: '#education' },
   { label: 'Hobbies', href: '#hobbies' },
@@ -18,14 +18,24 @@ export const PROFILE = {
 export const PROJECTS = [
   {
     id: 1,
-    title: 'E-commerce Website',
+    title: 'ServiSpot: Multi-Service Platform',
     description:
-      'A full-featured e-commerce website built with React and Node.js. It includes user authentication, product management, and an integrated payment gateway.',
-    techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+      'I developed a responsive platform integrating services like a weather and news app, accessible via user sign-in. Ads were implemented to drive engagement and revenue.',
+    techStack: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Git',
+      'Firebase Auth',
+      'GitHub',
+      'Web3Forms',
+      'Google Analytics',
+      'Monetag Ads'
+    ],
     videoSrc:
       'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+    preview_link: 'http://servispot.shop/',
+    code_link: 'https://github.com/gitboytushar/serviSpot'
   },
   {
     id: 2,

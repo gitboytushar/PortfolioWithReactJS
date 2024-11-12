@@ -27,7 +27,7 @@ export function CarouselDemo () {
                       alt='hobby image'
                     />
                     <div className='flex !flex-col text-center md:text-start items-center md:items-start justify-center h-full w-[300px] md:w-1/4'>
-                      <h3 className='text-2xl lg:text-3xl mb-3 bg-gradient-to-br from-green-400 to-blue-600 text-transparent bg-clip-text w-52 brightness-110'>
+                      <h3 className='text-2xl lg:text-3xl mb-3 bg-gradient-to-br from-pink-400 to-blue-700 text-transparent bg-clip-text w-52 brightness-110'>
                         {hobby.name}
                       </h3>
                       <h4 className='text-md lg:text-lg opacity-40'>

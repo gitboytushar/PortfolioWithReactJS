@@ -43,17 +43,19 @@ const Projects = () => {
                     />
                   </div>
                   <div className='p-3 md:p-5 pb-0'>
-                    <h3 className='mb-2 text-[18.5px] font-medium'>
+                    <h3 className='mb-1 text-[18.5px] font-medium'>
                       {project.title}
                     </h3>
-                    <p className='mb-3 text-white/65'>{project.description}</p>
+                    <p className='mb-3 text-white/55 text-sm'>
+                      {project.description}
+                    </p>
                     <div className='mb-4'>
                       <p className='mb-1'>Tech Stack:</p>
                       <ul>
                         {project.techStack.map((tech, index) => (
                           <li
                             key={index}
-                            className='m-1 mb-2 inline-block rounded-full border border-purple-300/40 px-3 py-1 text-[.7rem] font-mono'
+                            className='mr-1 mb-1 inline-block rounded-full border border-purple-300/40 px-3 py-1 text-[.7rem] font-mono'
                           >
                             {tech}
                           </li>
@@ -64,16 +66,16 @@ const Projects = () => {
                 </div>
 
                 {/* preview link and code link */}
-                <div className='px-6 mt-2 mb-5'>
+                <div className='px-6 mt-2 mb-3'>
                   <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
                     <a
                       id='projectPreviewLink'
                       href={project.preview_link}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-r from-purple-800 border-none px-4 py-1 text-sm cursor-pointer'
+                      className='project-card-btn rounded-full bg-gradient-to-r from-violet-600 to-violet-950 border-none px-4 py-1 text-sm cursor-pointer'
                     >
-                      <div className='flex flex-row items-center justify-center gap-2'>
+                      <div className='flex flex-row items-center justify-center gap-2 font-medium'>
                         <p>Live Preview</p>
                         <RiArrowRightLine className='projectPreviewIcon w-4' />
                       </div>
@@ -98,7 +100,7 @@ const Projects = () => {
 
         {/* Show More Button */}
         {visibleProjects < PROJECTS.length && (
-          <div className='text-center mt-3 lg:mt-4'>
+          <div className='text-center mt-3 lg:mt-0'>
             <button
               onClick={handleShowMore}
               className='showMoreProjectsBtn py-2 px-4 w-fit text-1xl lg:text-lg cursor-pointer'

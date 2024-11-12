@@ -33,8 +33,8 @@ const Contact = () => {
             <div className='lg:ml-28 pt-1 lg:pt-2 w-[80vw] lg:w-2/3'>
               <p className='text-sm md:text-lg lg:text-xl opacity-45'>
                 I’m excited to work with you on real-world projects that will
-                help me grow as a professional and make a difference. Together,
-                we can build amazing apps!
+                help me grow as a professional software developer. Together, we
+                can build amazing apps!
               </p>
             </div>
           </div>
@@ -50,15 +50,27 @@ const Contact = () => {
             {/* social media contacts */}
             <div className='flex items-center justify-start mt-5'>
               <a
-                href=''
-                className='p-2 pl-0 cursor-pointer text-gray-500 hover:text-blue-500 transition-colors duration-300'
+                href='https://www.linkedin.com/in/tushar20/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='p-2 pl-0 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
               >
                 <RiLinkedinBoxFill size={30} />
               </a>
-              <a href='' className='p-2 cursor-pointer'>
+              <a
+                href='https://github.com/gitboytushar'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
+              >
                 <RiGithubFill size={30} />
               </a>
-              <a href='' className='p-2 cursor-pointer'>
+              <a
+                href='https://youtube.com/@tushardeveloper?si=ZZdPf3fmw5RqG4jV'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
+              >
                 <RiYoutubeFill size={30} />
               </a>
             </div>

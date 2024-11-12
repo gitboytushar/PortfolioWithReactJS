@@ -28,12 +28,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className='fixed left-0 right-0 z-50 lg:top-4'>
+      <nav className='fixed left-0 right-0 z-50 top-0 lg:top-4'>
         {/* Desktop Menu */}
-        <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg lg:flex'>
+        <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 bg-black/20 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-40'>
             <div>
-              <a href='/'>
+              <a href='/' className='text-sm text-white hover:text-white/80'>
                 <span>Tushar Verma</span>
               </a>
             </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className='text-sm hover:text-stone-300'
+                      className='text-sm text-white hover:text-white/80'
                       href={item.href}
                       onClick={e => handleLinkClick(e, item.href)}
                     >
@@ -56,8 +56,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='pt-3 backdrop-blur-lg lg:hidden'>
-          <div className='flex items-center justify-between px-4'>
+        <div className='pt-5 bg-black/20 backdrop-blur-2xl lg:hidden border-b border-white/20'>
+          <div className='flex items-center justify-between px-4 pb-2'>
             <div className='-translate-y-1'>
               <a href='#'>
                 <span className='ml-1'>Tushar Verma</span>
@@ -65,21 +65,23 @@ const Navbar = () => {
             </div>
             <div className='flex items-center'>
               <button
-                className='focus:outline-none lg:hidden -translate-y-1'
+                className={`focus:outline-none -translate-y-1 transition-transform duration-300 transform ${
+                  isMobileMenuOpen ? 'rotate-45' : ''
+                }`}
                 onClick={toggleMobileMenu}
                 aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >
                 {isMobileMenuOpen ? (
-                  <RiCloseLargeLine className='h-6 w-5' />
+                  <RiCloseLargeLine className='h-6 w-6 transition-transform duration-300 transform rotate-45' />
                 ) : (
-                  <RiMenu5Line className='h-6 w-5' />
+                  <RiMenu5Line className='h-6 w-6 transition-transform duration-300 transform' />
                 )}
               </button>
             </div>
           </div>
           {/* menu options */}
           {isMobileMenuOpen && (
-            <ul className='mt-16 mx-2 pb-16 flex flex-col gap-9 text-center border-b border-white/40 rounded-3xl'>
+            <ul className='py-16 flex flex-col gap-12 text-center border-t border-white/20'>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a

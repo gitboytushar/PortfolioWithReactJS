@@ -3,8 +3,8 @@ import 'ldrs/cardio'
 
 const Loading = () => {
   return (
-    <div className='flex items-center justify-center min-h-screen'>
-      <l-cardio size='170' stroke='6' speed='2' color='#F285BB'></l-cardio>
+    <div className='flex items-center justify-center min-h-screen -translate-y-14 md:-translate-y-0'>
+      <l-cardio size='150' stroke='7' speed='2' color='#F285BB'></l-cardio>
     </div>
   )
 }

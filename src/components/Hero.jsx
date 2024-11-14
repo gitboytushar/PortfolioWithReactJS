@@ -37,7 +37,7 @@ const Hero = () => {
       <img
         src='src/assets/Tushar.webp'
         alt={PROFILE.name}
-        className='max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-75'
+        className='max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-90 pointer-events-none'
       />
     </section>
   )

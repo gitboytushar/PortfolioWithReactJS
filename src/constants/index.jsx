@@ -311,34 +311,34 @@ export const HOBBIES = [
     image: 'src/assets/hobby_images/artist.webp',
     name: 'Artist and Designer',
     rewards:
-      'Passionate creator recognized for unique art and design throughout school and college; also enjoys crafting UI/UX in Figma for apps.'
+      'Creative mind celebrated for unique art throughout school and college; now exploring UI design through Figma in development projects.'
   },
   {
     id: 2,
     image: 'src/assets/hobby_images/tabletennis.jpg',
     name: 'Table Tennis Champ',
     rewards:
-      'Multi-tournament winner; led the CSE branch team as captain in 2023.'
+      'A competitive player with multiple wins; led my CSE branch team as captain in the 2023 inter-college tournament.'
   },
   {
     id: 3,
     image: 'src/assets/hobby_images/techy.jpg',
     name: 'Tech Enthusiast',
     rewards:
-      'Driven by curiosity for tech trends, gadgets, and digital innovations.'
+      'Passionate about tech innovations and gadgets; enjoys exploring cutting-edge developments, especially within the Apple ecosystem.'
   },
   {
     id: 4,
     image: 'src/assets/hobby_images/music.jpg',
     name: 'Movie and Music Lover',
     rewards:
-      'Loves diving into movies and music as a source of relaxation, inspiration, and fresh perspectives.'
+      'Finds relaxation and inspiration through diverse music and films, drawing fresh perspectives and creative ideas.'
   },
   {
     id: 5,
     image: 'src/assets/hobby_images/photography.jpg',
     name: 'Smartphone Photographer',
     rewards:
-      'Captures life’s moments through the lens of a smartphone, earning compliments from friends and family.'
+      'Captures moments with a smartphone, gaining appreciation from friends and family; cherishes the nostalgia of saved memories.'
   }
 ]

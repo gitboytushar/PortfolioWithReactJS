@@ -15,6 +15,9 @@ const Projects = () => {
     setVisibleProjects(prev => prev + 3)
   }
 
+  const fixedParams =
+    '?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1'
+
   return (
     <section className='py-24 min-h-[100vh]' id='projects' ref={projectRef}>
       <div className='px-4'>
@@ -29,19 +32,23 @@ const Projects = () => {
               className='flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
             >
               <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
-                {/* project info */}
+                {/* project video */}
                 <div>
-                  <div
-                    className='relative w-full'
-                    style={{ paddingTop: '56.25%' }}
-                  >
-                    <iframe
-                      src={project.videoSrc}
-                      className='absolute top-0 left-0 h-full w-full'
-                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                      allowFullScreen
-                    />
-                  </div>
+                  {project.videoSrc && (
+                    <div
+                      className='relative w-full'
+                      style={{ paddingTop: '56.25%' }}
+                    >
+                      <iframe
+                        src={`${project.videoSrc}${fixedParams}`} // concatenation
+                        className='absolute top-0 left-0 h-full w-full'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
+
+                  {/* project details */}
                   <div className='p-3 md:p-5 pb-0'>
                     <h3 className='mb-1 text-[18.5px] font-medium'>
                       {project.title}
@@ -65,32 +72,39 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* preview link and code link */}
+                {/* cta */}
                 <div className='px-6 mt-2 mb-3'>
                   <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
-                    <a
-                      id='projectPreviewLink'
-                      href={project.preview_link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='project-card-btn rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
-                    >
-                      <div className='flex flex-row items-center justify-center gap-2 font-medium'>
-                        <p>Live Preview</p>
-                        <RiArrowRightLine className='projectPreviewIcon w-4' />
-                      </div>
-                    </a>
-                    <a
-                      href={project.code_link}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='project-card-btn rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
-                    >
-                      <div className='flex flex-row items-center justify-center gap-2'>
-                        <p>Source Code</p>
-                        <RiGithubFill className='w-4' />
-                      </div>
-                    </a>
+                    {/* live preview */}
+                    {project.preview_link && (
+                      <a
+                        id='projectPreviewLink'
+                        href={project.preview_link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='project-card-btn rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                      >
+                        <div className='flex flex-row items-center justify-center gap-2 font-medium'>
+                          <p>Live Preview</p>
+                          <RiArrowRightLine className='projectPreviewIcon w-4' />
+                        </div>
+                      </a>
+                    )}
+
+                    {/* source code - github repo */}
+                    {project.code_link && (
+                      <a
+                        href={project.code_link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='project-card-btn rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
+                      >
+                        <div className='flex flex-row items-center justify-center gap-2'>
+                          <p>Source Code</p>
+                          <RiGithubFill className='w-4' />
+                        </div>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -98,7 +112,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Show More Button */}
+        {/* Show More projects - Button */}
         {visibleProjects < PROJECTS.length && (
           <div className='text-center mt-3 lg:mt-0'>
             <button

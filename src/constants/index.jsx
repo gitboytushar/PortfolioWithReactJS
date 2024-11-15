@@ -18,9 +18,29 @@ export const PROFILE = {
 export const PROJECTS = [
   {
     id: 1,
-    title: 'ServiSpot: Multi-Service Platform',
+    title: 'Basic Order Management App',
     description:
-      'I developed a responsive platform integrating services like a weather and news app, accessible via user sign-in. Ads were implemented to drive engagement and revenue.',
+      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was redesigned in Figma before coding.',
+    techStack: [
+      'Figma',
+      'Android Studio',
+      'Flutter',
+      'Dart',
+      'Git',
+      'GitHub',
+      'Xcode',
+      'Appetize.io'
+    ],
+    videoSrc: '', // add video
+    preview_link:
+      'https://appetize.io/app/b_e2a34lzvqc57t2kgnbxy4w4b6e?device=iphone15promax&osVersion=17.2',
+    code_link: 'https://github.com/gitboytushar/Flutter_OrderManagementApp'
+  },
+  {
+    id: 2,
+    title: 'ServiSpot',
+    description:
+      'A modern, responsive web app bringing together useful services in one place accessible through a simple user login. Ads are displayed before login to generate revenue. Developed as a major college project.',
     techStack: [
       'HTML',
       'CSS',
@@ -32,98 +52,100 @@ export const PROJECTS = [
       'Google Analytics',
       'Monetag Ads'
     ],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1', // yt embed URL
+    videoSrc: 'https://www.youtube.com/embed/miP1INfMZG4',
     preview_link: 'http://servispot.shop/',
     code_link: 'https://github.com/gitboytushar/serviSpot'
   },
   {
-    id: 2,
-    title: 'Social Media App',
-    description:
-      'A real-time social media app with chat, notifications, and a customizable profile page. Built with React, Firebase, and Redux for state management.',
-    techStack: ['React', 'Firebase', 'Redux'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
-  },
-  {
     id: 3,
-    title: 'Portfolio Website',
+    title: 'News Aggregator',
     description:
-      'A personal portfolio website showcasing projects and skills. Fully responsive and optimized for performance.',
-    techStack: ['Next.js', 'Tailwind CSS'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      "It display's latest news using the gNews API, offering search functionality and predefined categories for easy navigation. Works across all devices and it's free of advertisements.",
+    techStack: ['HTML', 'CSS', 'JavaScript', 'gNews API'],
+    videoSrc: 'https://www.youtube.com/embed/LcRQHhaFb8A',
+    preview_link: 'https://gitboytushar.github.io/The-NewsBlocks/',
+    code_link: 'https://github.com/gitboytushar/The-NewsBlocks'
   },
   {
     id: 4,
-    title: 'Blog Platform',
+    title: 'WorldTime Mobile App',
     description:
-      'A blogging platform with a content management system, user authentication, and an intuitive editor.',
-    techStack: ['Ruby on Rails', 'PostgreSQL', 'Tailwind CSS'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      'This app demonstrates API integration and dynamic UI updates, working on both Android and iOS devices. Users can select global locations from a list to see real-time updates with backgrounds reflecting day or night. Developed using Android Studio, inspired by a YouTube tutorial by NetNinja.',
+    techStack: [
+      'Android Studio',
+      'Flutter',
+      'C++ & Dart',
+      'worldtimeapi',
+      'Git',
+      'GitHub',
+      'Xcode'
+    ],
+    videoSrc: '', // add video
+    preview_link:
+      'https://appetize.io/app/b_lh74aeeogtmeo7zqbszfesxrre?device=iphone14promax&osVersion=16.2',
+    code_link: 'https://github.com/gitboytushar/WorldTime_FlutterApp'
   },
   {
     id: 5,
-    title: 'Task Management App',
+    title: 'Bootstrap Website',
     description:
-      'A task management tool with user authentication, reminders, and collaboration features.',
-    techStack: ['Angular', 'Firebase', 'Material UI'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      'This website demonstrates my Bootstrap skills in creating a responsive and modern user interface. Designed as an educational platform with placeholder content, it marks my first project using Bootstrap.',
+    techStack: [
+      'Bootstrap',
+      'HTML',
+      'Google Maps embed',
+      'CSS',
+      'randomuser.me Api',
+      'Git',
+      'GitHub'
+    ],
+    videoSrc: 'https://www.youtube.com/embed/PBjDMEX4Z5I?si=oRwTVUcv35p4LdO2',
+    preview_link: 'https://gitboytushar.github.io/WebsiteWithBootstrap/',
+    code_link: 'https://github.com/gitboytushar/WebsiteWithBootstrap'
   },
   {
     id: 6,
-    title: 'Online Learning Platform',
+    title: 'Weather App',
     description:
-      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
-    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      'This app provides real-time weather updates for any searched location or the user’s device geolocation. It features a fully responsive interface with synced weather icons reflecting live conditions.',
+    techStack: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'openweathermap Api',
+      'Git',
+      'GitHub'
+    ],
+    videoSrc: 'https://www.youtube.com/embed/ChTQgtNTq_4?si=sK2GMjtMBH8VjSk-',
+    preview_link: 'https://weather-app-nine-ochre.vercel.app/',
+    code_link: 'https://github.com/gitboytushar/weatherApp'
   },
   {
     id: 7,
-    title: 'Online Learning Platform',
+    title: 'Bootstrap Assignment Website',
     description:
-      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
-    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      'This project highlights my Bootstrap skills, created for a recruitment assignment. Using the CDN method, I added subtle CSS animations as instructed and hosted the outcome on Netlify.',
+    techStack: [
+      'Bootstrap',
+      'JavaScript',
+      'unDraw.co',
+      'CSS animations',
+      'GitHub',
+      'Netlify'
+    ],
+    videoSrc: '', // add video
+    preview_link: 'https://jilliontechnologies-assignment.netlify.app/',
+    code_link: 'https://github.com/gitboytushar/bootstrap-website2'
   },
   {
     id: 8,
-    title: 'Online Learning Platform',
+    title: 'Wordpress Project',
     description:
-      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
-    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
-  },
-  {
-    id: 9,
-    title: 'Online Learning Platform',
-    description:
-      'An e-learning platform offering video courses, quizzes, and progress tracking for students.',
-    techStack: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
-    videoSrc:
-      'https://www.youtube.com/embed/miP1INfMZG4?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1',
-    preview_link: 'https://example-ecommerce.com',
-    code_link: 'https://example-ecommerce.com'
+      'This project showcases my no-code web development skills by creating a modern, responsive multi-page website on WordPress, deployed using AWS and developed using LocalWP software and Elementor, All-in-One Migration WordPress plugins.',
+    techStack: ['WordPress', 'LocalWP', 'Elementor', 'AWS'],
+    videoSrc: 'https://www.youtube.com/embed/nRyZNpC1E5M?si=dP03hrP-4CPqkmkF',
+    preview_link: 'http://finalwp.infinityfreeapp.com/?i=1',
+    code_link: '' // NA
   }
 ]
 

@@ -33,7 +33,7 @@ const Education = () => {
                   </a>
                   <h3 className='text-md mt-2 opacity-50'>{edu.duration}</h3>
                 </div>
-                <p className='text-md md:text-lg mt-3 opacity-90 bg-gradient-to-t from-pink-400 to-white text-transparent bg-clip-text'>
+                <p className='text-md md:text-lg mt-3 opacity-90 bg-gradient-to-t from-pink-500 to-white text-transparent bg-clip-text'>
                   {edu.description}
                 </p>
               </div>

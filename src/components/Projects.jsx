@@ -117,11 +117,11 @@ const Projects = () => {
           <div className='text-center mt-3 lg:mt-0'>
             <button
               onClick={handleShowMore}
-              className='showMoreProjectsBtn py-2 px-4 w-fit text-1xl lg:text-lg cursor-pointer'
+              className='showMoreProjectsBtn py-0 px-4 w-fit text-1xl lg:text-lg cursor-pointer'
             >
               <div className='flex items-center justify-center'>
                 <p className='ml-2 mr-1'>Show More Projects</p>
-                <RiArrowDownWideLine className='h-5' />
+                <RiArrowDownWideLine className='h-5 translate-y-[1px]' />
               </div>
             </button>
           </div>

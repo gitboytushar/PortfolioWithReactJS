@@ -1,9 +1,71 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { PROFILE } from '../constants'
 import { RiArrowRightUpLine } from '@remixicon/react'
+import { gsap } from 'gsap'
 
 const Hero = () => {
-  const heroRef = useRef(null) // use later
+  const heroRef = useRef(null)
+
+  // welcome animation with gsap
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        defaults: { duration: 0.6, ease: 'expoScale' }
+      })
+
+      tl.from('.hero-title', {
+        opacity: 0,
+        y: -50,
+        scale: 0.95,
+        duration: 0.6,
+        stagger: 0.1
+      })
+        .from(
+          '.sub-title',
+          {
+            opacity: 0,
+            y: 50,
+            scale: 0.95,
+            duration: 0.7
+          },
+          '-=0.4'
+        )
+        .from(
+          '.hero-subheading',
+          {
+            opacity: 0,
+            y: 50,
+            scale: 0.95,
+            duration: 1
+          },
+          '-=0.4'
+        )
+        .from(
+          '.hero-btn',
+          {
+            opacity: 0,
+            z: 50,
+            scale: 1.5,
+            duration: 0.8
+          },
+          '-=0.4'
+        )
+        .from(
+          '.hero-img',
+          {
+            opacity: 0,
+            y: -50,
+            scale: 0.6,
+            duration: 0.7
+          },
+          '-=0.4'
+        )
+    }, heroRef)
+
+    return () => ctx.revert()
+  }, [])
+
+  // main content
   return (
     <section
       className='py-24 md:py-28 lg:py-32 min-h-screen flex flex-col items-center justify-start gap-6 lg:gap-7'
@@ -37,7 +99,7 @@ const Hero = () => {
       <img
         src='src/assets/Tushar.webp'
         alt={PROFILE.name}
-        className='max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-90 pointer-events-none'
+        className='hero-img max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-90 pointer-events-none'
       />
     </section>
   )

@@ -1,23 +1,96 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { PROJECTS } from '../constants'
 import {
   RiArrowDownWideLine,
   RiArrowRightLine,
   RiGithubFill
 } from '@remixicon/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
   const projectRef = useRef(null)
-
-  // Show 3 latest projects initially
   const [visibleProjects, setVisibleProjects] = useState(3)
+
+  // show 3 cards initially
   const handleShowMore = () => {
     setVisibleProjects(prev => prev + 3)
   }
 
+  // youtube url concatenation
   const fixedParams =
     '?si=zW5MwaRU2U51UUp4&amp;controls=1&amp;rel=0&amp;modestbranding=1'
 
+  // gsap animaiton
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const cards = document.querySelectorAll('.project-card')
+      const isDesktop = window.innerWidth >= 1024 // custom breakpoint
+
+      if (isDesktop) {
+        // on Destop
+        cards.forEach(card => {
+          if (!card.dataset.animated) {
+            gsap.fromTo(
+              card,
+              {
+                opacity: 0,
+                x: -50
+              },
+              {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                ease: 'expoScale',
+                stagger: 0.4,
+                scrollTrigger: {
+                  trigger: card,
+                  start: 'top 70%',
+                  toggleActions: 'play none none none'
+                },
+                onComplete: () => {
+                  card.dataset.animated = 'true'
+                }
+              }
+            )
+          }
+        })
+      } else {
+        // on Mobiles
+        cards.forEach(card => {
+          if (!card.dataset.animated) {
+            gsap.fromTo(
+              card,
+              {
+                opacity: 0,
+                y: 80
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'expoScale',
+                scrollTrigger: {
+                  trigger: card,
+                  start: 'top 90%',
+                  toggleActions: 'play none none none'
+                },
+                onComplete: () => {
+                  card.dataset.animated = 'true'
+                }
+              }
+            )
+          }
+        })
+      }
+    }, projectRef)
+
+    return () => ctx.revert()
+  }, [visibleProjects])
+
+  // main content
   return (
     <section className='py-24 min-h-[100vh]' id='projects' ref={projectRef}>
       <div className='px-4'>
@@ -29,7 +102,7 @@ const Projects = () => {
           {PROJECTS.slice(0, visibleProjects).map(project => (
             <div
               key={project.id}
-              className='flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
+              className='project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
             >
               <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
                 {/* project video */}

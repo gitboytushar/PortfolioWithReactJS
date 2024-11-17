@@ -1,6 +1,7 @@
 import { RiCloseLargeLine, RiMenu5Line } from '@remixicon/react'
 import { useState } from 'react'
 import { NAVIGATION_LINKS } from '../constants/index'
+import { motion } from 'motion/react'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -65,25 +66,47 @@ const Navbar = () => {
             </div>
             <div className='flex items-center'>
               <button
-                className={`focus:outline-none -translate-y-1 transition-transform duration-300 transform ${
-                  isMobileMenuOpen ? 'rotate-45' : ''
+                className={`focus:outline-none -translate-y-1 transition-transform duration-300 ease-in-out ${
+                  isMobileMenuOpen ? 'rotate-90' : ''
                 }`}
                 onClick={toggleMobileMenu}
                 aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >
                 {isMobileMenuOpen ? (
-                  <RiCloseLargeLine className='h-6 w-6 transition-transform duration-300 transform rotate-45' />
+                  <RiCloseLargeLine className='h-6 w-6 transition-transform duration-300 ease-in-out rotate-90' />
                 ) : (
-                  <RiMenu5Line className='h-6 w-6 transition-transform duration-300 transform' />
+                  <RiMenu5Line className='h-6 w-6 transition-transform duration-300 ease-in-out' />
                 )}
               </button>
             </div>
           </div>
           {/* menu options */}
           {isMobileMenuOpen && (
-            <ul className='py-16 flex flex-col gap-12 text-center border-t border-white/20'>
+            <motion.ul
+              initial='hidden'
+              animate='visible'
+              variants={{
+                hidden: { opacity: 0, y: 50 }, // Fade out and slide up
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    staggerChildren: 0.03
+                  }
+                }
+              }}
+              transition={{ duration: 0.3 }}
+              layout='preserve-aspect'
+              className='py-16 flex flex-col gap-12 text-center border-t border-white/20'
+            >
               {NAVIGATION_LINKS.map((item, index) => (
-                <li key={index}>
+                <motion.li
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, y: -10 },
+                    visible: { opacity: 1, y: 0 }
+                  }}
+                >
                   <a
                     href={item.href}
                     className='block w-full text-lg'
@@ -91,9 +114,9 @@ const Navbar = () => {
                   >
                     {item.label}
                   </a>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
           )}
         </div>
       </nav>

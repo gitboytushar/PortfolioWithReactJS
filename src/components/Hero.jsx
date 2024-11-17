@@ -15,9 +15,9 @@ const Hero = () => {
 
       tl.from('.hero-title', {
         opacity: 0,
-        y: -50,
+        y: 50,
         scale: 0.95,
-        duration: 0.6,
+        duration: 0.5,
         stagger: 0.1
       })
         .from(
@@ -26,7 +26,7 @@ const Hero = () => {
             opacity: 0,
             y: 50,
             scale: 0.95,
-            duration: 0.7
+            duration: 0.6
           },
           '-=0.4'
         )
@@ -36,7 +36,7 @@ const Hero = () => {
             opacity: 0,
             y: 50,
             scale: 0.95,
-            duration: 1
+            duration: 0.8
           },
           '-=0.4'
         )
@@ -45,8 +45,8 @@ const Hero = () => {
           {
             opacity: 0,
             z: 50,
-            scale: 1.5,
-            duration: 0.8
+            scale: 2,
+            duration: 0.7
           },
           '-=0.4'
         )
@@ -54,11 +54,11 @@ const Hero = () => {
           '.hero-img',
           {
             opacity: 0,
-            y: -50,
+            z: -50,
             scale: 0.6,
-            duration: 0.7
+            duration: 0.5
           },
-          '-=0.4'
+          '-=0.6'
         )
     }, heroRef)
 

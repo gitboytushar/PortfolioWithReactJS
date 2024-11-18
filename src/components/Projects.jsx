@@ -175,7 +175,6 @@ const Projects = () => {
                     {project.code_link && (
                       <motion.a
                         whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
                         transition={{
                           type: 'spring',
                           stiffness: 400,

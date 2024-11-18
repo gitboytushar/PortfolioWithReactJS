@@ -18,7 +18,7 @@ export const PROFILE = {
 export const PROJECTS = [
   {
     id: 1,
-    title: 'Basic Order Management App',
+    title: 'Food Order Management App',
     description:
       'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was redesigned in Figma before coding.',
     techStack: [
@@ -34,7 +34,7 @@ export const PROJECTS = [
     videoSrc: '', // add video
     preview_link:
       'https://appetize.io/app/b_e2a34lzvqc57t2kgnbxy4w4b6e?device=iphone15promax&osVersion=17.2',
-    code_link: 'https://github.com/gitboytushar/Flutter_OrderManagementApp'
+    code_link: ''
   },
   {
     id: 2,
@@ -133,7 +133,7 @@ export const PROJECTS = [
       'GitHub',
       'Netlify'
     ],
-    videoSrc: '', // add video
+    videoSrc: '', // no need for video
     preview_link: 'https://jilliontechnologies-assignment.netlify.app/',
     code_link: 'https://github.com/gitboytushar/bootstrap-website2'
   },

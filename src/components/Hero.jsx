@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { PROFILE } from '../constants'
 import { RiArrowRightUpLine } from '@remixicon/react'
 import { gsap } from 'gsap'
+import { motion } from 'motion/react'
 
 const Hero = () => {
   const heroRef = useRef(null)
@@ -84,7 +85,14 @@ const Hero = () => {
         {PROFILE.subheading}
       </h3>
 
-      <a
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{
+          type: 'spring',
+          stiffness: 400,
+          damping: 17
+        }}
         id='dnRBtn'
         href='src/assets/resume/tushar resume.pdf'
         target='_blank'
@@ -94,7 +102,7 @@ const Hero = () => {
       >
         <span>download Resume</span>
         <RiArrowRightUpLine className='dnRIcon w-5' />
-      </a>
+      </motion.a>
 
       <img
         src='src/assets/Tushar.webp'

@@ -1,9 +1,48 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { EDUCATION } from '../constants'
 import { RiExternalLinkLine } from '@remixicon/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Education = () => {
   const educationRef = useRef(null)
+
+  // gsap animaiton
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const cards = document.querySelectorAll('.eduCard')
+      cards.forEach(card => {
+        if (!card.dataset.animated) {
+          gsap.fromTo(
+            card,
+            {
+              opacity: 0,
+              y: -50
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: 'expoScale',
+              stagger: 0.3,
+              scrollTrigger: {
+                trigger: card,
+                start: 'top 60%',
+                toggleActions: 'play none none none'
+              },
+              onComplete: () => {
+                card.dataset.animated = 'true'
+              }
+            }
+          )
+        }
+      })
+    }, educationRef)
+
+    return () => ctx.revert()
+  }, [])
 
   return (
     <section className='py-32 min-h-[100vh]' id='education' ref={educationRef}>
@@ -18,7 +57,8 @@ const Education = () => {
         {EDUCATION.map(edu => {
           return (
             <div key={edu.id}>
-              <div className='flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/20 rounded-xl p-6'>
+              {/* added gsap animation to each card */}
+              <div className='eduCard flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/20 rounded-xl p-6'>
                 <h2 className='text-xl lg:text-2xl'>{edu.degree}</h2>
                 <div>
                   <a

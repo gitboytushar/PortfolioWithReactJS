@@ -62,7 +62,7 @@ export function CarouselDemo () {
                           variants={parentVariant}
                           initial='hidden'
                           whileInView='visible'
-                          viewport={{ once: true, amount: 0.5 }}
+                          viewport={{ once: true, amount: 0.6 }}
                           className='flex !flex-col text-center md:text-start items-center md:items-start justify-center h-full w-[300px] md:w-1/4'
                         >
                           <motion.h3

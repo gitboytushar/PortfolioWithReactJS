@@ -7,6 +7,7 @@ import {
 } from '@remixicon/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { motion } from 'motion/react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -150,33 +151,46 @@ const Projects = () => {
                   <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
                     {/* live preview */}
                     {project.preview_link && (
-                      <a
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        transition={{
+                          type: 'spring',
+                          stiffness: 400,
+                          damping: 17
+                        }}
                         id='projectPreviewLink'
                         href={project.preview_link}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='project-card-btn rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                        className='rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
                       >
                         <div className='flex flex-row items-center justify-center gap-2 font-medium'>
                           <p>Live Preview</p>
-                          <RiArrowRightLine className='projectPreviewIcon w-4' />
+                          <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[1px]' />
                         </div>
-                      </a>
+                      </motion.a>
                     )}
 
                     {/* source code - github repo */}
                     {project.code_link && (
-                      <a
+                      <motion.a
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{
+                          type: 'spring',
+                          stiffness: 400,
+                          damping: 17
+                        }}
                         href={project.code_link}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='project-card-btn rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
+                        className='rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
                       >
                         <div className='flex flex-row items-center justify-center gap-2'>
                           <p>Source Code</p>
                           <RiGithubFill className='w-4' />
                         </div>
-                      </a>
+                      </motion.a>
                     )}
                   </div>
                 </div>

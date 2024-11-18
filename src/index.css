@@ -63,21 +63,11 @@ iframe {
 /* ------------ projects element interactions ------------ */
 @media (hover: hover) and (pointer: fine) {
   .projectPreviewIcon {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 
   #projectPreviewLink:hover .projectPreviewIcon {
-    transform: rotate(-45deg);
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .project-card-btn {
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .project-card-btn:hover {
-    transform: scale(1.05);
+    transform: rotate(-45deg) scale(1.3);
   }
 }
 

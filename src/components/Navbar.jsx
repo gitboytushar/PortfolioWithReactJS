@@ -91,7 +91,7 @@ const Navbar = () => {
                   opacity: 1,
                   y: 0,
                   transition: {
-                    staggerChildren: 0.03
+                    staggerChildren: 0.05
                   }
                 }
               }}
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <motion.li
                   key={index}
                   variants={{
-                    hidden: { opacity: 0, y: -10 },
+                    hidden: { opacity: 0, y: -20 },
                     visible: { opacity: 1, y: 0 }
                   }}
                 >

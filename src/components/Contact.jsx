@@ -5,18 +5,41 @@ import {
   RiMailSendFill,
   RiYoutubeFill
 } from '@remixicon/react'
-import { useRef } from 'react'
+import { easeInOut, motion } from 'motion/react'
 
 const Contact = () => {
-  const contactRef = useRef(null)
+  // framer motion variables
+  const parentVariant = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        duration: 0.7
+      }
+    }
+  }
+
+  const childVariant = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        easeInOut
+      }
+    }
+  }
 
   return (
-    <section
-      className='pt-32 min-h-screen px-4 lg:px-2 relative'
-      id='contact'
-      ref={contactRef}
-    >
-      <div className='lg:absolute bottom-12'>
+    <section className='pt-32 min-h-screen px-4 lg:px-2 relative' id='contact'>
+      <motion.div
+        variants={parentVariant}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.5 }} // play animation when 50% area is exposed
+        className='lg:absolute bottom-12'
+      >
         <div className='flex flex-col items-start justify-center gap-y-8'>
           {/* top part */}
           <div>
@@ -26,29 +49,42 @@ const Contact = () => {
               </div>
             </div>
             <div className='lg:ml-28 pt-5 lg:pt-7 lg:w-2/3'>
-              <h2 className='text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-tight opacity-65'>
+              <motion.h2
+                variants={childVariant}
+                className='text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-tight !opacity-65'
+              >
                 let's work on something great
-              </h2>
+              </motion.h2>
             </div>
             <div className='lg:ml-28 pt-1 lg:pt-2 w-[80vw] lg:w-2/3'>
-              <p className='text-sm md:text-lg lg:text-xl opacity-45'>
+              <motion.p
+                variants={childVariant}
+                className='text-sm md:text-lg lg:text-xl !opacity-45'
+              >
                 I’m excited to work with you on real-world projects that will
                 help me grow as a professional software developer. Together, we
                 can build amazing apps!
-              </p>
+              </motion.p>
             </div>
           </div>
 
           {/* bottom part - contact info */}
           <div className='lg:ml-28'>
-            <h3 className='mail-link pb-1 flex items-center justify-center gap-1 md:gap-2 pt-2 text-lg md:text-xl cursor-pointer'>
+            <motion.h3
+              variants={childVariant}
+              className='mail-link pb-1 flex items-center justify-center gap-1 md:gap-2 pt-2 text-lg md:text-xl cursor-pointer'
+            >
               <a href='mailto:tusharwork.001@gmail.com'>
                 tusharwork.001@gmail.com
               </a>
               <RiMailSendFill className='h-4 md:h-5' />
-            </h3>
+            </motion.h3>
+
             {/* social media contacts */}
-            <div className='flex items-center justify-start mt-5'>
+            <motion.div
+              variants={childVariant}
+              className='flex items-center justify-start mt-5'
+            >
               <a
                 href='https://www.linkedin.com/in/tushar20/'
                 target='_blank'
@@ -73,11 +109,11 @@ const Contact = () => {
               >
                 <RiYoutubeFill size={30} />
               </a>
-            </div>
+            </motion.div>
           </div>
 
-          {/* footer - my copywrite statement */}
-          <div className='text-start text-xs md:text-sm opacity-25 absolute bottom-5 lg:pl-28 lg:relative lg:translate-y-10'>
+          {/* footer copywrite */}
+          <div className='text-start text-xs md:text-sm !opacity-25 absolute bottom-5 lg:pl-28 lg:relative lg:translate-y-10'>
             <p className='flex items-center justify-center gap-x-1'>
               <span>
                 <RiCopyrightLine size={12} />
@@ -86,7 +122,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -94,7 +94,7 @@ const Hero = () => {
           damping: 17
         }}
         id='dnRBtn'
-        href='src/assets/resume/tushar resume.pdf'
+        href='/assets/resume/tushar resume.pdf'
         target='_blank'
         rel='noopener noreferrer'
         download
@@ -105,7 +105,7 @@ const Hero = () => {
       </motion.a>
 
       <img
-        src='src/assets/Tushar.webp'
+        src='/assets/Tushar.webp'
         alt={PROFILE.name}
         className='hero-img max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-90 pointer-events-none'
       />

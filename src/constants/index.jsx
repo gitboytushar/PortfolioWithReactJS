@@ -153,14 +153,14 @@ export const SKILLS = [
   {
     name: 'Java',
     logo: (
-      <img src='src/assets/skillsIcons/java.png' alt='java' draggable='false' />
+      <img src='/assets/skillsIcons/java.png' alt='java' draggable='false' />
     )
   },
   {
     name: 'Python',
     logo: (
       <img
-        src='src/assets/skillsIcons/python.png'
+        src='/assets/skillsIcons/python.png'
         alt='python'
         draggable='false'
       />
@@ -169,28 +169,22 @@ export const SKILLS = [
   {
     name: 'Html5',
     logo: (
-      <img
-        src='src/assets/skillsIcons/html.png'
-        alt='html5'
-        draggable='false'
-      />
+      <img src='/assets/skillsIcons/html.png' alt='html5' draggable='false' />
     )
   },
   {
     name: 'Css3',
-    logo: (
-      <img src='src/assets/skillsIcons/css.png' alt='css3' draggable='false' />
-    )
+    logo: <img src='/assets/skillsIcons/css.png' alt='css3' draggable='false' />
   },
   {
     name: 'Javascript',
-    logo: <img src='src/assets/skillsIcons/js.png' alt='js' draggable='false' />
+    logo: <img src='/assets/skillsIcons/js.png' alt='js' draggable='false' />
   },
   {
     name: 'Bootstrap5',
     logo: (
       <img
-        src='src/assets/skillsIcons/bootstrap.png'
+        src='/assets/skillsIcons/bootstrap.png'
         alt='bootstrap'
         draggable='false'
       />
@@ -200,7 +194,7 @@ export const SKILLS = [
     name: 'ReactJS',
     logo: (
       <img
-        src='src/assets/skillsIcons/react.png'
+        src='/assets/skillsIcons/react.png'
         alt='reactjs'
         draggable='false'
       />
@@ -210,7 +204,7 @@ export const SKILLS = [
     name: 'Tailwindcss',
     logo: (
       <img
-        src='src/assets/skillsIcons/tailwind.png'
+        src='/assets/skillsIcons/tailwind.png'
         alt='tailwindcss'
         draggable='false'
       />
@@ -219,24 +213,20 @@ export const SKILLS = [
   {
     name: 'Figma',
     logo: (
-      <img
-        src='src/assets/skillsIcons/figma.png'
-        alt='figma'
-        draggable='false'
-      />
+      <img src='/assets/skillsIcons/figma.png' alt='figma' draggable='false' />
     )
   },
   {
     name: 'NodeJS',
     logo: (
-      <img src='src/assets/skillsIcons/node.png' alt='node' draggable='false' />
+      <img src='/assets/skillsIcons/node.png' alt='node' draggable='false' />
     )
   },
   {
     name: 'MongoDB',
     logo: (
       <img
-        src='src/assets/skillsIcons/mongodb.png'
+        src='/assets/skillsIcons/mongodb.png'
         alt='mongodb'
         draggable='false'
       />
@@ -244,15 +234,13 @@ export const SKILLS = [
   },
   {
     name: 'Git',
-    logo: (
-      <img src='src/assets/skillsIcons/git.png' alt='git' draggable='false' />
-    )
+    logo: <img src='/assets/skillsIcons/git.png' alt='git' draggable='false' />
   },
   {
     name: 'GitHub',
     logo: (
       <img
-        src='src/assets/skillsIcons/github.png'
+        src='/assets/skillsIcons/github.png'
         alt='github'
         draggable='false'
       />
@@ -260,15 +248,13 @@ export const SKILLS = [
   },
   {
     name: 'Aws',
-    logo: (
-      <img src='src/assets/skillsIcons/aws.png' alt='aws' draggable='false' />
-    )
+    logo: <img src='/assets/skillsIcons/aws.png' alt='aws' draggable='false' />
   },
   {
     name: 'Firebase',
     logo: (
       <img
-        src='src/assets/skillsIcons/firebase.png'
+        src='/assets/skillsIcons/firebase.png'
         alt='firebase'
         draggable='false'
       />
@@ -278,7 +264,7 @@ export const SKILLS = [
     name: 'WordPress',
     logo: (
       <img
-        src='src/assets/skillsIcons/wordpress.png'
+        src='/assets/skillsIcons/wordpress.png'
         alt='wordpress'
         draggable='false'
       />
@@ -288,7 +274,7 @@ export const SKILLS = [
     name: 'Flutter',
     logo: (
       <img
-        src='src/assets/skillsIcons/flutter.png'
+        src='/assets/skillsIcons/flutter.png'
         alt='flutter'
         draggable='false'
       />
@@ -330,35 +316,35 @@ export const EDUCATION = [
 export const HOBBIES = [
   {
     id: 1,
-    image: 'src/assets/hobby_images/artist.webp',
+    image: '/assets/hobby_images/artist.webp',
     name: 'Artist and Designer',
     rewards:
       'Creative mind celebrated for unique art throughout school and college; now exploring UI design through Figma in development projects.'
   },
   {
     id: 2,
-    image: 'src/assets/hobby_images/tabletennis.jpg',
+    image: '/assets/hobby_images/tabletennis.jpg',
     name: 'Table Tennis Champ',
     rewards:
       'A competitive player with multiple wins; led my CSE branch team as captain in the 2023 inter-college tournament.'
   },
   {
     id: 3,
-    image: 'src/assets/hobby_images/techy.jpg',
+    image: '/assets/hobby_images/techy.jpg',
     name: 'Tech Enthusiast',
     rewards:
       'Passionate about tech innovations and gadgets; enjoys exploring cutting-edge developments, especially within the Apple ecosystem.'
   },
   {
     id: 4,
-    image: 'src/assets/hobby_images/music.jpg',
+    image: '/assets/hobby_images/music.jpg',
     name: 'Movie and Music Lover',
     rewards:
       'Finds relaxation and inspiration through diverse music and films, drawing fresh perspectives and creative ideas.'
   },
   {
     id: 5,
-    image: 'src/assets/hobby_images/photography.jpg',
+    image: '/assets/hobby_images/photography.jpg',
     name: 'Smartphone Photographer',
     rewards:
       'Captures moments with a smartphone, gaining appreciation from friends and family; cherishes the nostalgia of saved memories.'

@@ -42,12 +42,12 @@ const Achievements = () => {
           <div className='max-w-full h-[600px] md:h-[450px] lg:h-[600px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-white relative'>
             {/* interactive and floating icons */}
             <img
-              src='src/assets/gcpIcon.png'
+              src='/assets/gcpIcon.png'
               alt='gcp icon'
               className='gcp-iconTop absolute w-20 -top-8 md:w-24 lg:w-28 right-14 md:right-36 md:-top-9 lg:-top-11 z-10'
             />
             <img
-              src='src/assets/gInstanceIcon.png'
+              src='/assets/gInstanceIcon.png'
               alt='gcp instance icon'
               className='gcp-iconLeft absolute w-20 lg:w-28 -left-7 lg:-left-12 top-44 lg:top-56 hidden md:block z-10'
             />
@@ -100,12 +100,12 @@ const Achievements = () => {
           <div className='max-w-full h-[600px] md:h-[450px] lg:h-[600px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-[#697C8B] relative'>
             {/* interactive and floating icons */}
             <img
-              src='src/assets/awsIcon.png'
+              src='/assets/awsIcon.png'
               alt='aws icon'
               className='aws-iconTop absolute w-20 -top-7 md:w-24 lg:w-28 left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-48 lg:left-72 md:-top-8 lg:-top-9 z-10'
             />
             <img
-              src='src/assets/awsInstanceIcon.png'
+              src='/assets/awsInstanceIcon.png'
               alt='aws instance icon'
               className='aws-iconBottom absolute w-20 md:w-24 lg:w-28 right-28 lg:right-64 -bottom-7 lg:-bottom-9 hidden md:block z-10'
             />

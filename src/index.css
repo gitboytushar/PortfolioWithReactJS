@@ -31,7 +31,7 @@
 
 /* ------------ main webpage background noise image ------------ */
 .bg-image {
-  background-image: url(assets/noise.webp);
+  background-image: url(/public/assets/noise.webp);
 }
 
 /* ------------ projects video player size ------------ */
@@ -122,14 +122,14 @@ iframe {
 
 /* achievements section */
 .img-container-gcp {
-  background-image: url(./assets/gcpBg.png);
+  background-image: url(/public/assets/gcpBg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% center;
 }
 
 .img-container-aws {
-  background-image: url(./assets/awsBg.png);
+  background-image: url(/public/assets/awsBg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 18% center;

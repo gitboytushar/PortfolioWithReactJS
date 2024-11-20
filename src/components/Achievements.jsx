@@ -70,13 +70,13 @@ const Achievements = () => {
                   </motion.h2>
                   <motion.h3
                     variants={childVariant}
-                    className='text-lg lg:text-2xl mt-1 lg:mt-2 opacity-50'
+                    className='text-lg lg:text-2xl mt-1 lg:mt-2 !opacity-50'
                   >
                     College curriculum
                   </motion.h3>
                   <motion.h3
                     variants={childVariant}
-                    className='text-xl lg:text-4xl mt-4 md:mt-6 opacity-70'
+                    className='text-xl lg:text-4xl mt-4 md:mt-6 !opacity-70'
                   >
                     Earned in 2022
                   </motion.h3>
@@ -128,7 +128,7 @@ const Achievements = () => {
                   </motion.h2>
                   <motion.h3
                     variants={childVariant}
-                    className='text-lg lg:text-2xl lg:mt-2 opacity-50 md:opacity-30'
+                    className='text-lg lg:text-2xl lg:mt-2 !opacity-50 md:!opacity-30'
                   >
                     College curriculum
                   </motion.h3>
@@ -138,7 +138,7 @@ const Achievements = () => {
                   variants={childVariant}
                   className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-32'
                 >
-                  <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 opacity-70'>
+                  <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 !opacity-70'>
                     Earned in 2022 - 2023
                   </h3>
                   <a

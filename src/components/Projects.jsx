@@ -166,7 +166,7 @@ const Projects = () => {
                       >
                         <div className='flex flex-row items-center justify-center gap-2 font-medium'>
                           <p>Live Preview</p>
-                          <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[1px]' />
+                          <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[0.5px]' />
                         </div>
                       </motion.a>
                     )}

@@ -34,16 +34,19 @@ const Navbar = () => {
         <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 bg-black/20 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-40'>
             <div>
-              <a href='/' className='text-sm text-white hover:text-white/80'>
+              <a
+                href='/'
+                className='text-sm text-white hover:text-yellow-300 hover:motion-preset-confetti'
+              >
                 <span>Tushar Verma</span>
               </a>
             </div>
             <div>
               <ul className='flex items-center gap-4'>
                 {NAVIGATION_LINKS.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className='hover:motion-preset-confetti'>
                     <a
-                      className='text-sm text-white hover:text-white/80'
+                      className='text-sm text-white hover:text-yellow-300'
                       href={item.href}
                       onClick={e => handleLinkClick(e, item.href)}
                     >

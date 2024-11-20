@@ -1,6 +1,6 @@
 import Marquee from 'react-fast-marquee'
 import FloatingSkills from './FloatingSkills'
-import { RiArrowRightWideFill, RiSparkling2Line } from '@remixicon/react'
+import { RiArrowRightWideFill, RiSparkling2Fill } from '@remixicon/react'
 
 const Skills = () => {
   return (
@@ -55,41 +55,41 @@ const Skills = () => {
               <RiArrowRightWideFill size={14} className='ml-1' />
             </div>
 
-            <Marquee speed={70} direction='right'>
-              <div className='w-full flex flex-row-reverse items-center justify-center flex-wrap ml-10 gap-10 text-center text-sm'>
-                <RiSparkling2Line size={16} />
+            <Marquee speed={90} direction='right'>
+              <div className='w-full flex flex-row-reverse items-center justify-center flex-wrap ml-10 gap-8 text-center text-sm'>
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Problem Solving
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Versatile
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Creative
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Growth Mindset
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Passionate
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Quick Learner
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Attention to Detail
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Teamwork
                 </p>
-                <RiSparkling2Line size={16} />
+                <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Optimistic
                 </p>

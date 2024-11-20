@@ -18,8 +18,8 @@ const Hero = () => {
         opacity: 0,
         y: 50,
         scale: 0.95,
-        duration: 1,
-        stagger: 0.2
+        duration: 0.8,
+        stagger: 0.4
       })
         .from(
           '.sub-title',
@@ -27,7 +27,7 @@ const Hero = () => {
             opacity: 0,
             y: 50,
             scale: 0.95,
-            duration: 0.6
+            duration: 0.8
           },
           '-=0.4'
         )
@@ -37,7 +37,7 @@ const Hero = () => {
             opacity: 0,
             y: 50,
             scale: 0.95,
-            duration: 0.8
+            duration: 0.9
           },
           '-=0.4'
         )
@@ -47,7 +47,7 @@ const Hero = () => {
             opacity: 0,
             z: 50,
             scale: 1.5,
-            duration: 0.8
+            duration: 1
           },
           '-=0.6'
         )
@@ -57,7 +57,7 @@ const Hero = () => {
             opacity: 0,
             z: -50,
             scale: 0.4,
-            duration: 0.5
+            duration: 0.7
           },
           '-=0.6'
         )

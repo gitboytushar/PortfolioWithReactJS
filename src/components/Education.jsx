@@ -19,17 +19,17 @@ const Education = () => {
             card,
             {
               opacity: 0,
-              y: -50
+              y: 70
             },
             {
               opacity: 1,
               y: 0,
               duration: 1,
-              ease: 'expoScale',
-              stagger: 0.3,
+              ease: 'sine.out',
+              stagger: 0.6,
               scrollTrigger: {
                 trigger: card,
-                start: 'top 60%',
+                start: 'top 80%',
                 toggleActions: 'play none none none'
               },
               onComplete: () => {

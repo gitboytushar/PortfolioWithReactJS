@@ -14,20 +14,20 @@ import { motion, AnimatePresence } from 'motion/react'
 export function CarouselDemo () {
   // framer motion variables
   const parentVariant = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -35 },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
-        staggerChildren: 0.2,
-        duration: 0.6
+        staggerChildren: 0.3,
+        duration: 0.7
       }
     }
   }
 
   const childVariant = {
-    hidden: { y: 15, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         easeInOut
@@ -46,12 +46,7 @@ export function CarouselDemo () {
               <Card>
                 <AnimatePresence>
                   <CardContent>
-                    <motion.div
-                      initial={{ x: 300, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: -300, opacity: 0 }}
-                      transition={{ easeInOut }}
-                    >
+                    <motion.div variants={parentVariant}>
                       <div className='py-2 md:py-6 flex flex-col md:flex-row text-center md:text-start items-center justify-center gap-3 md:gap-8 h-full md:h-[280px] px-2 md:px-0'>
                         <img
                           className='w-[300px] h-[300px] md:w-[350px] md:h-full object-cover rounded-2xl brightness-90 border border-white/40 p-1'

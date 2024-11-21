@@ -14,8 +14,8 @@ const Contact = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        duration: 0.7
+        staggerChildren: 0.2,
+        duration: 0.6
       }
     }
   }
@@ -37,7 +37,7 @@ const Contact = () => {
         variants={parentVariant}
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.5 }} // play animation when 50% area is exposed
+        viewport={{ amount: 0.5 }} // play when 50% area is entered
         className='lg:absolute bottom-12'
       >
         <div className='flex flex-col items-start justify-center gap-y-8'>

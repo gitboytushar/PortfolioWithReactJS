@@ -25,12 +25,12 @@ const Education = () => {
               opacity: 1,
               y: 0,
               duration: 1,
-              ease: 'sine.out',
-              stagger: 0.6,
+              ease: 'expoScale',
+              stagger: 0.4,
               scrollTrigger: {
                 trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
+                start: 'top 65%',
+                toggleActions: 'play none none reverse'
               },
               onComplete: () => {
                 card.dataset.animated = 'true'

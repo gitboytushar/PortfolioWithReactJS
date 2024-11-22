@@ -112,6 +112,7 @@ export const PROJECTS = [
       'HTML',
       'CSS',
       'JavaScript',
+      'Vercel',
       'openweathermap Api',
       'Git',
       'GitHub'

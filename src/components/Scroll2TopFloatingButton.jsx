@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { RiArrowUpLine } from '@remixicon/react'
+import { useLenis } from 'lenis/react'
+import { easeInOutCubic } from '../utilities/easing'
 
 const Scroll2TopFloatingButton = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const lenis = useLenis()
 
   // Show button only when not on the hero section
   useEffect(() => {
@@ -15,11 +18,11 @@ const Scroll2TopFloatingButton = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // smooth scrolling with lenis
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 2.5, easing: easeInOutCubic }) // custom duration and easing
+    }
   }
 
   // Hide button if it's not visible

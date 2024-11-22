@@ -2,9 +2,12 @@ import { RiCloseLargeLine, RiMenu5Line } from '@remixicon/react'
 import { useState } from 'react'
 import { NAVIGATION_LINKS } from '../constants/index'
 import { motion } from 'motion/react'
+import { useLenis } from 'lenis/react'
+import { easeInOutCubic } from '../utilities/easing'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const lenis = useLenis() // access lenis instance
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -14,14 +17,14 @@ const Navbar = () => {
     e.preventDefault()
 
     const targetElement = document.querySelector(href)
-    if (targetElement) {
+    if (targetElement && lenis) {
       const offset = -10 // prev:85
       const elementPosition = targetElement.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.scrollY + offset
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+      lenis.scrollTo(offsetPosition, {
+        duration: 2,
+        easing: easeInOutCubic
       })
     }
     setIsMobileMenuOpen(false)
@@ -33,7 +36,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 bg-black/20 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-40'>
-            <div>
+            <div className='select-none'>
               <a
                 href='/'
                 className='text-sm text-white hover:text-yellow-300 hover:motion-preset-confetti'
@@ -42,7 +45,7 @@ const Navbar = () => {
               </a>
             </div>
             <div>
-              <ul className='flex items-center gap-4'>
+              <ul className='flex items-center gap-4 select-none'>
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index} className='hover:motion-preset-confetti'>
                     <a
@@ -63,7 +66,7 @@ const Navbar = () => {
         <div className='pt-5 bg-black/20 backdrop-blur-2xl lg:hidden border-b border-white/20'>
           <div className='flex items-center justify-between px-4 pb-2'>
             <div className='-translate-y-1'>
-              <a href='#'>
+              <a href='/'>
                 <span className='ml-1'>Tushar Verma</span>
               </a>
             </div>

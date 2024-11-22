@@ -18,6 +18,7 @@
     "embla-carousel-react": "^8.3.1",
     "gsap": "^3.12.5",
     "ldrs": "^1.0.2",
+    "lenis": "^1.1.16",
     "lucide-react": "^0.454.0",
     "motion": "^11.11.17",
     "react": "^18.3.1",

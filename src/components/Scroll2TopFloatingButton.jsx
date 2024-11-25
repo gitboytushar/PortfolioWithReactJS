@@ -21,7 +21,7 @@ const Scroll2TopFloatingButton = () => {
   // smooth scrolling with lenis
   const scrollToTop = () => {
     if (lenis) {
-      lenis.scrollTo(0, { duration: 2.5, easing: easeInOutCubic }) // custom duration and easing
+      lenis.scrollTo(0, { duration: 2.2, easing: easeInOutCubic }) // custom duration and easing
     }
   }
 

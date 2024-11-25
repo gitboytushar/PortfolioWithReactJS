@@ -4,18 +4,17 @@ import { easeInOut, motion } from 'motion/react'
 const Achievements = () => {
   // framer motion variables
   const parentVariant = {
-    hidden: { opacity: 0 },
+    hidden: {},
     visible: {
-      opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        duration: 1.5
+        duration: 0.5
       }
     }
   }
 
   const childVariant = {
-    hidden: { y: 50, opacity: 0 },
+    hidden: { y: -30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -57,7 +56,7 @@ const Achievements = () => {
               variants={parentVariant}
               initial='hidden'
               whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.4 }}
               className='img-container-gcp w-full h-full rounded-[10px] relative'
             >
               <div className='flex flex-col items-center justify-between gap-12 lg:gap-14 w-full md:w-fit p-5 md:absolute top-12 lg:top-20 left-14'>
@@ -87,7 +86,7 @@ const Achievements = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   id='view-badge-btn'
-                  className='flex items-center justify-center gap-2 bg-[#303240] py-3 px-5 rounded-xl hover:brightness-125 transition-all duration-300 ease-linear'
+                  className='flex items-center justify-center gap-2 bg-[#303240] py-3 px-5 rounded-xl'
                 >
                   <span className='text-center text-xl'>View Badges</span>
                   <RiArrowRightLine className='view-badge-icon' size={20} />
@@ -115,14 +114,14 @@ const Achievements = () => {
               variants={parentVariant}
               initial='hidden'
               whileInView='visible'
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.4 }}
               className='img-container-aws w-full h-full rounded-[10px] relative'
             >
               <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
                 <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-36 px-2 md:px-0'>
                   <motion.h2
                     variants={childVariant}
-                    className='text-3xl lg:text-5xl font-bold px-4'
+                    className='text-3xl lg:text-5xl font-bold'
                   >
                     Amazon Web Services
                   </motion.h2>
@@ -138,7 +137,7 @@ const Achievements = () => {
                   variants={childVariant}
                   className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-32'
                 >
-                  <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 !opacity-70'>
+                  <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 !opacity-50'>
                     Earned in 2022 - 2023
                   </h3>
                   <a
@@ -146,7 +145,7 @@ const Achievements = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     id='view-badge-btn'
-                    className='flex items-center justify-center gap-2 bg-[#FF7304] py-3 px-5 rounded-xl hover:brightness-110 transition-all duration-300 ease-linear'
+                    className='flex items-center justify-center gap-2 bg-[#FF7304] py-3 px-5 rounded-xl'
                   >
                     <span className='text-center text-xl'>View Badges</span>
                     <RiArrowRightLine className='view-badge-icon' size={20} />

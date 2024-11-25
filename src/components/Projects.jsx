@@ -43,9 +43,9 @@ const Projects = () => {
               {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 0.8,
                 ease: 'expoScale',
-                stagger: 0.4,
+                stagger: 0.6,
                 scrollTrigger: {
                   trigger: card,
                   start: 'top 70%',
@@ -71,7 +71,7 @@ const Projects = () => {
               {
                 opacity: 1,
                 y: 0,
-                duration: 0.8,
+                duration: 0.6,
                 ease: 'expoScale',
                 scrollTrigger: {
                   trigger: card,

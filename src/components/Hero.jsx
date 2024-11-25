@@ -76,12 +76,12 @@ const Hero = () => {
         <h1 className='hero-title uppercase text-4xl lg:text-7xl font-medium'>
           {PROFILE.name}
         </h1>
-        <h2 className='sub-title text-xl lg:text-4xl opacity-20'>
+        <h2 className='sub-title text-xl lg:text-4xl mt-2 lg:mt-0 opacity-50'>
           {PROFILE.role}
         </h2>
       </div>
 
-      <h3 className='hero-subheading bg-gradient-to-t from-pink-500 to-white bg-clip-text text-transparent text-center text-md md:text-xl lg:text-2xl px-12 lg:px-52 mb-2'>
+      <h3 className='hero-subheading bg-gradient-to-t from-pink-500 to-white bg-clip-text text-transparent text-center text-md md:text-xl lg:text-2xl px-8 lg:px-48 mb-1'>
         {PROFILE.subheading}
       </h3>
 
@@ -98,7 +98,7 @@ const Hero = () => {
         target='_blank'
         rel='noopener noreferrer'
         download
-        className='hero-btn mb-2 flex gap-1 rounded-full border border-white/50 px-4 py-2 text-white/80 cursor-pointer hover:text-white transition-colors duration-300 ease-in-out'
+        className='hero-btn mb-1 flex gap-1 rounded-full border border-white/50 px-4 py-2 text-white lg:text-white/60 cursor-pointer hover:text-white transition-colors duration-300 ease-spring-smooth'
       >
         <span>download Resume</span>
         <RiArrowRightUpLine className='dnRIcon w-5' />

@@ -12,7 +12,7 @@ export const PROFILE = {
   name: 'Tushar Verma',
   role: 'Frontend Developer',
   subheading:
-    'I’m a B.tech graduate passionate about frontend development for web and mobile. I’m new to the industry but excited to roll up my sleeves, learn fast, and add value to dynamic projects and teams.'
+    'Passionate about creating modern, responsive and impactful solutions. Excited to work with a team, take on challenges, and gain real-world experience while growing my skills in software development.'
 }
 
 export const PROJECTS = [
@@ -72,9 +72,9 @@ export const PROJECTS = [
     description:
       'This app demonstrates API integration and dynamic UI updates, working on both Android and iOS devices. Users can select global locations from a list to see real-time updates with backgrounds reflecting day or night. Developed using Android Studio, inspired by a YouTube tutorial by NetNinja.',
     techStack: [
-      'Android Studio',
       'Flutter',
-      'C++ & Dart',
+      'Android Studio',
+      'Dart',
       'worldtimeapi',
       'Git',
       'GitHub',
@@ -212,6 +212,26 @@ export const SKILLS = [
     )
   },
   {
+    name: 'Gsap',
+    logo: (
+      <img
+        src='/assets/skillsIcons/gsap.png'
+        alt='gsap icon'
+        draggable='false'
+      />
+    )
+  },
+  {
+    name: 'Framer motion',
+    logo: (
+      <img
+        src='/assets/skillsIcons/motion.png'
+        alt='framer motion icon'
+        draggable='false'
+      />
+    )
+  },
+  {
     name: 'Figma',
     logo: (
       <img src='/assets/skillsIcons/figma.png' alt='figma' draggable='false' />
@@ -320,34 +340,27 @@ export const HOBBIES = [
     image: '/assets/hobby_images/artist.webp',
     name: 'Artist and Designer',
     rewards:
-      'Creative mind celebrated for unique art throughout school and college; now exploring UI design through Figma in development projects.'
+      'Recognized throughout school and college, now applying my skills and passion for UI design to software development projects.'
   },
   {
     id: 2,
-    image: '/assets/hobby_images/tabletennis.jpg',
-    name: 'Table Tennis Champ',
+    image: '/assets/hobby_images/tabletennis.webp',
+    name: 'Table Tennis Professional',
     rewards:
-      'A competitive player with multiple wins; led my CSE branch team as captain in the 2023 inter-college tournament.'
+      'A competitive player with multiple wins in school and college, I led my CSE team as captain in the 2023 inter-college tournament.'
   },
   {
     id: 3,
-    image: '/assets/hobby_images/techy.jpg',
+    image: '/assets/hobby_images/techy.webp',
     name: 'Tech Enthusiast',
     rewards:
-      'Passionate about tech innovations and gadgets; enjoys exploring cutting-edge developments, especially within the Apple ecosystem.'
+      'Passionate about tech innovations and gadgets, always eager to learn about the latest updates and trends in the tech world.'
   },
   {
     id: 4,
-    image: '/assets/hobby_images/music.jpg',
-    name: 'Movie and Music Lover',
-    rewards:
-      'Finds relaxation and inspiration through diverse music and films, drawing fresh perspectives and creative ideas.'
-  },
-  {
-    id: 5,
-    image: '/assets/hobby_images/photography.jpg',
+    image: '/assets/hobby_images/photography.webp',
     name: 'Smartphone Photographer',
     rewards:
-      'Captures moments with a smartphone, gaining appreciation from friends and family; cherishes the nostalgia of saved memories.'
+      'I enjoy capturing moments that my friends and family cherish. I find satisfaction in post-editing to enhance their visual impact.'
   }
 ]

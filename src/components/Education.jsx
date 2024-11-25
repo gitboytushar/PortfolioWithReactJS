@@ -19,18 +19,18 @@ const Education = () => {
             card,
             {
               opacity: 0,
-              y: 70
+              y: 50
             },
             {
               opacity: 1,
               y: 0,
-              duration: 1,
+              duration: 0.7,
               ease: 'expoScale',
-              stagger: 0.4,
+              stagger: 0.2,
               scrollTrigger: {
                 trigger: card,
-                start: 'top 65%',
-                toggleActions: 'play none none reverse'
+                start: 'top 75%',
+                toggleActions: 'play none none none'
               },
               onComplete: () => {
                 card.dataset.animated = 'true'

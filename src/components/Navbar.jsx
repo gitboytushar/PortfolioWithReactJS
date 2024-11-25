@@ -23,7 +23,7 @@ const Navbar = () => {
       const offsetPosition = elementPosition + window.scrollY + offset
 
       lenis.scrollTo(offsetPosition, {
-        duration: 2,
+        duration: 1.8,
         easing: easeInOutCubic
       })
     }

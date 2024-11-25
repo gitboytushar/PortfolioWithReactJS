@@ -1,5 +1,6 @@
 import Marquee from 'react-fast-marquee'
 import FloatingSkills from './FloatingSkills'
+import FloatingSkills2 from './FloatingSkills2'
 import { RiArrowRightWideFill, RiSparkling2Fill } from '@remixicon/react'
 
 const Skills = () => {
@@ -12,7 +13,7 @@ const Skills = () => {
 
         {/* ------------- on medium and large devices ------------ */}
         <div className='fade-shadow hidden md:flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab select-none'>
-          <Marquee speed={90} pauseOnHover>
+          <Marquee speed={100} pauseOnHover>
             <FloatingSkills />
           </Marquee>
 
@@ -34,18 +35,18 @@ const Skills = () => {
             </p>
           </div>
 
-          <Marquee speed={90} direction='right' pauseOnHover>
-            <FloatingSkills />
+          <Marquee speed={100} direction='right' pauseOnHover>
+            <FloatingSkills2 />
           </Marquee>
         </div>
 
         {/* ------------- on Mobile devices ----------- */}
         <div className='flex md:hidden flex-col items-center justify-center gap-y-14 cursor-grab select-none'>
-          <Marquee speed={70} direction='right' pauseOnHover>
+          <Marquee speed={50} pauseOnHover>
             <FloatingSkills />
           </Marquee>
 
-          <Marquee speed={70} pauseOnHover>
+          <Marquee speed={150} direction='right' pauseOnHover>
             <FloatingSkills />
           </Marquee>
 
@@ -55,7 +56,7 @@ const Skills = () => {
               <RiArrowRightWideFill size={14} className='ml-1' />
             </div>
 
-            <Marquee speed={90} direction='right'>
+            <Marquee speed={100}>
               <div className='w-full flex flex-row-reverse items-center justify-center flex-wrap ml-10 gap-8 text-center text-sm'>
                 <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>

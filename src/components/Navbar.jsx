@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className='select-none'>
               <a
                 href='/'
-                className='text-sm text-white hover:text-yellow-300 hover:motion-preset-confetti'
+                className='text-sm hover:font-bold text-white hover:text-yellow-300 hover:motion-preset-confetti'
               >
                 <span>Tushar Verma</span>
               </a>
@@ -47,9 +47,9 @@ const Navbar = () => {
             <div>
               <ul className='flex items-center gap-4 select-none'>
                 {NAVIGATION_LINKS.map((item, index) => (
-                  <li key={index} className='hover:motion-preset-confetti'>
+                  <li key={index}>
                     <a
-                      className='text-sm text-white hover:text-yellow-300'
+                      className='text-sm hover:font-bold text-white hover:text-yellow-300 transition-all duration-300 ease-in-out'
                       href={item.href}
                       onClick={e => handleLinkClick(e, item.href)}
                     >

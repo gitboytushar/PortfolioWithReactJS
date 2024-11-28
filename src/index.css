@@ -60,6 +60,16 @@ iframe {
   }
 }
 
+/* code below smooth outs the jitter bug of animations */
+.hero-title,
+.sub-title,
+.hero-subheading,
+.hero-btn,
+.hero-img {
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+}
+
 /* ------------ projects element interactions ------------ */
 @media (hover: hover) and (pointer: fine) {
   .projectPreviewIcon {

@@ -18,18 +18,18 @@ const Hero = () => {
         opacity: 0,
         y: 50,
         scale: 0.95,
-        duration: 0.8,
-        stagger: 0.4
+        duration: 0.6,
+        stagger: 0.1
       })
         .from(
           '.sub-title',
           {
             opacity: 0,
-            y: 50,
+            y: 60,
             scale: 0.95,
-            duration: 0.8
+            duration: 0.7
           },
-          '-=0.4'
+          '-=0.2'
         )
         .from(
           '.hero-subheading',
@@ -37,9 +37,9 @@ const Hero = () => {
             opacity: 0,
             y: 50,
             scale: 0.95,
-            duration: 0.9
+            duration: 0.6
           },
-          '-=0.4'
+          '-=0.3'
         )
         .from(
           '.hero-btn',
@@ -47,19 +47,19 @@ const Hero = () => {
             opacity: 0,
             z: 50,
             scale: 1.5,
-            duration: 1
+            duration: 0.6
           },
-          '-=0.6'
+          '-=0.4'
         )
         .from(
           '.hero-img',
           {
             opacity: 0,
-            z: -50,
-            scale: 0.4,
-            duration: 0.7
+            y: -50,
+            scale: 0.5,
+            duration: 0.5
           },
-          '-=0.6'
+          '-=0.3'
         )
     }, heroRef)
 

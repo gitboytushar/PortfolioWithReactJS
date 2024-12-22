@@ -100,102 +100,106 @@ const Projects = () => {
         </h2>
 
         <div className='flex flex-wrap'>
-          {PROJECTS.slice(0, visibleProjects).map(project => (
-            <div
-              key={project.id}
-              className='project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
-            >
-              <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
-                {/* project video */}
-                <div>
-                  {project.videoSrc && (
-                    <div
-                      className='relative w-full'
-                      style={{ paddingTop: '56.25%' }}
-                    >
-                      <iframe
-                        src={`${project.videoSrc}${fixedParams}`} // concatenation
-                        className='absolute top-0 left-0 h-full w-full'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                        allowFullScreen
-                      />
-                    </div>
-                  )}
+          {/* last data card will be printed first */}
+          {PROJECTS.slice()
+            .reverse()
+            .slice(0, visibleProjects)
+            .map(project => (
+              <div
+                key={project.id}
+                className='project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
+              >
+                <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
+                  {/* project video */}
+                  <div>
+                    {project.videoSrc && (
+                      <div
+                        className='relative w-full'
+                        style={{ paddingTop: '56.25%' }}
+                      >
+                        <iframe
+                          src={`${project.videoSrc}${fixedParams}`} // concatenation
+                          className='absolute top-0 left-0 h-full w-full'
+                          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
 
-                  {/* project details */}
-                  <div className='p-3 md:p-5 pb-0'>
-                    <h3 className='mb-1 text-[18.5px] font-medium'>
-                      {project.title}
-                    </h3>
-                    <p className='mb-3 text-white/55 text-sm'>
-                      {project.description}
-                    </p>
-                    <div className='mb-4'>
-                      <p className='mb-1'>Tech Stack:</p>
-                      <ul>
-                        {project.techStack.map((tech, index) => (
-                          <li
-                            key={index}
-                            className='mr-1 mb-1 inline-block rounded-full border border-white/40 px-3 py-1 text-[.7rem] font-mono'
-                          >
-                            {tech}
-                          </li>
-                        ))}
-                      </ul>
+                    {/* project details */}
+                    <div className='p-3 md:p-5 pb-0'>
+                      <h3 className='mb-1 text-[18.5px] font-medium'>
+                        {project.title}
+                      </h3>
+                      <p className='mb-3 text-white/55 text-sm'>
+                        {project.description}
+                      </p>
+                      <div className='mb-4'>
+                        <p className='mb-1'>Tech Stack:</p>
+                        <ul>
+                          {project.techStack.map((tech, index) => (
+                            <li
+                              key={index}
+                              className='mr-1 mb-1 inline-block rounded-full border border-white/40 px-3 py-1 text-[.7rem] font-mono'
+                            >
+                              {tech}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* cta */}
-                <div className='px-6 mt-2 mb-3'>
-                  <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
-                    {/* live preview */}
-                    {project.preview_link && (
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
-                        transition={{
-                          type: 'spring',
-                          stiffness: 400,
-                          damping: 17
-                        }}
-                        id='projectPreviewLink'
-                        href={project.preview_link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
-                      >
-                        <div className='flex flex-row items-center justify-center gap-2 font-medium'>
-                          <p>Live Preview</p>
-                          <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[0.5px]' />
-                        </div>
-                      </motion.a>
-                    )}
+                  {/* cta */}
+                  <div className='px-6 mt-2 mb-3'>
+                    <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
+                      {/* live preview */}
+                      {project.preview_link && (
+                        <motion.a
+                          whileHover={{ scale: 1.1 }}
+                          transition={{
+                            type: 'spring',
+                            stiffness: 400,
+                            damping: 17
+                          }}
+                          id='projectPreviewLink'
+                          href={project.preview_link}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                        >
+                          <div className='flex flex-row items-center justify-center gap-2 font-medium'>
+                            <p>Live Preview</p>
+                            <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[0.5px]' />
+                          </div>
+                        </motion.a>
+                      )}
 
-                    {/* source code - github repo */}
-                    {project.code_link && (
-                      <motion.a
-                        whileHover={{ scale: 1.1 }}
-                        transition={{
-                          type: 'spring',
-                          stiffness: 400,
-                          damping: 17
-                        }}
-                        href={project.code_link}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
-                      >
-                        <div className='flex flex-row items-center justify-center gap-2'>
-                          <p>Source Code</p>
-                          <RiGithubFill className='w-4' />
-                        </div>
-                      </motion.a>
-                    )}
+                      {/* source code - github repo */}
+                      {project.code_link && (
+                        <motion.a
+                          whileHover={{ scale: 1.1 }}
+                          transition={{
+                            type: 'spring',
+                            stiffness: 400,
+                            damping: 17
+                          }}
+                          href={project.code_link}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
+                        >
+                          <div className='flex flex-row items-center justify-center gap-2'>
+                            <p>Source Code</p>
+                            <RiGithubFill className='w-4' />
+                          </div>
+                        </motion.a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
 
         {/* Show More projects - Button */}

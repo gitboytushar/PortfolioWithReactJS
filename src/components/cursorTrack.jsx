@@ -15,7 +15,7 @@ const CursorTrack = () => {
     minimumDistanceBetweenStars: 75,
     glowDuration: 75,
     maximumGlowPointSpacing: 10,
-    colors: ['255 62 165', '0 255 0'],
+    colors: ['249 228 0', '252 246 245'],
     sizes: ['1.4rem', '1rem', '0.6rem'],
     animations: ['fall-1', 'fall-2', 'fall-3']
   }

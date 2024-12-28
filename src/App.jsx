@@ -11,6 +11,7 @@ import Education from './components/Education'
 import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
+import CursorTrack from './components/cursorTrack'
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
         <div className='bg-image fixed inset-0 bg-blend-soft-light bg-scroll lg:bg-fixed bg-center'></div>
         {/* custom components */}
         <div className='relative z-10'>
+          {/* curstom animated cursor tail */}
+          <CursorTrack />
+
+          {/* content sections */}
           <Navbar />
           <Hero />
           <Projects />
@@ -29,6 +34,8 @@ const App = () => {
           <Education />
           <Hobbies />
           <Contact />
+
+          {/* scroll to page top, assitive floating button */}
           <Scroll2TopFloatingButton />
         </div>
       </main>

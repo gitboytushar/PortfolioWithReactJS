@@ -140,7 +140,7 @@ const Projects = () => {
                           {project.techStack.map((tech, index) => (
                             <li
                               key={index}
-                              className='mr-1 mb-1 inline-block rounded-full border border-white/40 px-3 py-1 text-[.7rem] font-mono'
+                              className='mr-1 mb-1 inline-block rounded-[6px] border border-white/20 px-3 py-1 text-[.7rem] font-mono'
                             >
                               {tech}
                             </li>
@@ -166,7 +166,7 @@ const Projects = () => {
                           href={project.preview_link}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='rounded-full bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
+                          className='rounded-[8px] bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
                         >
                           <div className='flex flex-row items-center justify-center gap-2 font-medium'>
                             <p>Live Preview</p>
@@ -187,7 +187,7 @@ const Projects = () => {
                           href={project.code_link}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='rounded-full border border-white/40 px-4 py-1 text-sm cursor-pointer'
+                          className='rounded-[8px] border-none bg-white/15 px-4 py-1 text-sm cursor-pointer'
                         >
                           <div className='flex flex-row items-center justify-center gap-2'>
                             <p>Source Code</p>

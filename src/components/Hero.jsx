@@ -98,7 +98,7 @@ const Hero = () => {
         target='_blank'
         rel='noopener noreferrer'
         download
-        className='hero-btn mb-1 flex gap-1 rounded-full border border-white/50 px-4 py-2 text-white lg:text-white/60 cursor-pointer hover:text-white transition-colors duration-300 ease-spring-smooth'
+        className='hero-btn mb-1 flex gap-1 rounded-xl border border-white/40 hover:border-transparent hover:bg-white/10 px-4 py-2 text-white/80 lg:text-white/70 cursor-pointer hover:text-white transition-colors duration-300 ease-spring-smooth'
       >
         <span>download Resume</span>
         <RiArrowRightUpLine className='dnRIcon w-5' />
@@ -107,7 +107,7 @@ const Hero = () => {
       <img
         src='/assets/Tushar.webp'
         alt={PROFILE.name}
-        className='hero-img max-w-[230px] rounded-3xl border border-white/40 p-1 brightness-90 pointer-events-none'
+        className='hero-img max-w-[230px] rounded-2xl border border-white/40 p-1 brightness-90 pointer-events-none'
       />
     </section>
   )

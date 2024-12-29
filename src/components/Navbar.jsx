@@ -34,22 +34,22 @@ const Navbar = () => {
     <div>
       <nav className='fixed left-0 right-0 z-50 top-0 lg:top-4'>
         {/* Desktop Menu */}
-        <div className='mx-auto hidden w-fit px-6 items-center justify-center rounded-full border border-white/30 py-2 bg-black/20 backdrop-blur-lg lg:flex'>
-          <div className='flex items-center justify-between gap-40'>
+        <div className='mx-auto hidden w-fit h-12 py-2 px-1.5 items-center justify-center rounded-[10px] border border-white/30 bg-black/50 backdrop-blur-lg lg:flex'>
+          <div className='flex items-center justify-between gap-44'>
             <div className='select-none'>
               <a
                 href='/'
-                className='text-sm hover:font-bold text-white hover:text-yellow-300 hover:motion-preset-confetti'
+                className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
               >
                 <span>Tushar Verma</span>
               </a>
             </div>
             <div>
-              <ul className='flex items-center gap-4 select-none'>
+              <ul className='flex items-center gap-1 select-none'>
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className='text-sm hover:font-bold text-white hover:text-yellow-300 transition-all duration-300 ease-in-out'
+                      className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
                       href={item.href}
                       onClick={e => handleLinkClick(e, item.href)}
                     >

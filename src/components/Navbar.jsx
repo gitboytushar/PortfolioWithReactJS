@@ -34,12 +34,12 @@ const Navbar = () => {
     <div>
       <nav className='fixed left-0 right-0 z-50 top-0 lg:top-4'>
         {/* Desktop Menu */}
-        <div className='mx-auto hidden w-fit h-12 py-2 px-1.5 items-center justify-center rounded-[10px] border border-white/30 bg-black/50 backdrop-blur-lg lg:flex'>
+        <div className='mx-auto hidden w-fit h-12 py-2 px-1.5 items-center justify-center rounded-[10px] border border-white/30 backdrop-blur-2xl lg:flex'>
           <div className='flex items-center justify-between gap-44'>
             <div className='select-none'>
               <a
                 href='/'
-                className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
+                className='text-sm py-2 px-3 rounded-[5px] text-white bg-none'
               >
                 <span>Tushar Verma</span>
               </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
-                      className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
+                      className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-300 ease-in-out'
                       href={item.href}
                       onClick={e => handleLinkClick(e, item.href)}
                     >
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='pt-5 bg-black/20 backdrop-blur-2xl lg:hidden border-b border-white/20'>
+        <div className='pt-5 bg-black/20 backdrop-blur-3xl lg:hidden border-b border-white/20'>
           <div className='flex items-center justify-between px-4 pb-2'>
             <div className='-translate-y-1'>
               <a href='/'>

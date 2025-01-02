@@ -19,18 +19,18 @@ const Education = () => {
             card,
             {
               opacity: 0,
-              y: 60
+              y: 50
             },
             {
               opacity: 1,
               y: 0,
-              duration: 0.3,
+              duration: 0.4,
               ease: 'expoScale',
               stagger: 0.2,
               scrollTrigger: {
                 trigger: card,
-                start: 'top 80%',
-                toggleActions: 'play none none reverse'
+                start: 'top 60%',
+                toggleActions: 'play none none none'
               },
               onComplete: () => {
                 card.dataset.animated = 'true'
@@ -45,19 +45,21 @@ const Education = () => {
   }, [])
 
   return (
-    <section className='py-32 min-h-[100vh]' id='education' ref={educationRef}>
+    <section className='py-32 min-h-[100vh]' id='education'>
       <div className='mx-auto max-w-full px-4'>
         <h2 className='mb-14 text-center font-medium text-3xl lg:text-4xl'>
           Education Milestones
         </h2>
       </div>
 
-      {/* content */}
-      <div className='w-full flex flex-col space-y-10 px-4 lg:px-40'>
+      {/* cards */}
+      <div
+        className='w-full flex flex-col space-y-10 px-4 lg:px-40'
+        ref={educationRef}
+      >
         {EDUCATION.map(edu => {
           return (
             <div key={edu.id}>
-              {/* added gsap animation to each card */}
               <div className='eduCard flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/20 rounded-xl p-6'>
                 <h2 className='text-xl lg:text-2xl'>{edu.degree}</h2>
                 <div>

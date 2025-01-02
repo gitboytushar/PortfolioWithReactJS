@@ -37,7 +37,7 @@ const Contact = () => {
         variants={parentVariant}
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.5 }} // play when 50% area is entered
+        viewport={{ once: true, amount: 0.5 }} // play once per refresh when 50% area is entered
         className='lg:absolute bottom-12'
       >
         <div className='flex flex-col items-start justify-center gap-y-8'>
@@ -72,12 +72,14 @@ const Contact = () => {
           <div className='lg:ml-28'>
             <motion.h3
               variants={childVariant}
-              className='mail-link pb-1 flex items-center justify-center gap-1 md:gap-2 pt-2 text-lg md:text-xl cursor-pointer'
+              className='mail-link pb-1 flex items-center justify-center gap-2 md:gap-2 pt-2 text-lg md:text-xl cursor-pointer'
             >
               <a href='mailto:tusharwork.001@gmail.com'>
                 tusharwork.001@gmail.com
               </a>
-              <RiMailSendFill className='h-4 md:h-5' />
+              <span className='motion-preset-wobble motion-duration-1000'>
+                <RiMailSendFill className='h-5 md:h-6' />
+              </span>
             </motion.h3>
 
             {/* social media contacts */}

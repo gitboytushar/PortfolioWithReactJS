@@ -5,9 +5,9 @@ import { RiArrowRightWideFill, RiSparkling2Fill } from '@remixicon/react'
 
 const Skills = () => {
   return (
-    <section className='py-24 md:py-32 min-h-[100vh]' id='skills'>
+    <section className='py-24 md:py-32' id='skills'>
       <div className='px-4 relative'>
-        <h2 className='mb-16 pt-10 md:pt-6 text-center font-medium text-3xl lg:text-4xl'>
+        <h2 className='mb-12 uppercase opacity-10 text-center lg:text-start font-extrabold text-5xl lg:text-9xl'>
           Skills
         </h2>
 
@@ -41,23 +41,19 @@ const Skills = () => {
         </div>
 
         {/* ------------- on Mobile devices ----------- */}
-        <div className='flex md:hidden flex-col items-center justify-center gap-y-14 cursor-grab select-none'>
-          <Marquee speed={50} pauseOnHover>
-            <FloatingSkills />
-          </Marquee>
-
-          <Marquee speed={150} direction='right' pauseOnHover>
+        <div className='flex md:hidden flex-col items-center justify-center gap-y-16 mt-20 select-none'>
+          <Marquee speed={80}>
             <FloatingSkills />
           </Marquee>
 
           <div className='mt-1 flex items-center justify-center flex-col gap-y-4'>
-            <div className='text-sm text-white bg-black/40 backdrop-blur-lg rounded-r-full py-1 pl-4 pr-3 w-fit absolute left-0 flex items-center justify-center gap-x-0 z-10'>
+            <div className='text-sm text-white bg-black/25 backdrop-blur-lg rounded-r-full py-2.5 pl-4 pr-3 w-fit absolute left-0 flex items-center justify-center gap-x-0 z-10'>
               <span>Soft skills</span>
-              <RiArrowRightWideFill size={14} className='ml-1' />
+              <RiArrowRightWideFill size={15} className='ml-1' />
             </div>
 
-            <Marquee speed={100}>
-              <div className='w-full flex flex-row-reverse items-center justify-center flex-wrap ml-10 gap-8 text-center text-sm'>
+            <Marquee speed={60} direction='right'>
+              <div className='w-full flex flex-row-reverse items-center justify-center flex-wrap ml-10 gap-8 text-center text-md'>
                 <RiSparkling2Fill size={14} />
                 <p className='px-1 bg-gradient-to-br from-pink-400 to-indigo-700 bg-clip-text text-transparent brightness-150'>
                   Problem Solving

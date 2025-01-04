@@ -100,7 +100,7 @@ const Projects = () => {
 
   // main content
   return (
-    <section className='py-24 min-h-[100vh]' id='projects' ref={projectRef}>
+    <section className='py-24' id='projects' ref={projectRef}>
       <div className='px-4'>
         <h2 className='mb-4 uppercase opacity-10 text-center lg:text-start font-extrabold text-5xl lg:text-9xl'>
           Projects

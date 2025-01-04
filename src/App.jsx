@@ -27,15 +27,17 @@ const App = () => {
           {/* curstom animated cursor tail */}
           {/* <CursorTrack /> */}
 
-          {/* React snowfall component for winter season - imported */}
-          <Snowfall
-            snowflakeCount={270}
-            speed={[0.5, 0.5]}
-            wind={[-0.5, -0.5]}
-            radius={[1.5, 3]}
-            color='#dee4fd'
-            images={undefined}
-          />
+          {/* React snowfall component for winter season - npm */}
+          <div className='absolute max-h-[100vh] inset-0 z-20 pointer-events-none'>
+            <Snowfall
+              snowflakeCount={51}
+              speed={[0.5, 0.3]}
+              wind={[-0.5, -0.5]}
+              radius={[1.5, 3]}
+              color='#dee4fd'
+              images={undefined}
+            />
+          </div>
 
           {/* my content sections */}
           <Navbar />

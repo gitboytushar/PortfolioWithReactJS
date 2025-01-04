@@ -2,22 +2,29 @@ import { useEffect, useRef, useState } from 'react'
 import { PROJECTS } from '../constants'
 import {
   RiArrowDownWideLine,
-  RiArrowRightLine,
-  RiGithubFill
+  RiArrowRightUpLine,
+  RiGithubLine,
+  RiYoutubeFill
 } from '@remixicon/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { motion } from 'motion/react'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger
+} from '@/components/ui/tooltip-top'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
   const projectRef = useRef(null)
-  const [visibleProjects, setVisibleProjects] = useState(3)
+  const [visibleProjects, setVisibleProjects] = useState(4)
 
   // show 3 cards initially
   const handleShowMore = () => {
-    setVisibleProjects(prev => prev + 3)
+    setVisibleProjects(prev => prev + 2)
   }
 
   // youtube url concatenation
@@ -95,52 +102,41 @@ const Projects = () => {
   return (
     <section className='py-24 min-h-[100vh]' id='projects' ref={projectRef}>
       <div className='px-4'>
-        <h2 className='mb-5 text-center font-medium text-3xl lg:text-4xl'>
-          Projects in Action
+        <h2 className='mb-4 uppercase opacity-10 text-center lg:text-start font-extrabold text-5xl lg:text-9xl'>
+          Projects
         </h2>
 
         <div className='flex flex-wrap'>
-          {/* last data card will be printed first */}
+          {/* last card will be shown first */}
           {PROJECTS.slice()
             .reverse()
             .slice(0, visibleProjects)
             .map(project => (
               <div
                 key={project.id}
-                className='project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3'
+                className='project-card flex flex-col md:p-2 w-full md:w-1/2'
               >
-                <div className='flex-grow overflow-hidden rounded-2xl border border-white/20 p-1 flex flex-col items-center justify-between'>
-                  {/* project video */}
+                <div className='flex-grow overflow-hidden rounded-lg border-2 border-white/10 bg-white/5 p-1.5 md:p-3 flex flex-col items-stretch justify-between mb-5 md:mb-0'>
                   <div>
-                    {project.videoSrc && (
-                      <div
-                        className='relative w-full'
-                        style={{ paddingTop: '56.25%' }}
-                      >
-                        <iframe
-                          src={`${project.videoSrc}${fixedParams}`} // concatenation
-                          className='absolute top-0 left-0 h-full w-full'
-                          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                          allowFullScreen
-                        />
-                      </div>
-                    )}
-
                     {/* project details */}
-                    <div className='p-3 md:p-5 pb-0'>
-                      <h3 className='mb-1 text-[18.5px] font-medium'>
+                    <div className='p-2.5 md:p-4 pb-0 flex flex-col items-start justify-center gap-y-2'>
+                      <h3 className='text-xl md:text-3xl font-medium'>
                         {project.title}
                       </h3>
-                      <p className='mb-3 text-white/55 text-sm'>
+
+                      <p className='text-white/75 font-light tracking-wide text-md lg:text-lg'>
                         {project.description}
                       </p>
-                      <div className='mb-4'>
-                        <p className='mb-1'>Tech Stack:</p>
+
+                      <div className='mt-1'>
+                        <p className='mb-2 text-lg md:text-xl font-medium'>
+                          Tech Stack
+                        </p>
                         <ul>
                           {project.techStack.map((tech, index) => (
                             <li
                               key={index}
-                              className='mr-1 mb-1 inline-block rounded-[6px] border border-white/20 px-3 py-1 text-[.7rem] font-mono'
+                              className='mr-1.5 mb-1.5 inline-block rounded-[5px] border-none bg-white/10 px-3 py-1.5 tracking-wider text-xs lg:text-sm'
                             >
                               {tech}
                             </li>
@@ -150,51 +146,95 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* cta */}
-                  <div className='px-6 mt-2 mb-3'>
-                    <div className='flex flex-row flex-wrap items-center justify-center gap-4'>
-                      {/* live preview */}
-                      {project.preview_link && (
-                        <motion.a
-                          whileHover={{ scale: 1.1 }}
-                          transition={{
-                            type: 'spring',
-                            stiffness: 400,
-                            damping: 17
-                          }}
-                          id='projectPreviewLink'
-                          href={project.preview_link}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='rounded-[8px] bg-gradient-to-br from-violet-600 to-pink-600 border-none px-4 py-1 text-sm cursor-pointer'
-                        >
-                          <div className='flex flex-row items-center justify-center gap-2 font-medium'>
+                  {/* cta buttons */}
+                  <div className='px-4 mt-8 md:mt-6 mb-3'>
+                    <div className='flex flex-row flex-wrap items-center justify-center md:justify-end gap-4'>
+                      {/* video for demonstration */}
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            {project.videoSrc && (
+                              <motion.a
+                                whileHover={{ y: -2 }}
+                                transition={{
+                                  type: 'spring',
+                                  stiffness: 300,
+                                  damping: 20
+                                }}
+                                href={`${project.videoSrc}${fixedParams}`}
+                                target='_blank'
+                                className='rounded-md bg-gradient-to-tr from-rose-500 to-red-700 border-none px-3 py-2 cursor-pointer'
+                              >
+                                <div className='flex items-center justify-center'>
+                                  <RiYoutubeFill className='w-5 h-5 md:w-7 md:h-7' />
+                                </div>
+                              </motion.a>
+                            )}
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Video Demo</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+
+                      {/* live preview - hosted app */}
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            {project.preview_link && (
+                              <motion.a
+                                whileHover={{ y: -2 }}
+                                transition={{
+                                  type: 'spring',
+                                  stiffness: 300,
+                                  damping: 20
+                                }}
+                                id='projectPreviewLink'
+                                href={project.preview_link}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='rounded-md bg-gradient-to-tr from-violet-600 to-pink-600 border-none px-3 py-2 cursor-pointer brightness-110'
+                              >
+                                <div className='flex items-center justify-center'>
+                                  <RiArrowRightUpLine className='w-5 h-5 md:w-7 md:h-7' />
+                                </div>
+                              </motion.a>
+                            )}
+                          </TooltipTrigger>
+                          <TooltipContent>
                             <p>Live Preview</p>
-                            <RiArrowRightLine className='projectPreviewIcon w-4 translate-y-[0.5px]' />
-                          </div>
-                        </motion.a>
-                      )}
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
 
                       {/* source code - github repo */}
-                      {project.code_link && (
-                        <motion.a
-                          whileHover={{ scale: 1.1 }}
-                          transition={{
-                            type: 'spring',
-                            stiffness: 400,
-                            damping: 17
-                          }}
-                          href={project.code_link}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='rounded-[8px] border-none bg-white/15 px-4 py-1 text-sm cursor-pointer'
-                        >
-                          <div className='flex flex-row items-center justify-center gap-2'>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            {project.code_link && (
+                              <motion.a
+                                whileHover={{ y: -2 }}
+                                transition={{
+                                  type: 'spring',
+                                  stiffness: 300,
+                                  damping: 20
+                                }}
+                                href={project.code_link}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='rounded-md border-none bg-white px-3 py-2 cursor-pointer'
+                              >
+                                <div className='flex items-center justify-center'>
+                                  <RiGithubLine className='w-5 h-5 md:w-7 md:h-7 text-black' />
+                                </div>
+                              </motion.a>
+                            )}
+                          </TooltipTrigger>
+                          <TooltipContent>
                             <p>Source Code</p>
-                            <RiGithubFill className='w-4' />
-                          </div>
-                        </motion.a>
-                      )}
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     </div>
                   </div>
                 </div>
@@ -204,10 +244,10 @@ const Projects = () => {
 
         {/* Show More projects - Button */}
         {visibleProjects < PROJECTS.length && (
-          <div className='text-center mt-3 lg:mt-0'>
+          <div className='text-center mt-3 lg:mt-4'>
             <button
               onClick={handleShowMore}
-              className='showMoreProjectsBtn py-0 px-4 w-fit text-1xl lg:text-lg cursor-pointer'
+              className='showMoreProjectsBtn py-1 px-4 w-fit text-1xl tracking-tight lg:text-lg cursor-pointer'
             >
               <div className='flex items-center justify-center'>
                 <p className='ml-2 mr-1'>Show More Projects</p>

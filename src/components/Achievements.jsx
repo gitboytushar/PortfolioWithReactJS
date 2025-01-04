@@ -26,11 +26,13 @@ const Achievements = () => {
 
   // main
   return (
-    <section className='py-20 min-h-[100vh]' id='achievements'>
+    <section className='py-20' id='achievements'>
       <div className='px-4'>
-        <h2 className='mb-16 md:mb-20 lg:pt-2 lg:mb-10 text-center font-medium text-3xl lg:text-4xl flex flex-col items-center justify-center'>
-          <span>Achievements</span>
-          <span className='text-lg opacity-50 font-normal'>
+        <h2 className='mb-16 md:mb-20 pt-12 lg:pt-8 lg:mb-10 flex flex-col'>
+          <span className='items-center justify-center uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
+            Achievements
+          </span>
+          <span className='text-center mt-2 lg:mt-0 uppercase text-lg text-white/65 tracking-wider font-extrabold'>
             Cloud computing badges
           </span>
         </h2>
@@ -38,7 +40,7 @@ const Achievements = () => {
         {/* Cards Stack */}
         <div className='flex flex-col gap-20 md:gap-28 lg:gap-40'>
           {/* GCP card */}
-          <div className='max-w-full h-[600px] md:h-[450px] lg:h-[600px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-white relative'>
+          <div className='max-w-full h-[600px] md:h-[450px] lg:h-[500px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-white relative'>
             {/* interactive and floating icons */}
             <img
               src='/assets/gcpIcon.png'
@@ -59,11 +61,11 @@ const Achievements = () => {
               viewport={{ once: true, amount: 0.4 }}
               className='img-container-gcp w-full h-full rounded-[10px] relative'
             >
-              <div className='flex flex-col items-center justify-between gap-12 lg:gap-14 w-full md:w-fit p-5 md:absolute top-12 lg:top-20 left-14'>
+              <div className='flex flex-col items-center justify-between gap-12 lg:gap-14 w-full md:w-fit p-5 md:absolute top-12 lg:top-18 left-14'>
                 <div className='text-center mt-20 md:mt-0'>
                   <motion.h2
                     variants={childVariant}
-                    className='text-3xl lg:text-5xl font-bold'
+                    className='text-4xl lg:text-5xl font-bold'
                   >
                     Google Cloud Platform
                   </motion.h2>
@@ -96,7 +98,7 @@ const Achievements = () => {
           </div>
 
           {/* AWS card */}
-          <div className='max-w-full h-[600px] md:h-[450px] lg:h-[600px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-[#697C8B] relative'>
+          <div className='max-w-full h-[600px] md:h-[450px] lg:h-[500px] rounded-[20px] mx-2 md:mx-12 p-4 md:p-5 bg-[#697C8B] relative'>
             {/* interactive and floating icons */}
             <img
               src='/assets/awsIcon.png'
@@ -118,10 +120,10 @@ const Achievements = () => {
               className='img-container-aws w-full h-full rounded-[10px] relative'
             >
               <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
-                <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-36 px-2 md:px-0'>
+                <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-24 px-2 md:px-0'>
                   <motion.h2
                     variants={childVariant}
-                    className='text-3xl lg:text-5xl font-bold'
+                    className='text-4xl lg:text-5xl font-bold'
                   >
                     Amazon Web Services
                   </motion.h2>
@@ -135,7 +137,7 @@ const Achievements = () => {
 
                 <motion.div
                   variants={childVariant}
-                  className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-32'
+                  className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-24'
                 >
                   <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 !opacity-50'>
                     Earned in 2022 - 2023

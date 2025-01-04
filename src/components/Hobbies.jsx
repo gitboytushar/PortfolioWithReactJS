@@ -5,14 +5,10 @@ const Hobbies = () => {
   const hobbiesRef = useRef(null)
 
   return (
-    <section
-      className='py-12 md:pt-32 min-h-screen'
-      id='hobbies'
-      ref={hobbiesRef}
-    >
+    <section className='py-12 md:pt-32' id='hobbies' ref={hobbiesRef}>
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='mb-5 pt-10 md:pt-5 md:mb-12 lg:mb-14 lg:pt-14 text-center text-3xl lg:text-4xl font-medium'>
-          Life Outside Work
+        <h2 className='my-10 lg:my-14 pt-5 uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
+          More about me
         </h2>
       </div>
 

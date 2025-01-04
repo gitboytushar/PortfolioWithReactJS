@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section className='py-24 md:py-32' id='skills'>
       <div className='px-4 relative'>
-        <h2 className='mb-12 uppercase opacity-10 text-center lg:text-start font-extrabold text-5xl lg:text-9xl'>
+        <h2 className='mb-12 mt-10 lg:mt-2 uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
           Skills
         </h2>
 

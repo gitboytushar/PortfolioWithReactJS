@@ -79,7 +79,7 @@ export function CarouselDemo () {
       </CarouselContent>
 
       {/* navigation buttons centered below */}
-      <div className='flex items-center justify-center space-x-8 lg:space-x-6 mt-8 md:mt-7'>
+      <div className='flex items-center justify-center space-x-7 lg:space-x-6 mt-1 md:mt-10'>
         <CarouselPrevious />
         <CarouselNext />
       </div>

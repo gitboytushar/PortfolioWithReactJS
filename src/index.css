@@ -177,7 +177,7 @@
 /* Contact Section */
 .contact-title-underline {
   border: none;
-  border-bottom: 3px solid white;
+  border-bottom: 5px solid rgb(213, 213, 213);
 }
 
 /* cool underline effect on the mail-id hover on desktops */

@@ -83,7 +83,7 @@ const Education = () => {
                   </h3>
                 </div>
 
-                <p className='text-md md:text-lg lg:text-2xl tracking-wide font-thin text-white/70'>
+                <p className='text-md md:text-lg lg:text-2xl tracking-wide font-light text-white/50'>
                   {edu.description}
                 </p>
               </div>

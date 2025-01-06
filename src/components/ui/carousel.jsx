@@ -171,7 +171,7 @@ const CarouselPrevious = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          'h-10 w-14 rounded-xl border border-white/40 hover:border-transparent hover:bg-white/10 text-white/80 lg:text-white/70 cursor-pointer hover:text-white transition-colors duration-200 ease-in-out',
+          'h-10 w-14 rounded-lg border border-white/40 hover:border-transparent hover:bg-white/10 text-white/80 lg:text-white/70 cursor-pointer hover:text-white transition-colors duration-200 ease-in-out',
           'z-10', // Ensure button visibility
           className
         )}
@@ -197,7 +197,7 @@ const CarouselNext = React.forwardRef(
         variant={variant}
         size={size}
         className={cn(
-          'h-10 w-14 rounded-xl border border-white/40 hover:border-transparent hover:bg-white/10 text-white/80 lg:text-white/70 cursor-pointer hover:text-white transition-colors duration-200 ease-in-out',
+          'h-10 w-14 rounded-lg border border-white/40 hover:border-transparent hover:bg-white/10 text-white/80 lg:text-white/70 cursor-pointer hover:text-white transition-colors duration-200 ease-in-out',
           'z-10', // Ensure button visibility
           className
         )}

@@ -5,7 +5,8 @@ import {
   RiMailSendFill,
   RiYoutubeFill
 } from '@remixicon/react'
-import { easeInOut, motion } from 'motion/react'
+import { circIn, delay } from 'motion'
+import { motion } from 'motion/react'
 
 const Contact = () => {
   // framer motion variables
@@ -14,8 +15,8 @@ const Contact = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        duration: 0.6
+        staggerChildren: 0.4,
+        duration: 1.2
       }
     }
   }
@@ -26,13 +27,16 @@ const Contact = () => {
       y: 0,
       opacity: 1,
       transition: {
-        easeInOut
+        circIn
       }
     }
   }
 
   return (
-    <section className='pt-32 min-h-screen px-4 lg:px-2 relative' id='contact'>
+    <section
+      className='pt-24 min-h-screen px-4 md:px-6 lg:px-0 relative'
+      id='contact'
+    >
       <motion.div
         variants={parentVariant}
         initial='hidden'
@@ -44,35 +48,40 @@ const Contact = () => {
           {/* top part */}
           <div>
             <div className='lg:ml-28 pt-20 lg:pt-24'>
-              <div className='contact-title-underline w-[2.5rem] lg:w-[4rem] h-full pb-7 md:pb-9'>
-                <h2 className='text-3xl lg:text-5xl font-medium'>Contact</h2>
+              <div className='contact-title-underline w-[2rem] lg:w-[3.5rem] h-full pb-5 md:pb-8'>
+                <h2 className='text-4xl lg:text-6xl font-extrabold text-white/85 uppercase'>
+                  Contact
+                </h2>
               </div>
             </div>
-            <div className='lg:ml-28 pt-5 lg:pt-7 lg:w-2/3'>
+
+            <div className='lg:ml-28 pt-5 lg:pt-7 md:mb-2 lg:w-3/4'>
               <motion.h2
                 variants={childVariant}
-                className='text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-tight !opacity-65'
+                className='text-4xl md:text-6xl lg:text-8xl font-extrabold uppercase tracking-tight !opacity-40 lg:!opacity-20'
               >
                 let's work on something great
               </motion.h2>
             </div>
-            <div className='lg:ml-28 pt-1 lg:pt-2 w-[80vw] lg:w-2/3'>
+
+            <div className='lg:ml-28 pt-1 lg:pt-2 w-[85vw] lg:w-3/4'>
               <motion.p
                 variants={childVariant}
-                className='text-sm md:text-lg lg:text-xl !opacity-45'
+                className='text-md md:text-xl lg:text-2xl !opacity-50 lg:!opacity-40'
               >
-                I’m excited to work with you on real-world projects that will
-                help me grow as a professional software developer. Together, we
-                can build amazing apps!
+                Allow me the opportunity to bring fresh perspectives, unwavering
+                dedication, and a commitment to excellence, ensuring measurable
+                contributions to your organization’s success while continuously
+                growing as a professional.
               </motion.p>
             </div>
           </div>
 
-          {/* bottom part - contact info */}
+          {/* mail and social accounts */}
           <div className='lg:ml-28'>
             <motion.h3
               variants={childVariant}
-              className='mail-link pb-1 flex items-center justify-center gap-2 md:gap-2 pt-2 text-lg md:text-xl cursor-pointer'
+              className='mail-link pb-1 flex items-center justify-center gap-2 md:gap-3 pt-2 text-[5vw] md:text-2xl cursor-pointer'
             >
               <a href='mailto:tusharwork.001@gmail.com'>
                 tusharwork.001@gmail.com
@@ -91,31 +100,31 @@ const Contact = () => {
                 href='https://www.linkedin.com/in/tushar20/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 pl-0 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
+                className='p-2 pl-0 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
               >
-                <RiLinkedinBoxFill size={30} />
+                <RiLinkedinBoxFill size={35} />
               </a>
               <a
                 href='https://github.com/gitboytushar'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
+                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
               >
-                <RiGithubFill size={30} />
+                <RiGithubFill size={35} />
               </a>
               <a
                 href='https://youtube.com/@tushardeveloper?si=ZZdPf3fmw5RqG4jV'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-500'
+                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
               >
-                <RiYoutubeFill size={30} />
+                <RiYoutubeFill size={35} />
               </a>
             </motion.div>
           </div>
 
           {/* footer copywrite */}
-          <div className='text-start text-xs md:text-sm !opacity-25 absolute bottom-5 lg:pl-28 lg:relative lg:translate-y-10'>
+          <div className='text-start text-xs md:text-sm !opacity-25 absolute bottom-1 lg:pl-28 lg:relative lg:translate-y-10'>
             <p className='flex items-center justify-center gap-x-1'>
               <span>
                 <RiCopyrightLine size={12} />

@@ -104,7 +104,7 @@ const Hero = () => {
 
         <motion.img
           variants={childVariantDesktopRight}
-          src='/assets/tushar.webp'
+          src='/assets/Tushar.webp'
           alt={PROFILE.name}
           className='hero-img w-1/2 h-full rounded-full border-none bg-gradient-to-r from-yellow-500 to-rose-600 p-1 brightness-90 pointer-events-none'
         />
@@ -155,7 +155,7 @@ const Hero = () => {
 
         <motion.img
           variants={childVariant}
-          src='/assets/tushar.webp'
+          src='/assets/Tushar.webp'
           alt={PROFILE.name}
           className='hero-img max-w-[230px] rounded-xl border-none bg-gradient-to-b from-yellow-500 to-rose-600 p-0.5 brightness-95 pointer-events-none'
         />

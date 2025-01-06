@@ -5,8 +5,14 @@ import {
   RiMailSendFill,
   RiYoutubeFill
 } from '@remixicon/react'
-import { circIn, delay } from 'motion'
+import { circIn } from 'motion'
 import { motion } from 'motion/react'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger
+} from '@/components/ui/tooltip-bottom'
 
 const Contact = () => {
   // framer motion variables
@@ -96,38 +102,67 @@ const Contact = () => {
               variants={childVariant}
               className='flex items-center justify-start mt-5'
             >
-              <a
-                href='https://www.linkedin.com/in/tushar20/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='p-2 pl-0 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
-              >
-                <RiLinkedinBoxFill size={35} />
-              </a>
-              <a
-                href='https://github.com/gitboytushar'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
-              >
-                <RiGithubFill size={35} />
-              </a>
-              <a
-                href='https://youtube.com/@tushardeveloper?si=ZZdPf3fmw5RqG4jV'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
-              >
-                <RiYoutubeFill size={35} />
-              </a>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a
+                      href='https://www.linkedin.com/in/tushar20/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-2 pl-0 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
+                    >
+                      <RiLinkedinBoxFill size={35} />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>LinkedIn</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a
+                      href='https://github.com/gitboytushar'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
+                    >
+                      <RiGithubFill size={35} />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>GitHub</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a
+                      href='https://youtube.com/@tushardeveloper?si=ZZdPf3fmw5RqG4jV'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-2 cursor-pointer text-white lg:text-white/50 hover:text-white hover:scale-110 transition-all ease-in-out duration-300'
+                    >
+                      <RiYoutubeFill size={35} />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Youtube</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </motion.div>
           </div>
 
           {/* footer copywrite */}
-          <div className='text-start text-xs md:text-sm !opacity-25 absolute bottom-1 lg:pl-28 lg:relative lg:translate-y-10'>
-            <p className='flex items-center justify-center gap-x-1'>
+          <div className='text-start text-sm md:text-base !opacity-25 absolute bottom-1 lg:pl-28 lg:relative lg:translate-y-10'>
+            <p className='flex items-center justify-center font-light gap-x-1.5'>
               <span>
-                <RiCopyrightLine size={12} />
+                <RiCopyrightLine size={15} />
               </span>
               2024 Tushar Verma. All rights reserved.
             </p>

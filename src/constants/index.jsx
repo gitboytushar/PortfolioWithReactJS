@@ -312,7 +312,7 @@ export const EDUCATION = [
       'https://www.ncuindia.edu/the-northcap-university/#the-northcap-university',
     duration: 'Batch of 2020',
     description:
-      'Graduated with a specialization in Cloud Computing. Gained hands-on experience with GCP and AWS cloud service providers. Primarily focused on software development to attain the status of a full-stack developer, aligning with my career aspirations.'
+      'Graduated in CSE with a specialization in Cloud Computing. Gained hands-on experience with GCP and AWS cloud service providers. Primarily focused on software development to attain the status of a full-stack developer, aligning with my career aspirations.'
   },
   {
     id: 2,

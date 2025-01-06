@@ -5,9 +5,9 @@ const Hobbies = () => {
   const hobbiesRef = useRef(null)
 
   return (
-    <section className='py-12 md:pt-32' id='hobbies' ref={hobbiesRef}>
+    <section className='py-8 md:pt-24' id='hobbies' ref={hobbiesRef}>
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='my-10 lg:my-14 pt-5 uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
+        <h2 className='my-10 lg:my-14 pt-5 uppercase opacity-10 text-center font-extrabold text-[10vw] lg:text-9xl'>
           More about me
         </h2>
       </div>

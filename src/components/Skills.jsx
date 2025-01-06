@@ -13,7 +13,7 @@ const Skills = () => {
 
         {/* ------------- on medium and large devices ------------ */}
         <div className='fade-shadow hidden md:flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab select-none'>
-          <Marquee speed={100} pauseOnHover>
+          <Marquee speed={100} pauseOnClick>
             <FloatingSkills />
           </Marquee>
 
@@ -35,7 +35,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <Marquee speed={100} direction='right' pauseOnHover>
+          <Marquee speed={100} direction='right' pauseOnClick>
             <FloatingSkills2 />
           </Marquee>
         </div>

@@ -306,31 +306,31 @@ export const SKILLS = [
 export const EDUCATION = [
   {
     id: 1,
-    degree: 'Bachelor of Technology in Computer Science',
-    institution: 'The Northcap University, Gurugram',
+    degree: 'Bachelor of Technology',
+    institution: 'The Northcap University',
     institutionWebsiteLink:
       'https://www.ncuindia.edu/the-northcap-university/#the-northcap-university',
-    duration: '2020 - 2024',
+    duration: 'Batch of 2020',
     description:
-      'Graduated in Computer Science with a specialization in Cloud Computing, achieving a 7.9 CGPA. Developed hands-on experience with leading cloud service providers, including Google Cloud Platform and Amazon Web Services. Additionally, focused on web development and completed a major project, Servispot—a modern, responsive platform designed as a hub for multiple small web applications accessible via user login.'
+      'Graduated with a specialization in Cloud Computing. Gained hands-on experience with GCP and AWS cloud service providers. Primarily focused on software development to attain the status of a full-stack developer, aligning with my career aspirations.'
   },
   {
     id: 2,
-    degree: 'Non-Medical with Computer Science',
-    institution: 'Kendriya Vidyalaya No.1 AFS Gurugram',
+    degree: 'Intermediate',
+    institution: 'Kendriya Vidyalaya',
     institutionWebsiteLink: 'https://afsno1gurgaon.kvs.ac.in/',
-    duration: 'Senior Secondary (XII) - 2019',
+    duration: 'Senior Secondary (XII)',
     description:
-      'I chose the Non-Medical stream with Computer Science as an elective in senior secondary, where I built a solid foundation in C++ coding under a supportive teacher. As a bright student, I mentored classmates and developed a C++ command-line application for my Class 12 project, featuring shopping and lottery functionalities while managing user data in text files. I completed my studies with 82% in the CBSE board exams.'
+      'With the Non-medical stream, I chose Computer Science as an elective, where a supportive teacher taught me coding. In lab sessions, I excelled in coding assignments. This ignited my passion for becoming a software developer.'
   },
   {
     id: 3,
     degree: 'Matriculation',
-    institution: 'Kendriya Vidyalaya No.1 AFS Gurugram',
+    institution: 'Kendriya Vidyalaya',
     institutionWebsiteLink: 'https://afsno1gurgaon.kvs.ac.in/',
-    duration: 'Secondary (X) - 2017',
+    duration: 'Secondary (X)',
     description:
-      'I completed Class 10 with a CGPA of 8.8, and while performing well in my studies, I was recognized for my creative skills in art and craft, earning several prizes and trophies. I also enjoyed playing table tennis at a regional level, where I achieved bronze and silver medals, showcasing my commitment to extracurricular activities and skill development.'
+      'With good academic results, I was also known for my creative talents in art and craft, winning numerous awards. I also played table tennis, winning bronze and silver medals at a regional level.'
   }
 ]
 
@@ -352,9 +352,9 @@ export const HOBBIES = [
   {
     id: 3,
     image: '/assets/hobby_images/techy.webp',
-    name: 'Tech Enthusiast',
+    name: 'Technology Enthusiast',
     rewards:
-      'Passionate about tech innovations and gadgets, always eager to learn about the latest updates and trends in the tech world.'
+      'Passionate about tech innovations and gadgets, thus always eager to learn about the latest updates and trends in the tech world.'
   },
   {
     id: 4,

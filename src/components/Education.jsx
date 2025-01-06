@@ -24,9 +24,9 @@ const Education = () => {
             {
               opacity: 1,
               y: 0,
-              duration: 0.4,
+              duration: 0.7,
               ease: 'expoScale',
-              stagger: 0.2,
+              stagger: 0.3,
               scrollTrigger: {
                 trigger: card,
                 start: 'top 60%',
@@ -45,37 +45,45 @@ const Education = () => {
   }, [])
 
   return (
-    <section className='py-32 min-h-[100vh]' id='education'>
+    <section className='py-14 lg:py-32' id='education'>
       <div className='mx-auto max-w-full px-4'>
-        <h2 className='mb-14 text-center font-medium text-3xl lg:text-4xl'>
+        <h2 className='mb-6 md:mb-12 mt-10 lg:mt-2 uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
           Education Milestones
         </h2>
       </div>
 
       {/* cards */}
       <div
-        className='w-full flex flex-col space-y-10 px-4 lg:px-40'
+        className='w-full flex flex-col space-y-5 lg:space-y-8 px-4 lg:px-40'
         ref={educationRef}
       >
         {EDUCATION.map(edu => {
           return (
             <div key={edu.id}>
-              <div className='eduCard flex flex-col text-center md:text-start items-center md:items-start justify-center gap-y-3 border border-white/20 rounded-xl p-6'>
-                <h2 className='text-xl lg:text-2xl'>{edu.degree}</h2>
-                <div>
+              <div className='eduCard flex flex-col text-start items-center justify-center gap-y-5 rounded-lg border-2 border-white/10 bg-white/5 p-4 md:p-8'>
+                <h2 className='text-xl md:text-2xl lg:text-5xl uppercase font-medium w-full text-white tracking-wide'>
+                  {edu.degree}
+                </h2>
+
+                <div className='w-full flex flex-col-reverse items-stretch justify-center gap-y-1'>
                   <a
                     id='institutionLink'
                     href={edu.institutionWebsiteLink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='w-fit text-md md:text-xl opacity-50 flex flex-wrap items-center justify-center gap-1'
+                    className='text-md lg:text-2xl text-white/70 flex items-center justify-start gap-2'
                   >
                     <span>{edu.institution}</span>
-                    <RiExternalLinkLine className='w-3 md:w-5' />
+                    <span>
+                      <RiExternalLinkLine className='w-3 md:w-5' />
+                    </span>
                   </a>
-                  <h3 className='text-md mt-2 opacity-50'>{edu.duration}</h3>
+                  <h3 className='text-md md:text-lg lg:text-2xl text-white/80'>
+                    {edu.duration}
+                  </h3>
                 </div>
-                <p className='text-md md:text-lg mt-3 opacity-90 bg-gradient-to-t from-pink-500 to-white text-transparent bg-clip-text'>
+
+                <p className='text-md md:text-lg lg:text-2xl tracking-wide font-thin text-white/70'>
                   {edu.description}
                 </p>
               </div>

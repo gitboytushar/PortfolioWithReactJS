@@ -8,29 +8,30 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel'
 import { HOBBIES } from '@/constants'
-import { easeInOut } from 'motion'
+import { circIn } from 'motion'
 import { motion, AnimatePresence } from 'motion/react'
 
 export function CarouselDemo () {
   // framer motion variables
   const parentVariant = {
-    hidden: { opacity: 0, y: -35 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
-        staggerChildren: 0.3,
-        duration: 0.7
+        staggerChildren: 0.2,
+        duration: 0.6
       }
     }
   }
 
   const childVariant = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -30 },
     visible: {
       opacity: 1,
+      y: 0,
       transition: {
-        easeInOut
+        duration: 0.6,
+        circIn
       }
     }
   }
@@ -41,37 +42,31 @@ export function CarouselDemo () {
       <CarouselContent className='cursor-grab select-none'>
         {HOBBIES.map(hobby => (
           <CarouselItem key={hobby.id}>
-            <div className='p-0'>
+            <div className='p-0 lg:scale-110'>
               {/* actual card content */}
               <Card>
                 <AnimatePresence>
                   <CardContent>
                     <motion.div variants={parentVariant}>
-                      <div className='py-2 md:py-6 flex flex-col md:flex-row text-center md:text-start items-center justify-center gap-3 md:gap-8 h-full md:h-[280px] px-2 md:px-0'>
+                      <div className='py-2 md:py-6 flex flex-col md:flex-row text-center md:text-start items-center justify-center gap-4 md:gap-8 h-full md:h-[280px] px-2 md:px-0'>
                         <img
-                          className='w-[300px] h-[300px] md:w-[350px] md:h-full object-cover rounded-2xl brightness-90 border border-white/40 p-1'
+                          className='w-[80vw] h-[250px] md:w-[350px] md:h-full object-cover rounded-xl brightness-90 border-none p-1 bg-gradient-to-br from-yellow-500 to-rose-600'
                           src={hobby.image}
                           alt='hobby image'
                         />
                         <motion.div
-                          variants={parentVariant}
+                          variants={childVariant}
                           initial='hidden'
                           whileInView='visible'
                           viewport={{ once: true, amount: 0.6 }}
-                          className='flex !flex-col text-center md:text-start items-center md:items-start justify-center h-full w-[300px] md:w-1/4'
+                          className='flex !flex-col text-center md:text-start items-center md:items-start justify-center h-full w-[80vw] md:w-1/3'
                         >
-                          <motion.h3
-                            variants={childVariant}
-                            className='text-2xl lg:text-3xl mb-3 bg-gradient-to-br from-yellow-400 to-red-700 text-transparent bg-clip-text w-52 brightness-110'
-                          >
+                          <h3 className='text-2xl lg:text-3xl mb-3 bg-gradient-to-br from-yellow-500 to-rose-600 text-transparent bg-clip-text font-medium w-52 brightness-110'>
                             {hobby.name}
-                          </motion.h3>
-                          <motion.h4
-                            variants={childVariant}
-                            className='text-md lg:text-lg !opacity-40'
-                          >
+                          </h3>
+                          <h4 className='text-lg lg:text-xl font-normal opacity-45'>
                             {hobby.rewards}
-                          </motion.h4>
+                          </h4>
                         </motion.div>
                       </div>
                     </motion.div>
@@ -84,7 +79,7 @@ export function CarouselDemo () {
       </CarouselContent>
 
       {/* navigation buttons centered below */}
-      <div className='flex items-center justify-center space-x-6 ld:space-x-4 mt-3 md:mt-8'>
+      <div className='flex items-center justify-center space-x-8 lg:space-x-6 mt-8 md:mt-7'>
         <CarouselPrevious />
         <CarouselNext />
       </div>

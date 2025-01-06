@@ -28,7 +28,7 @@ const App = () => {
           {/* <CursorTrack /> */}
 
           {/* React snowfall component for winter season - npm */}
-          <div className='absolute max-h-[125vh] inset-0 z-20 pointer-events-none'>
+          <div className='absolute max-h-[129vh] inset-0 z-20 pointer-events-none'>
             <Snowfall
               snowflakeCount={111}
               speed={[0.5, 0.3]}

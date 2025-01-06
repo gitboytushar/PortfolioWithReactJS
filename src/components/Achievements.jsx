@@ -26,10 +26,10 @@ const Achievements = () => {
 
   // main
   return (
-    <section className='py-20' id='achievements'>
+    <section className='py-10 lg:py-20' id='achievements'>
       <div className='px-4'>
-        <h2 className='mb-16 md:mb-20 pt-12 lg:pt-8 lg:mb-10 flex flex-col'>
-          <span className='items-center justify-center uppercase opacity-10 text-center font-extrabold text-5xl lg:text-9xl'>
+        <h2 className='mb-14 md:mb-20 lg:mb-16 pt-12 lg:pt-8 flex flex-col'>
+          <span className='items-center justify-center uppercase opacity-10 text-center font-extrabold text-[12vw] lg:text-9xl'>
             Achievements
           </span>
           <span className='text-center mt-2 lg:mt-0 uppercase text-lg text-white/65 tracking-wider font-extrabold'>
@@ -120,20 +120,17 @@ const Achievements = () => {
               className='img-container-aws w-full h-full rounded-[10px] relative'
             >
               <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
-                <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-24 px-2 md:px-0'>
-                  <motion.h2
-                    variants={childVariant}
-                    className='text-4xl lg:text-5xl font-bold'
-                  >
+                <motion.div
+                  variants={childVariant}
+                  className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-24 px-2 md:px-0'
+                >
+                  <h2 className='text-4xl lg:text-5xl font-bold'>
                     Amazon Web Services
-                  </motion.h2>
-                  <motion.h3
-                    variants={childVariant}
-                    className='text-lg lg:text-2xl lg:mt-2 !opacity-50 md:!opacity-30'
-                  >
+                  </h2>
+                  <h3 className='text-lg lg:text-2xl lg:mt-2 !opacity-50 md:!opacity-30'>
                     College curriculum
-                  </motion.h3>
-                </div>
+                  </h3>
+                </motion.div>
 
                 <motion.div
                   variants={childVariant}

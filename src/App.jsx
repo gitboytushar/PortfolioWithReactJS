@@ -21,24 +21,21 @@ const App = () => {
       <main className='mx-auto max-w-[1200px] overflow-x-hidden antialiased'>
         {/* main background-noise image */}
         <div className='bg-image fixed inset-0 bg-blend-soft-light bg-scroll lg:bg-fixed bg-center'></div>
-
+        {/* React snowfall component - winter season */}
+        <div className='absolute h-[127.5vh] hidden md:flex inset-0 z-20 pointer-events-none'>
+          <Snowfall
+            snowflakeCount={71}
+            speed={[0.5, 0.3]}
+            wind={[0, 0]}
+            radius={[2, 5]}
+            color='#ffffff'
+            images={undefined}
+          />
+        </div>
         {/* custom components */}
         <div className='relative z-10'>
           {/* curstom animated cursor tail */}
           {/* <CursorTrack /> */}
-
-          {/* React snowfall component for winter season - npm */}
-          <div className='absolute max-h-[129vh] inset-0 z-20 pointer-events-none'>
-            <Snowfall
-              snowflakeCount={111}
-              speed={[0.5, 0.3]}
-              wind={[-0.5, -0.5]}
-              radius={[1.5, 3]}
-              color='#dee4fd'
-              images={undefined}
-            />
-          </div>
-
           {/* my content sections */}
           <Navbar />
           <Hero />
@@ -48,7 +45,6 @@ const App = () => {
           <Education />
           <Hobbies />
           <Contact />
-
           {/* scroll to page top floating button */}
           <Scroll2TopFloatingButton />
         </div>

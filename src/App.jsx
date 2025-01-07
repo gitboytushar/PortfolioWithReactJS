@@ -19,23 +19,23 @@ const App = () => {
     // Smooth scroll with Lenis
     <ReactLenis root>
       <main className='mx-auto max-w-[1200px] overflow-x-hidden antialiased'>
-        {/* main background-noise image */}
-        <div className='bg-image fixed inset-0 bg-blend-soft-light bg-scroll lg:bg-fixed bg-center'></div>
         {/* React snowfall component - winter season */}
-        <div className='absolute h-[127.5vh] hidden md:flex inset-0 z-20 pointer-events-none'>
+        <div className='absolute h-[127.5vh] flex inset-0 z-20 pointer-events-none'>
           <Snowfall
             snowflakeCount={71}
-            speed={[0.5, 0.3]}
+            speed={[0.3, 0.5]}
             wind={[0, 0]}
             radius={[2, 5]}
             color='#ffffff'
             images={undefined}
           />
         </div>
+
         {/* custom components */}
         <div className='relative z-10'>
           {/* curstom animated cursor tail */}
           {/* <CursorTrack /> */}
+
           {/* my content sections */}
           <Navbar />
           <Hero />
@@ -45,6 +45,7 @@ const App = () => {
           <Education />
           <Hobbies />
           <Contact />
+
           {/* scroll to page top floating button */}
           <Scroll2TopFloatingButton />
         </div>

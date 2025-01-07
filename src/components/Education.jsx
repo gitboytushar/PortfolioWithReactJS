@@ -59,23 +59,22 @@ const Education = () => {
       >
         {EDUCATION.map(edu => {
           return (
-            <div key={edu.id}>
-              <div className='eduCard flex flex-col text-start items-center justify-center gap-y-5 rounded-lg border-2 border-white/10 bg-white/5 p-4 md:p-8'>
+            <div key={edu.id} className='w-full'>
+              <div className='eduCard flex flex-col text-start items-start justify-center gap-y-5 rounded-lg border-2 border-white/10 bg-white/5 p-4 md:p-8'>
                 <h2 className='text-xl md:text-2xl lg:text-5xl uppercase font-medium w-full text-white tracking-wide'>
                   {edu.degree}
                 </h2>
 
-                <div className='w-full flex flex-col-reverse items-stretch justify-center gap-y-1'>
+                <div className='w-fit flex flex-col-reverse items-stretch justify-cestartap-y-1'>
                   <a
-                    id='institutionLink'
                     href={edu.institutionWebsiteLink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-md lg:text-2xl text-white/70 flex items-center justify-start gap-2'
+                    className='text-md lg:text-2xl text-white/60 flex items-center justify-start gap-2 hover:text-white hover:translate-x-0.5 transition-all duration-300 ease-in-out'
                   >
                     <span>{edu.institution}</span>
                     <span>
-                      <RiExternalLinkLine className='w-3 md:w-5' />
+                      <RiExternalLinkLine className='w-4 md:w-6' />
                     </span>
                   </a>
                   <h3 className='text-md md:text-lg lg:text-2xl text-white/80'>

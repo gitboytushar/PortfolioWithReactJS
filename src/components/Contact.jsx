@@ -5,7 +5,7 @@ import {
   RiMailSendFill,
   RiYoutubeFill
 } from '@remixicon/react'
-import { circIn } from 'motion'
+import { easeIn } from 'motion'
 import { motion } from 'motion/react'
 import {
   Tooltip,
@@ -21,8 +21,8 @@ const Contact = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.4,
-        duration: 1.2
+        staggerChildren: 0.3,
+        duration: 1
       }
     }
   }
@@ -33,7 +33,7 @@ const Contact = () => {
       y: 0,
       opacity: 1,
       transition: {
-        circIn
+        easeIn
       }
     }
   }
@@ -73,7 +73,7 @@ const Contact = () => {
             <div className='lg:ml-28 pt-1 lg:pt-2 w-[85vw] lg:w-3/4'>
               <motion.p
                 variants={childVariant}
-                className='text-md md:text-xl lg:text-2xl !opacity-50 lg:!opacity-40'
+                className='text-md md:text-xl lg:text-2xl !opacity-70'
               >
                 Allow me the opportunity to bring fresh perspectives, unwavering
                 dedication, and a commitment to excellence, ensuring measurable

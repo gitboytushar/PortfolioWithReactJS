@@ -12,25 +12,25 @@ const Skills = () => {
         </h2>
 
         {/* ------------- on medium and large devices ------------ */}
-        <div className='fade-shadow hidden md:flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab select-none'>
+        <div className='fade-shadow hidden md:flex flex-col items-center justify-center gap-y-8 lg:gap-y-12 cursor-grab active:cursor-grabbing select-none'>
           <Marquee speed={100} pauseOnClick>
             <FloatingSkills />
           </Marquee>
 
           <div className='w-full flex items-center justify-center px-0 gap-4 lg:gap-12 text-center text-sm lg:text-xl opacity-50 md:opacity-75'>
-            <p className='p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
+            <p className='text-transparent bg-clip-text bg-gradient-to-br from-violet-200 to-indigo-700 brightness-150 p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
               Problem Solving
             </p>
-            <p className='p-1 md:p-5 hover:rotate-3 transition-all ease-in-out duration-300'>
+            <p className='text-transparent bg-clip-text bg-gradient-to-br from-violet-200 to-indigo-700 brightness-150 p-1 md:p-5 hover:rotate-3 transition-all ease-in-out duration-300'>
               Versatile
             </p>
-            <p className='p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
+            <p className='text-transparent bg-clip-text bg-gradient-to-br from-violet-200 to-indigo-700 brightness-150 p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
               Punctual
             </p>
-            <p className='p-1 md:p-5 hover:rotate-3 transition-all ease-in-out duration-300'>
+            <p className='text-transparent bg-clip-text bg-gradient-to-br from-violet-200 to-indigo-700 brightness-150 p-1 md:p-5 hover:rotate-3 transition-all ease-in-out duration-300'>
               Teamwork
             </p>
-            <p className='p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
+            <p className='text-transparent bg-clip-text bg-gradient-to-br from-violet-200 to-indigo-700 brightness-150 p-1 md:p-5 hover:-rotate-3 transition-all ease-in-out duration-300'>
               Attention to Detail
             </p>
           </div>

@@ -14,7 +14,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 
-  background-color: rgb(24 3 23);
+  background-color: rgb(24, 24, 24);
   color: white;
 }
 
@@ -28,23 +28,6 @@
   background-color: white;
   color: black;
 }
-
-/* ------------ main webpage background noise image ------------ */
-.bg-image {
-  background-image: url(/public/assets/noise.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* ------------ projects video player size ------------ */
-/* iframe {
-  height: 300px;
-  width: 100%;
-  border: none;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-} */
 
 /* ------------ resume download btn interaction ------------ */
 @media (hover: hover) and (pointer: fine) {
@@ -117,12 +100,12 @@
 
 .fade-shadow::before {
   left: 0;
-  background: linear-gradient(to right, rgb(24 3 23), rgba(24, 3, 23, 0));
+  background: linear-gradient(to right, rgb(24, 24, 24), rgba(24, 24, 24, 0));
 }
 
 .fade-shadow::after {
   right: 0;
-  background: linear-gradient(to left, rgb(24 3 23), rgba(24, 3, 23, 0));
+  background: linear-gradient(to left, rgb(24, 24, 24), rgba(24, 24, 24, 0));
 }
 
 @media screen and (min-width: 250px) and (max-width: 1033px) {
@@ -155,22 +138,6 @@
 
   #view-badge-btn:hover .view-badge-icon {
     transform: rotate(-45deg) scale(1.1);
-  }
-}
-
-/* Education section */
-@media (hover: hover) and (pointer: fine) {
-  #institutionLink {
-    transition: all 0.3s ease-in-out;
-  }
-
-  #institutionLink:hover {
-    opacity: 1;
-    transform: translateX(2px);
-    background: linear-gradient(to left, #fcf8ff, #63ffbe, #3affef);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 }
 

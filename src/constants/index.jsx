@@ -18,7 +18,7 @@ export const PROFILE = {
 export const PROJECTS = [
   {
     id: 1,
-    title: 'Wordpress Project',
+    title: 'Wordpress Build #1',
     description:
       'This project showcases my no-code web development skills by creating a modern, responsive multi-page website on WordPress, deployed using AWS and developed using LocalWP software and Elementor, All-in-One Migration WordPress plugins.',
     techStack: ['WordPress', 'LocalWP', 'Elementor', 'AWS'],
@@ -28,7 +28,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'Bootstrap Assignment Website',
+    title: 'Bootstrap Build #2',
     description:
       'This project highlights my Bootstrap skills, created for a recruitment assignment. Using the CDN method, I added subtle CSS animations as instructed and hosted the outcome on Netlify.',
     techStack: [
@@ -63,7 +63,7 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: 'Bootstrap Website',
+    title: '🌟 Bootstrap Build #1',
     description:
       'This website demonstrates my Bootstrap skills in creating a responsive and modern user interface. Designed as an educational platform with placeholder content, it marks my first project using Bootstrap.',
     techStack: [
@@ -81,7 +81,7 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    title: 'WorldTime Mobile App',
+    title: 'Flutter App #1',
     description:
       'This app demonstrates API integration and dynamic UI updates, working on both Android and iOS devices. Users can select global locations from a list to see real-time updates with backgrounds reflecting day or night. Developed using Android Studio, inspired by a YouTube tutorial by NetNinja.',
     techStack: [
@@ -100,7 +100,27 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: 'News Aggregator',
+    title: '🌟 Flutter App #2',
+    description:
+      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was redesigned in Figma before coding.',
+    techStack: [
+      'Figma',
+      'Android Studio',
+      'Flutter',
+      'Dart',
+      'Git',
+      'GitHub',
+      'Xcode',
+      'Appetize.io'
+    ],
+    videoSrc: '', // add video
+    preview_link:
+      'https://appetize.io/app/b_e2a34lzvqc57t2kgnbxy4w4b6e?device=iphone15promax&osVersion=17.2',
+    code_link: ''
+  },
+  {
+    id: 7,
+    title: '🌟 News Aggregator',
     description:
       "It display's latest news using the gNews API, offering search functionality and predefined categories for easy navigation. Works across all devices and it's free of advertisements.",
     techStack: ['HTML', 'CSS', 'JavaScript', 'gNews API'],
@@ -109,8 +129,8 @@ export const PROJECTS = [
     code_link: 'https://github.com/gitboytushar/The-NewsBlocks'
   },
   {
-    id: 7,
-    title: 'ServiSpot',
+    id: 8,
+    title: '🌟 ServiSpot Website',
     description:
       'A modern, responsive web app bringing together useful services in one place accessible through a simple user login. Ads are displayed before login to generate revenue. Developed as a major college project.',
     techStack: [
@@ -129,24 +149,22 @@ export const PROJECTS = [
     code_link: 'https://github.com/gitboytushar/serviSpot'
   },
   {
-    id: 8,
-    title: 'Food Order Management App',
+    id: 9,
+    title: 'Simple Chat App',
     description:
-      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was redesigned in Figma before coding.',
+      'A basic implementation of the Socket.IO library for a real-time chat app that provides private chat with socket IDs, or users can join custom-created rooms for a multi-user messaging experience. To try this, follow the guidelines mentioned in my GitHub readme.',
     techStack: [
-      'Figma',
-      'Android Studio',
-      'Flutter',
-      'Dart',
-      'Git',
-      'GitHub',
-      'Xcode',
-      'Appetize.io'
+      'ReactJs',
+      'Material UI',
+      'Socket.io',
+      'ExpressJs',
+      'NodeJs',
+      'git',
+      'github'
     ],
-    videoSrc: '', // add video
-    preview_link:
-      'https://appetize.io/app/b_e2a34lzvqc57t2kgnbxy4w4b6e?device=iphone15promax&osVersion=17.2',
-    code_link: ''
+    videoSrc: 'https://www.youtube.com/embed/x0vAYMjXzqQ',
+    preview_link: '',
+    code_link: 'https://github.com/gitboytushar/Socket.io-Mini-Project'
   }
 ]
 
@@ -158,23 +176,13 @@ export const SKILLS = [
     )
   },
   {
-    name: 'Python',
-    logo: (
-      <img
-        src='/assets/skillsIcons/python.png'
-        alt='python'
-        draggable='false'
-      />
-    )
-  },
-  {
-    name: 'Html5',
+    name: 'Html',
     logo: (
       <img src='/assets/skillsIcons/html.png' alt='html5' draggable='false' />
     )
   },
   {
-    name: 'Css3',
+    name: 'Css',
     logo: <img src='/assets/skillsIcons/css.png' alt='css3' draggable='false' />
   },
   {
@@ -182,7 +190,7 @@ export const SKILLS = [
     logo: <img src='/assets/skillsIcons/js.png' alt='js' draggable='false' />
   },
   {
-    name: 'Bootstrap5',
+    name: 'Bootstrap',
     logo: (
       <img
         src='/assets/skillsIcons/bootstrap.png'
@@ -192,7 +200,7 @@ export const SKILLS = [
     )
   },
   {
-    name: 'ReactJS',
+    name: 'ReactJs',
     logo: (
       <img
         src='/assets/skillsIcons/react.png'
@@ -212,16 +220,6 @@ export const SKILLS = [
     )
   },
   {
-    name: 'Gsap',
-    logo: (
-      <img
-        src='/assets/skillsIcons/gsap.png'
-        alt='gsap icon'
-        draggable='false'
-      />
-    )
-  },
-  {
     name: 'Framer motion',
     logo: (
       <img
@@ -232,15 +230,15 @@ export const SKILLS = [
     )
   },
   {
-    name: 'Figma',
+    name: 'NodeJs',
     logo: (
-      <img src='/assets/skillsIcons/figma.png' alt='figma' draggable='false' />
+      <img src='/assets/skillsIcons/node.png' alt='node' draggable='false' />
     )
   },
   {
-    name: 'NodeJS',
+    name: 'ExpressJs',
     logo: (
-      <img src='/assets/skillsIcons/node.png' alt='node' draggable='false' />
+      <img src='/assets/skillsIcons/express.png' alt='node' draggable='false' />
     )
   },
   {
@@ -248,6 +246,16 @@ export const SKILLS = [
     logo: (
       <img
         src='/assets/skillsIcons/mongodb.png'
+        alt='mongodb'
+        draggable='false'
+      />
+    )
+  },
+  {
+    name: 'MySQL',
+    logo: (
+      <img
+        src='/assets/skillsIcons/mysql.png'
         alt='mongodb'
         draggable='false'
       />
@@ -268,8 +276,14 @@ export const SKILLS = [
     )
   },
   {
-    name: 'Aws',
-    logo: <img src='/assets/skillsIcons/aws.png' alt='aws' draggable='false' />
+    name: 'Flutter',
+    logo: (
+      <img
+        src='/assets/skillsIcons/flutter.png'
+        alt='flutter'
+        draggable='false'
+      />
+    )
   },
   {
     name: 'Firebase',
@@ -282,21 +296,21 @@ export const SKILLS = [
     )
   },
   {
+    name: 'Aws',
+    logo: <img src='/assets/skillsIcons/aws.png' alt='aws' draggable='false' />
+  },
+  {
+    name: 'Figma',
+    logo: (
+      <img src='/assets/skillsIcons/figma.png' alt='figma' draggable='false' />
+    )
+  },
+  {
     name: 'WordPress',
     logo: (
       <img
         src='/assets/skillsIcons/wordpress.png'
         alt='wordpress'
-        draggable='false'
-      />
-    )
-  },
-  {
-    name: 'Flutter',
-    logo: (
-      <img
-        src='/assets/skillsIcons/flutter.png'
-        alt='flutter'
         draggable='false'
       />
     )

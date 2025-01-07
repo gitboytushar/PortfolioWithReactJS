@@ -34,31 +34,30 @@ const Navbar = () => {
     <div>
       <nav className='fixed left-0 right-0 z-50 top-0 lg:top-4'>
         {/* Desktop Menu */}
-        <div className='mx-auto hidden w-fit h-12 py-2 px-1.5 items-center justify-center rounded-[10px] border border-white/30 backdrop-blur-2xl lg:flex'>
-          <div className='flex items-center justify-between gap-44'>
-            <div className='select-none'>
-              <a
-                href='/'
-                className='text-sm py-2 px-3 rounded-[5px] text-white bg-none'
-              >
-                <span>Tushar Verma</span>
-              </a>
-            </div>
-            <div>
-              <ul className='flex items-center gap-1 select-none'>
-                {NAVIGATION_LINKS.map((item, index) => (
-                  <li key={index}>
-                    <a
-                      className='text-sm py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-300 ease-in-out'
-                      href={item.href}
-                      onClick={e => handleLinkClick(e, item.href)}
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className='mx-auto hidden w-[1200px] h-12 py-2 px-1.5 items-center justify-between rounded-lg border-none bg-white/10 backdrop-blur-3xl lg:flex'>
+          <div className='select-none'>
+            <a
+              href='/'
+              className='text-md py-2 px-3 rounded-[5px] text-white bg-none'
+            >
+              <span>Tushar Verma</span>
+            </a>
+          </div>
+
+          <div>
+            <ul className='flex items-center gap-1 select-none'>
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <a
+                    className='text-md py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
+                    href={item.href}
+                    onClick={e => handleLinkClick(e, item.href)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

@@ -28,24 +28,25 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'Bootstrap Build #2',
+    title: 'Bootstrap Build #1',
     description:
-      'This project highlights my Bootstrap skills, created for a recruitment assignment. Using the CDN method, I added subtle CSS animations as instructed and hosted the outcome on Netlify.',
+      'This website demonstrates my Bootstrap skills in creating a responsive and modern user interface. Designed as an educational platform with placeholder content, it marks my first project using Bootstrap.',
     techStack: [
       'Bootstrap',
-      'JavaScript',
-      'unDraw.co',
-      'CSS animations',
-      'GitHub',
-      'Netlify'
+      'HTML',
+      'Google Maps embed',
+      'CSS',
+      'randomuser.me Api',
+      'Git',
+      'GitHub'
     ],
-    videoSrc: '', // no need for video
-    preview_link: 'https://jilliontechnologies-assignment.netlify.app/',
-    code_link: 'https://github.com/gitboytushar/bootstrap-website2'
+    videoSrc: 'https://www.youtube.com/embed/PBjDMEX4Z5I?si=oRwTVUcv35p4LdO2',
+    preview_link: 'https://gitboytushar.github.io/WebsiteWithBootstrap/',
+    code_link: 'https://github.com/gitboytushar/WebsiteWithBootstrap'
   },
   {
     id: 3,
-    title: 'Weather App',
+    title: 'Weather App with JavaScript',
     description:
       'This app provides real-time weather updates for any searched location or the user’s device geolocation. It features a fully responsive interface with synced weather icons reflecting live conditions.',
     techStack: [
@@ -63,21 +64,20 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: '🌟 Bootstrap Build #1',
+    title: 'Bootstrap Build #2',
     description:
-      'This website demonstrates my Bootstrap skills in creating a responsive and modern user interface. Designed as an educational platform with placeholder content, it marks my first project using Bootstrap.',
+      'This project highlights my Bootstrap skills, created for a recruitment assignment. Using the CDN method, I added subtle CSS animations as instructed and hosted the outcome on Netlify.',
     techStack: [
       'Bootstrap',
-      'HTML',
-      'Google Maps embed',
-      'CSS',
-      'randomuser.me Api',
-      'Git',
-      'GitHub'
+      'JavaScript',
+      'unDraw.co',
+      'CSS animations',
+      'GitHub',
+      'Netlify'
     ],
-    videoSrc: 'https://www.youtube.com/embed/PBjDMEX4Z5I?si=oRwTVUcv35p4LdO2',
-    preview_link: 'https://gitboytushar.github.io/WebsiteWithBootstrap/',
-    code_link: 'https://github.com/gitboytushar/WebsiteWithBootstrap'
+    videoSrc: '', // no need for video
+    preview_link: 'https://jilliontechnologies-assignment.netlify.app/',
+    code_link: 'https://github.com/gitboytushar/bootstrap-website2'
   },
   {
     id: 5,
@@ -100,9 +100,9 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: '🌟 Flutter App #2',
+    title: 'Flutter App #2',
     description:
-      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was redesigned in Figma before coding.',
+      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was designed in Figma.',
     techStack: [
       'Figma',
       'Android Studio',
@@ -120,7 +120,7 @@ export const PROJECTS = [
   },
   {
     id: 7,
-    title: '🌟 News Aggregator',
+    title: 'News Aggregator App',
     description:
       "It display's latest news using the gNews API, offering search functionality and predefined categories for easy navigation. Works across all devices and it's free of advertisements.",
     techStack: ['HTML', 'CSS', 'JavaScript', 'gNews API'],
@@ -130,7 +130,7 @@ export const PROJECTS = [
   },
   {
     id: 8,
-    title: '🌟 ServiSpot Website',
+    title: 'ServiSpot App',
     description:
       'A modern, responsive web app bringing together useful services in one place accessible through a simple user login. Ads are displayed before login to generate revenue. Developed as a major college project.',
     techStack: [
@@ -150,7 +150,7 @@ export const PROJECTS = [
   },
   {
     id: 9,
-    title: 'Simple Chat App',
+    title: 'Basic Chat App',
     description:
       'A basic implementation of the Socket.IO library for a real-time chat app that provides private chat with socket IDs, or users can join custom-created rooms for a multi-user messaging experience. To try this, follow the guidelines mentioned in my GitHub readme.',
     techStack: [
@@ -165,6 +165,25 @@ export const PROJECTS = [
     videoSrc: 'https://www.youtube.com/embed/x0vAYMjXzqQ',
     preview_link: '',
     code_link: 'https://github.com/gitboytushar/Socket.io-Mini-Project'
+  },
+  {
+    id: 10,
+    title: 'Employee Management App',
+    description:
+      'This application show cases a mordern and professional user interface designed by me to manage employee data. Frontend is ready to see. Login functionality with backend features and user database is in process... which will make this app even more useful.',
+    techStack: [
+      'ReactJs',
+      'Tailwindcss',
+      'Shadcn UI',
+      'NodeJs',
+      'ExpressJs',
+      'MongoDB',
+      'git',
+      'github'
+    ],
+    videoSrc: '',
+    preview_link: 'https://rbac-mgmt-app.vercel.app/',
+    code_link: 'https://github.com/gitboytushar/EmployeeManagementApp'
   }
 ]
 

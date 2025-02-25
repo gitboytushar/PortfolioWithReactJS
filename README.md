@@ -1,13 +1,22 @@
-# Personal Portfolio
+# Portfolio Website
 
-ReactJS and Talwindcss are the key technologies.
+## Tech Stack:
 
-Prebuilt Components and packages are used to enhance the website's functionality with modern animations.
+1. ReactJS (Vite)
+2. Talwindcss (Style)
+3. Shadcn/ui (Components)
+4. Vercel (Deploy)
+5. Framer motion & Gsap (Animations)
+7. Lenis (Smooth Scroll)
 
-### Offers
+## Live Preview 🚀
 
-- Showcasing my development skills.
-- Recent projects with code and live previews.
-- Lastest skillset and resume pdf.
+[Click Here](https://tusharverma.vercel.app/)
 
-### More in work...
+## Features:
+
+1. Mordern Unique Custom Designed User Interface.
+2. Interactive and Fully Responsive.
+3. Projects Portfolio with Live links, Source codes and Video demos.
+
+### Focused on Development and Continuous Learning...

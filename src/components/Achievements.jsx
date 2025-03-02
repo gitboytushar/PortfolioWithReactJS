@@ -1,30 +1,7 @@
 import { RiArrowRightLine } from '@remixicon/react'
-import { easeInOut, motion } from 'motion/react'
+import { motion } from 'motion/react'
 
 const Achievements = () => {
-  // framer motion variables
-  const parentVariant = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-        duration: 0.5
-      }
-    }
-  }
-
-  const childVariant = {
-    hidden: { y: -30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        easeInOut
-      }
-    }
-  }
-
-  // main
   return (
     <section className='py-10 lg:py-20' id='achievements'>
       <div className='px-4'>
@@ -54,36 +31,30 @@ const Achievements = () => {
             />
 
             {/* main content */}
-            <motion.div
-              variants={parentVariant}
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.4 }}
-              className='img-container-gcp w-full h-full rounded-[10px] relative'
-            >
+            <div className='img-container-gcp w-full h-full rounded-[10px] relative'>
               <div className='flex flex-col items-center justify-between gap-12 lg:gap-14 w-full md:w-fit p-5 md:absolute top-12 lg:top-18 left-14'>
-                <div className='text-center mt-20 md:mt-0'>
-                  <motion.h2
-                    variants={childVariant}
-                    className='text-4xl lg:text-5xl font-bold'
-                  >
+                <motion.div
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.4, delay: 0.2 }}
+                  className='text-center mt-20 md:mt-0'
+                >
+                  <h2 className='text-4xl lg:text-5xl font-bold'>
                     Google Cloud Platform
-                  </motion.h2>
-                  <motion.h3
-                    variants={childVariant}
-                    className='text-lg lg:text-2xl mt-1 lg:mt-2 !opacity-50'
-                  >
+                  </h2>
+                  <h3 className='text-lg lg:text-2xl mt-1 lg:mt-2 !opacity-50'>
                     College curriculum
-                  </motion.h3>
-                  <motion.h3
-                    variants={childVariant}
-                    className='text-xl lg:text-4xl mt-4 md:mt-6 !opacity-70'
-                  >
+                  </h3>
+                  <h3 className='text-xl lg:text-4xl mt-4 md:mt-6 !opacity-70'>
                     Earned in 2022
-                  </motion.h3>
-                </div>
+                  </h3>
+                </motion.div>
                 <motion.a
-                  variants={childVariant}
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
                   href='https://www.cloudskillsboost.google/public_profiles/ef2a273a-f0be-44d9-bbfd-49b17b329797'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -94,7 +65,7 @@ const Achievements = () => {
                   <RiArrowRightLine className='view-badge-icon' size={20} />
                 </motion.a>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* AWS card */}
@@ -112,30 +83,24 @@ const Achievements = () => {
             />
 
             {/* main content */}
-            <motion.div
-              variants={parentVariant}
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.4 }}
-              className='img-container-aws w-full h-full rounded-[10px] relative'
-            >
-              <div className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 left-1/2 -translate-x-1/2'>
-                <motion.div
-                  variants={childVariant}
-                  className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-24 px-2 md:px-0'
-                >
+            <div className='img-container-aws w-full h-full rounded-[10px] relative'>
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                className='text-center flex flex-col items-center justify-center w-full h-full p-5 absolute top-0 '
+              >
+                <div className='flex flex-col items-center justify-center gap-1 mt-20 md:mt-0 absolute -top-5 md:top-24 lg:top-24 px-2 md:px-0'>
                   <h2 className='text-4xl lg:text-5xl font-bold'>
                     Amazon Web Services
                   </h2>
                   <h3 className='text-lg lg:text-2xl lg:mt-2 !opacity-50 md:!opacity-30'>
                     College curriculum
                   </h3>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  variants={childVariant}
-                  className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-24'
-                >
+                <div className='flex flex-col items-center justify-center gap-7 absolute bottom-10 md:bottom-16 lg:bottom-24'>
                   <h3 className='w-32 md:w-fit text-xl lg:text-4xl mt-4 !opacity-50'>
                     Earned in 2022 - 2023
                   </h3>
@@ -149,9 +114,9 @@ const Achievements = () => {
                     <span className='text-center text-xl'>View Badges</span>
                     <RiArrowRightLine className='view-badge-icon' size={20} />
                   </a>
-                </motion.div>
-              </div>
-            </motion.div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

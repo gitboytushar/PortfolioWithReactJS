@@ -11,8 +11,8 @@ import Education from './components/Education'
 import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
-// import CursorTrack from './components/cursorTrack'
-import Snowfall from 'react-snowfall'
+import CursorTrack from './components/cursorTrack'
+// import Snowfall from 'react-snowfall'
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
     <ReactLenis root>
       <main className='mx-auto max-w-[1200px] overflow-x-hidden antialiased'>
         {/* React snowfall component - winter season */}
-        <div className='absolute h-[127.5vh] flex inset-0 z-20 pointer-events-none'>
+        {/* <div className='absolute h-[127.5vh] flex inset-0 z-20 pointer-events-none'>
           <Snowfall
             snowflakeCount={71}
             speed={[0.3, 0.5]}
@@ -29,12 +29,12 @@ const App = () => {
             color='#ffffff'
             images={undefined}
           />
-        </div>
+        </div> */}
 
         {/* custom components */}
         <div className='relative z-10'>
           {/* curstom animated cursor tail */}
-          {/* <CursorTrack /> */}
+          <CursorTrack />
 
           {/* my content sections */}
           <Navbar />

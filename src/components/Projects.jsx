@@ -45,17 +45,17 @@ const Projects = () => {
               card,
               {
                 opacity: 0,
-                x: -50
+                y: -20
               },
               {
                 opacity: 1,
-                x: 0,
-                duration: 0.8,
+                y: 0,
+                duration: 0.6,
                 ease: 'expoScale',
-                stagger: 0.6,
+                stagger: 0.4,
                 scrollTrigger: {
                   trigger: card,
-                  start: 'top 70%',
+                  start: 'top 75%',
                   toggleActions: 'play none none none'
                 },
                 onComplete: () => {
@@ -120,7 +120,7 @@ const Projects = () => {
                   <div>
                     {/* project details */}
                     <div className='p-2.5 md:p-4 pb-0 flex flex-col items-start justify-center gap-y-2'>
-                      <h3 className='text-xl md:text-3xl font-medium'>
+                      <h3 className='text-xl md:text-3xl font-medium capitalize'>
                         {project.title}
                       </h3>
 
@@ -136,7 +136,7 @@ const Projects = () => {
                           {project.techStack.map((tech, index) => (
                             <li
                               key={index}
-                              className='mr-1.5 mb-1.5 inline-block rounded-[5px] border-none bg-white/10 px-3 py-1.5 tracking-wider text-xs lg:text-sm'
+                              className='mr-1.5 mb-1.5 inline-block rounded-[5px] border-none bg-white/10 px-3 py-1.5 tracking-wider text-xs lg:text-sm capitalize'
                             >
                               {tech}
                             </li>

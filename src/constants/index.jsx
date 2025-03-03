@@ -12,13 +12,13 @@ export const PROFILE = {
   name: 'Tushar Verma',
   role: 'Frontend Developer',
   subheading:
-    'Passionate about creating modern, responsive and impactful solutions. Excited to work with a team, take on challenges, and gain real-world experience while growing my skills in software development.'
+    "Driven to create impactful web experiences. Designing and developing seamless, responsive solutions is my passion. Seeking challenges and real-world experience, I'm eager to learn and adapt, continuously refining my skills."
 }
 
 export const PROJECTS = [
   {
     id: 1,
-    title: 'Wordpress Build #1',
+    title: 'Portfolio with WordPress',
     description:
       'This project showcases my no-code web development skills by creating a modern, responsive multi-page website on WordPress, deployed using AWS and developed using LocalWP software and Elementor, All-in-One Migration WordPress plugins.',
     techStack: ['WordPress', 'LocalWP', 'Elementor', 'AWS'],
@@ -28,7 +28,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'Bootstrap Build #1',
+    title: 'Bootstrap project 1',
     description:
       'This website demonstrates my Bootstrap skills in creating a responsive and modern user interface. Designed as an educational platform with placeholder content, it marks my first project using Bootstrap.',
     techStack: [
@@ -46,7 +46,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: 'Weather App with JavaScript',
+    title: 'Weather App',
     description:
       'This app provides real-time weather updates for any searched location or the user’s device geolocation. It features a fully responsive interface with synced weather icons reflecting live conditions.',
     techStack: [
@@ -64,7 +64,7 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: 'Bootstrap Build #2',
+    title: 'Bootstrap project 2',
     description:
       'This project highlights my Bootstrap skills, created for a recruitment assignment. Using the CDN method, I added subtle CSS animations as instructed and hosted the outcome on Netlify.',
     techStack: [
@@ -81,9 +81,9 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    title: 'Flutter App #1',
+    title: 'WorldTime App',
     description:
-      'This app demonstrates API integration and dynamic UI updates, working on both Android and iOS devices. Users can select global locations from a list to see real-time updates with backgrounds reflecting day or night. Developed using Android Studio, inspired by a YouTube tutorial by NetNinja.',
+      'This app demonstrates API integration and dynamic UI updates, working on both Android and iOS devices. Users can select global locations from a list to see real-time updates with backgrounds reflecting day or night.',
     techStack: [
       'Flutter',
       'Android Studio',
@@ -100,9 +100,9 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: 'Flutter App #2',
+    title: 'KyuQ App',
     description:
-      'This app lets vendors manage food orders, inventory, and revenue stats. Developed for a friend, it features a modern UI and seamless user experience on Android and iOS. The UI was designed in Figma.',
+      'This application allows vendors to manage food orders, inventory, and revenue stats. Developed for a friend’s project, it features a modern UI and a seamless experience on Android and iOS. I redesigned the UI based on provided Figma designs.',
     techStack: [
       'Figma',
       'Android Studio',
@@ -120,7 +120,7 @@ export const PROJECTS = [
   },
   {
     id: 7,
-    title: 'News Aggregator App',
+    title: 'The Newsblocks',
     description:
       "It display's latest news using the gNews API, offering search functionality and predefined categories for easy navigation. Works across all devices and it's free of advertisements.",
     techStack: ['HTML', 'CSS', 'JavaScript', 'gNews API'],
@@ -159,8 +159,8 @@ export const PROJECTS = [
       'Socket.io',
       'ExpressJs',
       'NodeJs',
-      'git',
-      'github'
+      'Git',
+      'Github'
     ],
     videoSrc: 'https://www.youtube.com/embed/x0vAYMjXzqQ',
     preview_link: '',
@@ -170,7 +170,7 @@ export const PROJECTS = [
     id: 10,
     title: 'Employee Management App',
     description:
-      'This application show cases a mordern and professional user interface designed by me to manage employee data. Frontend is ready to see. Login functionality with backend features and user database is in process... which will make this app even more useful.',
+      'It delivers a sleek, modern front-end user interface built with Shadcn components for easy employee management. Currently, it is a static website with dummy data, featuring seamless animations to enhance the user experience.',
     techStack: [
       'ReactJs',
       'Tailwindcss',
@@ -178,12 +178,43 @@ export const PROJECTS = [
       'NodeJs',
       'ExpressJs',
       'MongoDB',
-      'git',
-      'github'
+      'Git',
+      'Github'
     ],
     videoSrc: '',
     preview_link: 'https://rbac-mgmt-app.vercel.app/',
     code_link: 'https://github.com/gitboytushar/EmployeeManagementApp'
+  },
+  {
+    id: 11,
+    title: '🌟 Prescripto Web app',
+    description:
+      'A full-stack doctor appointment booking app with role-based access for patients, doctors, and admin. Patients can book appointments and manage profiles. Doctors update appointment status and profile data. Admin manage the database. The responsive UI ensures a seamless user experience, and Razorpay enables smooth online payments.',
+    techStack: [
+      'MongoDB',
+      'ExpressJs',
+      'ReactJs',
+      'NodeJs',
+      'Bcrypt',
+      'Axios',
+      'Mongoose',
+      'Multer',
+      'Jwt',
+      'Cloudinary',
+      'Razorpay',
+      'React Toastify',
+      'Tailwindcss',
+      'Lucide Icons',
+      'Shadcn UI',
+      'Magic UI',
+      'Motion',
+      'Git',
+      'Github',
+      'Render'
+    ],
+    videoSrc: '',
+    preview_link: 'https://prescripto-frontend-vtwl.onrender.com/',
+    code_link: 'https://github.com/gitboytushar/Prescripto-Web-App'
   }
 ]
 

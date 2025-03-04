@@ -49,7 +49,7 @@ const Hero = () => {
   }
 
   const resume_url =
-    'https://drive.google.com/file/d/1U4hqkckBG7kgDgxEa3KgZ4VipSa7-uoe/view?usp=sharing'
+    'https://drive.google.com/file/d/1Pa-A9kBUCBz_qypR-6OgGvGkVCvyeQTO/view?usp=sharing'
 
   // main content
   return (

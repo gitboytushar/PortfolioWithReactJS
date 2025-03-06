@@ -1,7 +1,7 @@
 export const NAVIGATION_LINKS = [
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  // { label: 'Work Experience', href: '#work' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Education', href: '#education' },
   { label: 'Hobbies', href: '#hobbies' },

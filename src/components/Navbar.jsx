@@ -4,6 +4,7 @@ import { NAVIGATION_LINKS } from '../constants/index'
 import { motion } from 'motion/react'
 import { useLenis } from 'lenis/react'
 import { easeInOutCubic } from '../utilities/easing'
+import { MailIcon } from 'lucide-react'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -33,7 +34,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className='fixed left-0 right-0 z-50 top-0 lg:top-4'>
-        {/* Desktop Menu */}
+        {/* ------------- Desktop Menu ------------ */}
         <div className='mx-auto hidden w-[1200px] h-12 py-2 px-1.5 items-center justify-between rounded-lg border-none bg-white/10 backdrop-blur-3xl lg:flex'>
           <div className='select-none'>
             <a
@@ -48,20 +49,30 @@ const Navbar = () => {
             <ul className='flex items-center gap-1 select-none'>
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
-                  <a
-                    className='text-md py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
-                    href={item.href}
-                    onClick={e => handleLinkClick(e, item.href)}
-                  >
-                    {item.label}
-                  </a>
+                  {item.href === '#contact' ? (
+                    <a
+                      className='text-md py-2 px-3 rounded-[5px] text-white font-medium bg-violet-600 hover:bg-white/10 transition-colors duration-200 ease-linear'
+                      href={item.href}
+                      onClick={e => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <a
+                      className='text-md py-2 px-3 rounded-[5px] text-white bg-none hover:bg-white/10 transition-all duration-200 ease-in-out'
+                      href={item.href}
+                      onClick={e => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* ----------- Mobile Menu bar ------------ */}
         <div className='pt-5 bg-black/20 backdrop-blur-3xl lg:hidden border-b border-white/20'>
           <div className='flex items-center justify-between px-4 pb-2'>
             <div className='-translate-y-1'>
@@ -96,29 +107,44 @@ const Navbar = () => {
                   opacity: 1,
                   y: 0,
                   transition: {
-                    staggerChildren: 0.05
+                    staggerChildren: 0.1,
+                    ease: 'anticipate'
                   }
                 }
               }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.6 }}
               layout='preserve-aspect'
-              className='py-16 flex flex-col gap-12 text-center border-t border-white/20'
+              className='py-16 flex flex-col gap-10 text-center border-t border-white/20'
             >
               {NAVIGATION_LINKS.map((item, index) => (
                 <motion.li
                   key={index}
                   variants={{
-                    hidden: { opacity: 0, y: -20 },
+                    hidden: { opacity: 0, y: -50 },
                     visible: { opacity: 1, y: 0 }
                   }}
                 >
-                  <a
-                    href={item.href}
-                    className='block w-full text-lg'
-                    onClick={e => handleLinkClick(e, item.href)}
-                  >
-                    {item.label}
-                  </a>
+                  {item.href === '#contact' ? (
+                    <div className='flex flex-col items-center justify-center gap-10'>
+                      <p className='bg-white/10 h-0.5 w-1/2 rounded-full'></p>
+                      <a
+                        href={item.href}
+                        className='flex items-center justify-center gap-2 w-full text-lg'
+                        onClick={e => handleLinkClick(e, item.href)}
+                      >
+                        <MailIcon size={20} className='text-yellow-400' />
+                        {item.label}
+                      </a>
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className='block w-full text-lg'
+                      onClick={e => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
                 </motion.li>
               ))}
             </motion.ul>

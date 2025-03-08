@@ -1,7 +1,7 @@
 export const NAVIGATION_LINKS = [
-  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Education', href: '#education' },
   { label: 'Hobbies', href: '#hobbies' },
@@ -426,5 +426,50 @@ export const HOBBIES = [
     name: 'Smartphone Photographer',
     rewards:
       'I enjoy capturing moments that my friends and family cherish. I find satisfaction in post-editing to enhance their visual impact.'
+  }
+]
+
+export const WORK_EXP = [
+  {
+    id: 1,
+    overview: {
+      company_logo: '/assets/um/um_logo.jpg',
+      company_name: 'Unified Mentor',
+      company_linkedin:
+        'https://www.linkedin.com/company/unifiedmentor/posts/?feedView=all',
+      company_website: 'https://unifiedmentor.com/',
+      certificate_link:
+        'https://drive.google.com/file/d/1DP75mFLZ2QJxMvOnMrPggJ3fJO-8oM2X/view',
+      my_role: 'Full-Stack Web Developer Intern',
+      join_date: 'Dec 2024',
+      end_date: 'Feb 2025',
+      learning:
+        'Completed a two-month internship at Unified Mentor, working on three projects. Developed and delivered web applications using HTML, CSS, JavaScript, and the MERN stack. Gained hands-on experience in full-stack development and problem-solving, demonstrating strong technical and analytical skills.'
+    },
+    projects: {
+      p1: {
+        sno: 1,
+        title: 'Weather App ',
+        level: '(Basic)',
+        about: 'Provides current weather details using openweathermap api.',
+        preview_link: 'https://weather-app-nine-ochre.vercel.app/'
+      },
+      p2: {
+        sno: 2,
+        title: 'Portfolio Website ',
+        level: '(Intermediate)',
+        about:
+          'Showcase of skills, projects, and experiences to attract potential employers',
+        preview_link: 'https://tusharverma.vercel.app/'
+      },
+      p3: {
+        sno: 3,
+        title: 'Doctor Appointment Booking App ',
+        level: '(Advance)',
+        about:
+          'Provide RBAC system for admin, doctor & patient. Payment gateway integration. Works on mobiles and desktops.',
+        preview_link: 'https://prescripto-frontend-vtwl.onrender.com/'
+      }
+    }
   }
 ]

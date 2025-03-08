@@ -4,6 +4,7 @@ import { ReactLenis } from 'lenis/react'
 // import components
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import WorkExp from './components/WorkExp'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Achievements from './components/Achievements'
@@ -41,6 +42,7 @@ const App = () => {
           <Hero />
           <Projects />
           <Skills />
+          <WorkExp />
           <Achievements />
           <Education />
           <Hobbies />

@@ -13,6 +13,7 @@ import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
 import CursorTrack from './components/cursorTrack'
+import ProjectShowcase from './components/ProjectShowcase'
 // import Snowfall from 'react-snowfall'
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
           {/* my content sections */}
           <Navbar />
           <Hero />
+          <ProjectShowcase />
           <Projects />
           <Skills />
           <WorkExp />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactLenis } from 'lenis/react'
 
-// import components
+// components
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import WorkExp from './components/WorkExp'
@@ -13,7 +13,8 @@ import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import Scroll2TopFloatingButton from './components/Scroll2TopFloatingButton'
 import CursorTrack from './components/cursorTrack'
-import ProjectShowcase from './components/ProjectShowcase'
+import HightlightProject from './components/HightlightProject'
+
 // import Snowfall from 'react-snowfall'
 
 const App = () => {
@@ -41,7 +42,7 @@ const App = () => {
           {/* my content sections */}
           <Navbar />
           <Hero />
-          <ProjectShowcase />
+          <HightlightProject />
           <Projects />
           <Skills />
           <WorkExp />

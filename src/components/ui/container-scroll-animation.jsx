@@ -25,17 +25,18 @@ export const ContainerScroll = ({
   }, [])
 
   const scaleDimensions = () => {
-    return isMobile ? [0.8, 0.9] : [1.05, 1]
+    return isMobile ? [0.85, 0.75] : [1.05, 1]
   }
 
-  const rotate = useTransform(scrollYProgress, [0, 1], [19, 0])
+  const rotate = useTransform(scrollYProgress, [0, 1], [23, 0])
   const scale = useTransform(scrollYProgress, [0.5, 1], scaleDimensions())
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -100])
+  const translate = useTransform(scrollYProgress, [0, 1], [0, -120])
 
   return (
     <div
-      className='h-[50rem] md:h-[60rem] flex items-center justify-center relative p-1 md:p-20'
+      className='h-[50rem] md:h-[60rem] flex items-center justify-center relative p-1 md:p-20 overflow-hidden'
       ref={containerRef}
+      style={{ position: 'relative' }}
     >
       <div
         className='py-2 md:py-30 w-full relative'
@@ -75,15 +76,13 @@ export const Card = ({ rotate, scale, children, isMobile }) => {
     <motion.div
       style={{
         rotateX: rotate,
-        scale,
-        boxShadow:
-          '0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003'
+        scale
       }}
-      className={`w-full -mt-12 mx-auto ${
-        isMobile ? 'w-[360px] h-[680px]' : 'w-[1000px] h-[650px]'
-      } border-4 border-[#6C6C6C] p-3 md:p-6 bg-[#222222] rounded-3xl lg:rounded-[30px] shadow-2xl`}
+      className={`w-full -mt-24 lg:-mt-12 mx-auto ${
+        isMobile ? 'w-[90%] md:w-2/3 h-auto' : 'w-[1000px] h-[650px]'
+      } border-4 border-[#6C6C6C] p-3 md:p-6 bg-[#222222] rounded-[30px]`}
     >
-      <div className='h-full w-full overflow-hidden rounded-xl lg:rounded-2xl bg-white relative'>
+      <div className='h-full w-full overflow-hidden rounded-2xl bg-white relative'>
         {children}
       </div>
     </motion.div>

@@ -8,9 +8,9 @@ const ProjectShowcase = () => {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className='text-2xl md:text-5xl font-semibold text-white/50'>
-              Web Application <br /> Built with MERN Stack <br />
-              <span className='text-6xl md:text-6xl lg:text-9xl text-white font-bold mt-1 leading-none'>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold text-white/30'>
+              Web Application <br /> built with MERN Stack <br />
+              <span className='text-6xl md:text-7xl lg:text-9xl text-white font-bold mt-1 leading-none'>
                 Prescripto
               </span>
             </h1>
@@ -20,7 +20,7 @@ const ProjectShowcase = () => {
           <img
             src='/assets/AppUI/da_entry_phone.png'
             alt='hero mobile'
-            className='w-full h-full object-cover'
+            className='w-full h-full object-contain'
             draggable={false}
           />
         }

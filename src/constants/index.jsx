@@ -187,9 +187,9 @@ export const PROJECTS = [
   },
   {
     id: 11,
-    title: '🌟 Prescripto Web app',
+    title: 'Prescripto Web app',
     description:
-      'A full-stack doctor appointment booking app with role-based access for patients, doctors, and admin. Patients can book appointments and manage profiles. Doctors update appointment status and profile data. Admin manage the database. The responsive UI ensures a seamless user experience, and Razorpay enables smooth online payments.',
+      'Full-stack application offers doctor appointment booking and role-based access for patients, doctors, and admin. The responsive UI ensures a seamless user experience, and Razorpay enables smooth online payments.',
     techStack: [
       'MongoDB',
       'ExpressJs',
@@ -473,3 +473,12 @@ export const WORK_EXP = [
     }
   }
 ]
+
+// ---------- export screenshot images of the prescripto app ---------------------
+export const DAPP_UI_DSS = Array.from({ length: 9 }, (_, i) => ({
+  screenshot: <img src={`/assets/AppUI/dss/d${i + 1}.png`} alt='' />
+}))
+
+export const DAPP_UI_PSS = Array.from({ length: 9 }, (_, i) => ({
+  screenshot: <img src={`/assets/AppUI/pss/p${i + 1}.png`} alt='' />
+}))

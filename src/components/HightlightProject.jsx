@@ -4,6 +4,8 @@ import ProjectShowcase from './ProjectShowcase'
 import { Marquee } from './magicui/marquee'
 import { cn } from '../lib/utils'
 import { DAPP_UI_DSS, DAPP_UI_PSS } from '../constants'
+import { AnimatedGradientText } from './magicui/animated-gradient-text'
+import { ChevronRight } from 'lucide-react'
 
 const landscapeImages = DAPP_UI_DSS.map(item => ({
   img: item.screenshot.props.src
@@ -70,7 +72,7 @@ const HightlightProject = () => {
       </div>
 
       {/* Magic ui - app ui images - vertical marquee */}
-      <div className='flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-5 lg:pl-24 lg:pr-14'>
+      <div className='flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-5 lg:pl-24 lg:pr-10'>
         {/* scrolling iamges */}
         <div className='relative flex h-[500px] w-fit flex-row items-center justify-start overflow-hidden gap-0.5 lg:gap-5'>
           <Marquee
@@ -96,17 +98,67 @@ const HightlightProject = () => {
           <div className='pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background'></div>
         </div>
 
-        {/* buttons */}
-        <div className='flex flex-col items-center justify-center gap-5'>
-          <button className='py-3 min-w-44 text-xl bg-white text-black rounded-lg'>
-            Video
-          </button>
-          <button className='py-3 min-w-44 text-xl bg-white text-black rounded-lg'>
-            Live Preview
-          </button>
-          <button className='py-3 min-w-44 text-xl bg-white text-black rounded-lg'>
-            Source Code
-          </button>
+        {/* ------------------------------------- cta buttons - magic ui -------------------------------------- */}
+        <div className='flex flex-col items-center justify-center gap-6 lg:gap-8'>
+          {/* Live preview btn  */}
+          <a
+            href='https://prescripto-frontend-vtwl.onrender.com/'
+            target='_blank'
+            className='group relative mx-auto flex items-center justify-center w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer hover:scale-[103%] transition-all duration-200 ease-linear hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
+          >
+            <span
+              className={cn(
+                'absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/70 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]'
+              )}
+              style={{
+                WebkitMask:
+                  'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                WebkitMaskComposite: 'destination-out',
+                mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                maskComposite: 'subtract',
+                WebkitClipPath: 'padding-box'
+              }}
+            />
+            🚀
+            <hr className='mx-4 h-4 w-px shrink-0 border-none bg-neutral-600' />
+            <AnimatedGradientText className='text-base font-medium'>
+              Try Now
+            </AnimatedGradientText>
+            <ChevronRight
+              className='ml-1 size-4 stroke-neutral-400 transition-transform
+ duration-300 ease-in-out group-hover:translate-x-0.5'
+            />
+          </a>
+
+          {/* Source code btn */}
+          <a
+            href='https://github.com/gitboytushar/Prescripto-Web-App'
+            target='_blank'
+            className='group relative mx-auto flex items-center justify-center w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer hover:scale-[103%] transition-all duration-200 ease-linear hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
+          >
+            <span
+              className={cn(
+                'absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/70 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]'
+              )}
+              style={{
+                WebkitMask:
+                  'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                WebkitMaskComposite: 'destination-out',
+                mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                maskComposite: 'subtract',
+                WebkitClipPath: 'padding-box'
+              }}
+            />
+            🛠️
+            <hr className='mx-4 h-4 w-px shrink-0 border-none bg-neutral-600' />
+            <AnimatedGradientText className='text-base font-medium'>
+              Github
+            </AnimatedGradientText>
+            <ChevronRight
+              className='ml-1 size-4 stroke-neutral-400 transition-transform
+ duration-300 ease-in-out group-hover:translate-x-0.5'
+            />
+          </a>
         </div>
       </div>
     </section>

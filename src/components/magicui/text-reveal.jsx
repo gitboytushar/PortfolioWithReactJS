@@ -26,7 +26,7 @@ export const TextReveal = ({ children, className }) => {
       >
         <span
           className={
-            'flex flex-wrap p-5 text-2xl font-bold text-white/40 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl'
+            'flex flex-wrap justify-center lg:justify-start p-5 text-2xl font-bold text-white/40 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl'
           }
         >
           {words.map((word, i) => {

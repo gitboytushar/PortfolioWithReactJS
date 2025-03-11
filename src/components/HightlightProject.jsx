@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'motion/react'
 import { TextReveal } from './magicui/text-reveal'
 import ProjectShowcase from './ProjectShowcase'
 import { Marquee } from './magicui/marquee'
@@ -19,7 +20,7 @@ const LandscapeCard = ({ img }) => {
   return (
     <div
       className={cn(
-        'relative w-fit lg:w-[35vw] h-max my-0.5 lg:my-2 cursor-grab overflow-hidden'
+        'relative w-fit lg:w-[35vw] h-max my-0.5 lg:my-2 overflow-hidden'
       )}
     >
       <img
@@ -36,7 +37,7 @@ const PortraitCard = ({ img }) => {
   return (
     <div
       className={cn(
-        'relative w-fit lg:w-[11vw] h-max my-0.5 lg:my-2.5 cursor-grab overflow-hidden'
+        'relative w-fit lg:w-[11vw] h-max my-0.5 lg:my-2.5 overflow-hidden'
       )}
     >
       <img
@@ -58,7 +59,7 @@ const HightlightProject = () => {
       </div>
 
       {/* Magic ui - scroll based text reveal */}
-      <div className='flex flex-col items-stretch gap-10 md:gap-14 lg:gap-20 mt-0 lg:mt-32'>
+      <div className='flex flex-col items-stretch gap-5 md:gap-14 lg:gap-14 -mt-14 lg:mt-28'>
         <TextReveal>
           Schedule an appointment with doctor in just few clicks.
         </TextReveal>
@@ -72,23 +73,21 @@ const HightlightProject = () => {
       </div>
 
       {/* Magic ui - app ui images - vertical marquee */}
-      <div className='flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-5 lg:pl-24 lg:pr-10'>
+      <div className='flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-14'>
         {/* scrolling iamges */}
         <div className='relative flex h-[500px] w-fit flex-row items-center justify-start overflow-hidden gap-0.5 lg:gap-5'>
           <Marquee
-            pauseOnHover
             vertical
-            className='[--duration:35s] transition-all duration-500'
+            className='[--duration:35s] lg:[--duration:30s] transition-all duration-500'
           >
             {landscapeImages.map((item, index) => (
               <LandscapeCard key={index} {...item} />
             ))}
           </Marquee>
           <Marquee
-            pauseOnHover
             vertical
             reverse
-            className='[--duration:45s] transition-all duration-500'
+            className='[--duration:45s] lg:[--duration:35s] transition-all duration-500'
           >
             {portraitImages.map((item, index) => (
               <PortraitCard key={index} {...item} />
@@ -101,10 +100,16 @@ const HightlightProject = () => {
         {/* ------------------------------------- cta buttons - magic ui -------------------------------------- */}
         <div className='flex flex-col items-center justify-center gap-6 lg:gap-8'>
           {/* Live preview btn  */}
-          <a
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              type: 'spring',
+              stiffness: 400,
+              damping: 17
+            }}
             href='https://prescripto-frontend-vtwl.onrender.com/'
             target='_blank'
-            className='group relative mx-auto flex items-center justify-center w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer hover:scale-[103%] transition-all duration-200 ease-linear hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
+            className='group relative mx-auto flex items-center justify-center min-w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer transition-shadow hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
           >
             <span
               className={cn(
@@ -128,13 +133,19 @@ const HightlightProject = () => {
               className='ml-1 size-4 stroke-neutral-400 transition-transform
  duration-300 ease-in-out group-hover:translate-x-0.5'
             />
-          </a>
+          </motion.a>
 
           {/* Source code btn */}
-          <a
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              type: 'spring',
+              stiffness: 400,
+              damping: 17
+            }}
             href='https://github.com/gitboytushar/Prescripto-Web-App'
             target='_blank'
-            className='group relative mx-auto flex items-center justify-center w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer hover:scale-[103%] transition-all duration-200 ease-linear hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
+            className='group relative mx-auto flex items-center justify-center min-w-[180px] rounded-full px-6 py-3.5 shadow-[inset_0_-3px_10px_#8fdfff1f] cursor-pointer transition-shadow hover:shadow-[inset_0_-4px_10px_#8fdfff3f] '
           >
             <span
               className={cn(
@@ -158,7 +169,7 @@ const HightlightProject = () => {
               className='ml-1 size-4 stroke-neutral-400 transition-transform
  duration-300 ease-in-out group-hover:translate-x-0.5'
             />
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

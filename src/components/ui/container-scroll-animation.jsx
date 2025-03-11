@@ -1,6 +1,14 @@
 'use client'
 import React, { useRef } from 'react'
-import { useScroll, useTransform, motion } from 'motion/react'
+import { useScroll, useTransform, motion, useSpring } from 'framer-motion'
+
+const useSmooth = (value, smoothing = 80) => {
+  return useSpring(value, {
+    stiffness: smoothing,
+    damping: 15,
+    mass: 0.25
+  })
+}
 
 export const ContainerScroll = ({
   titleComponent,
@@ -28,13 +36,17 @@ export const ContainerScroll = ({
     return isMobile ? [0.85, 0.75] : [1.05, 1]
   }
 
-  const rotate = useTransform(scrollYProgress, [0, 1], [23, 0])
-  const scale = useTransform(scrollYProgress, [0.5, 1], scaleDimensions())
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -120])
+  const rawRotate = useTransform(scrollYProgress, [0, 1], [23, 0])
+  const rawScale = useTransform(scrollYProgress, [0.5, 1], scaleDimensions())
+  const rawTranslate = useTransform(scrollYProgress, [0, 1], [0, -120])
+  // smooth out the transform
+  const rotate = useSmooth(rawRotate)
+  const scale = useSmooth(rawScale)
+  const translate = useSmooth(rawTranslate)
 
   return (
     <div
-      className='h-[50rem] md:h-[60rem] flex items-center justify-center relative p-1 md:p-20 overflow-hidden'
+      className='h-[60rem] flex items-center justify-center relative p-1 md:p-20 overflow-hidden'
       ref={containerRef}
       style={{ position: 'relative' }}
     >
